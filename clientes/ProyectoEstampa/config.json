@@ -1,0 +1,15 @@
+{
+  "nombre": "PROYECTO ESTAMPA",
+  "servicios": ["Bordados", "Serigrafía", "Sublimación", "DTF"],
+  "descripcion": "Indumentaria personalizada. Envíos a todo el país.",
+  "whatsapp": "https://wa.me/qr/55J6JDCP2CJRN1",
+  "instagram": "https://www.instagram.com/proyectoestampa/",
+  "imagenes": [
+    {
+      "id": "xfNWEw2",
+      "nombre": "Logo fondo negro",
+      "url": "https://i.imgur.com/xfNWEw2.png"
+    }
+  ],
+  "logo": "https://i.imgur.com/xfNWEw2.png"
+}
