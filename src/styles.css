@@ -1,0 +1,57 @@
+body {
+    font-family: sans-serif;
+    -webkit-font-smoothing: auto;
+    -moz-font-smoothing: auto;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: auto;
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
+  @layer utilities {
+    @keyframes typewriter {
+      from { width: 0 }
+      to { width: 100% }
+    }
+  
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+  
+    @keyframes stitching {
+      0% { left: 0%; opacity: 1 }
+      100% { left: 100%; opacity: 0 }
+    }
+  
+    .animate-typewriter {
+      animation: typewriter 3s steps(20) 1s 1 normal both, blink 0.7s step-end infinite;
+      border-right: 3px solid #fbbf24;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+      font-family: monospace;
+      font-size: 2.25rem;
+      color: #facc15; /* amber-400 */
+    }
+  
+    .needle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 12px;
+      height: 100%;
+      background-color: #fbbf24;
+      border-radius: 50%;
+      animation: stitching 3s linear forwards;
+    }
+  }
+  
