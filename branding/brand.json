@@ -1,0 +1,24 @@
+{
+  "schema": "desarrollamo.brand.v1",
+  "status": "provisional",
+  "name": "DesarrollAMO",
+  "wordmark": {
+    "prefix": "Desarroll",
+    "accent": "AMO"
+  },
+  "tagline": "Traducimos tus ideas a tecnología.",
+  "links": {
+    "website": "https://desarrollamo.com.ar/",
+    "instagram": "https://www.instagram.com/desarrollamoficial"
+  },
+  "colors": {
+    "primary": "#2563EB",
+    "accent": "#EC4899",
+    "dark": "#111827",
+    "light": "#FFFFFF"
+  },
+  "source_notes": [
+    "Initial values extracted from the existing amoedo7/DesarrollAmo repository.",
+    "Production branding still requires validation before this file becomes canonical."
+  ]
+}
