@@ -1,6 +1,36 @@
 const filters = [...document.querySelectorAll('.filter')];
 const offices = [...document.querySelectorAll('.office')];
 
+const officeAnchors = {
+  'EstructurAMO': 'estructuramo',
+  'IAMO / DAMO': 'iamo-damo',
+  'DesarrolloAMO': 'desarrolloamo',
+  'WebAMO': 'webamo',
+  'DatabaseAMO': 'databaseamo',
+  'SecurityAMO': 'securityamo',
+  'InfraAMO': 'infraamo',
+  'OperAMO': 'operamo',
+  'MarketingAMO': 'marketingamo',
+  'ContaduríaAMO': 'contaduriaamo',
+  'InvestigAMO': 'investigamo',
+  'CobrAMO': 'cobramo',
+  'RagtAMO': 'ragtamo',
+  'VideAMO': 'videamo',
+  'CamarAMO': 'camaramo',
+  'ChoferAMO': 'choferamo'
+};
+
+offices.forEach((office) => {
+  const title = office.querySelector('h3')?.textContent.trim();
+  const anchor = officeAnchors[title];
+  if (!anchor) return;
+  const link = document.createElement('a');
+  link.href = `./oficinas.html#${anchor}`;
+  link.className = 'office-link';
+  link.textContent = 'Ver oficina →';
+  office.querySelector('div')?.appendChild(link);
+});
+
 filters.forEach((button) => {
   button.addEventListener('click', () => {
     const filter = button.dataset.filter;
