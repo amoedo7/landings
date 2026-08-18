@@ -8,10 +8,12 @@
   "visibility": "public",
   "source_of_truth": "partial",
   "production_url": null,
-  "related": ["amoedo7/DesarrollAmo"],
-  "reviewed_at": "2026-08-18",
+  "related": ["amoedo7/DesarrollAmo", "amoedo7/amoedo7"],
+  "reviewed_at": "2026-08-19",
   "notes": [
     "Contains historical client landings and reusable web assets.",
-    "branding/ is the provisional shared branding source."
+    "branding/ is the provisional shared branding source.",
+    "Root index is now the visual DesarrollAMO ecosystem portal.",
+    "oficinas.html documents public mission, inputs and outputs for the first office map."
   ]
 }
