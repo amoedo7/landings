@@ -1,0 +1,27 @@
+name: demos-ci
+
+on:
+  push:
+    paths:
+      - 'demos/**'
+      - '.github/workflows/demos-ci.yml'
+  pull_request:
+    paths:
+      - 'demos/**'
+      - '.github/workflows/demos-ci.yml'
+
+jobs:
+  file-integrity-contract:
+    name: File integrity · ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Verify shared output contract
+        run: python demos/file-integrity/test_contract.py
