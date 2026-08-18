@@ -1,12 +1,153 @@
-<!-- Página de bienvenida al sistema de landings -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Dashboard de Landings</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="DesarrollAMO transforma ideas, procesos y problemas reales en software, automatización e inteligencia aplicada mediante oficinas especializadas." />
+  <meta name="theme-color" content="#07111f" />
+  <title>DesarrollAMO · Ecosistema de oficinas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./ecosistema.css" />
 </head>
 <body>
-  <h1>Bienvenido a tu sistema de landings</h1>
-  <p><a href="./clientes/proyectoestampa/">Proyecto Estampa</a></p>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar shell">
+    <a class="brand" href="#inicio" aria-label="DesarrollAMO inicio">
+      <span class="brand-mark">D</span>
+      <span><b>desarroll</b><strong>AMO</strong><small>estructura · inteligencia · impacto</small></span>
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#oficinas">Oficinas</a>
+      <a href="#sistema">Sistema</a>
+      <a href="#clientes">Clientes</a>
+      <a href="#participar">Participar</a>
+    </nav>
+    <a class="button button-ghost" href="https://desarrollamo.com.ar/">Sitio principal</a>
+  </header>
+
+  <main id="inicio">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse"></span> ECOSISTEMA DESARROLLAMO</p>
+        <h1>Una idea entra.<br><span>Un sistema sale.</span></h1>
+        <p class="lead">DesarrollAMO reúne oficinas especializadas para investigar, diseñar, desarrollar, operar, medir y mejorar soluciones reales con software, automatización e IA.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#oficinas">Explorar oficinas</a>
+          <a class="button button-secondary" href="#clientes">Tengo un proyecto</a>
+        </div>
+        <div class="proof-strip" aria-label="Principios de trabajo">
+          <div><b>Humano + IA</b><span>supervisión y trazabilidad</span></div>
+          <div><b>Modular</b><span>cada oficina tiene un rol</span></div>
+          <div><b>Verificable</b><span>probar antes de prometer</span></div>
+        </div>
+      </div>
+
+      <div class="building" aria-label="Mapa conceptual de DesarrollAMO">
+        <div class="building-head">
+          <span>ESTRUCTURAMO</span>
+          <small>Dirección · visión · prioridades</small>
+        </div>
+        <div class="floor purple"><b>NÚCLEO INTELIGENTE</b><span>DAMO · OpenClaw · memoria · reglas · automatización</span></div>
+        <div class="floor blue"><b>SISTEMA OPERATIVO</b><span>agentes · skills · herramientas · scripts · dashboards</span></div>
+        <div class="floor cyan"><b>OFICINAS</b><span>especialistas coordinados por una misma estructura</span></div>
+        <div class="floor green"><b>LOOP DE SINERGIA</b><span>buscar → entender → hacer → verificar → aprender ↻</span></div>
+        <div class="floor gold"><b>OPERACIÓN REAL</b><span>clientes · proyectos · propuestas · entregas · cobros · seguimiento</span></div>
+        <div class="floor dark"><b>INFRAESTRUCTURA</b><span>datos · APIs · servidores · logs · despliegues</span></div>
+      </div>
+    </section>
+
+    <section id="oficinas" class="section shell">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">OFICINAS</p>
+          <h2>No es una sola IA. Es una organización.</h2>
+        </div>
+        <p>Cada oficina existe para resolver una clase de problema. Se combinan sólo cuando el trabajo lo necesita.</p>
+      </div>
+
+      <div class="filters" role="tablist" aria-label="Filtrar oficinas">
+        <button class="filter is-active" data-filter="all">Todas</button>
+        <button class="filter" data-filter="core">Núcleo</button>
+        <button class="filter" data-filter="build">Construcción</button>
+        <button class="filter" data-filter="business">Negocio</button>
+        <button class="filter" data-filter="field">Operación</button>
+      </div>
+
+      <div class="office-grid" id="officeGrid">
+        <article class="office office-orange" data-group="core"><span class="office-icon">⌂</span><div><p class="tag">NÚCLEO</p><h3>EstructurAMO</h3><p>Dirección, arquitectura organizacional, ownership, prioridades y gobernanza del ecosistema.</p><ul><li>Visión y decisiones</li><li>Mapa de capacidades</li><li>Coordinación entre oficinas</li></ul></div></article>
+        <article class="office office-violet" data-group="core"><span class="office-icon">∞</span><div><p class="tag">INTELIGENCIA</p><h3>IAMO / DAMO</h3><p>Interfaz humano ↔ IA, agentes, memoria, reglas y automatización con proveedores intercambiables.</p><ul><li>Agentes y skills</li><li>Memoria operativa</li><li>Orquestación</li></ul></div></article>
+        <article class="office office-blue" data-group="build"><span class="office-icon">&lt;/&gt;</span><div><p class="tag">INGENIERÍA</p><h3>DesarrolloAMO</h3><p>Arquitectura, implementación, integración, pruebas y evolución de productos digitales.</p><ul><li>Web y Android</li><li>Backends y APIs</li><li>Tests e integración</li></ul></div></article>
+        <article class="office office-cyan" data-group="build"><span class="office-icon">◈</span><div><p class="tag">WEB</p><h3>WebAMO</h3><p>Experiencias web rápidas, accesibles, medibles y preparadas para convertir visitas en acción.</p><ul><li>UX/UI</li><li>Landing pages</li><li>Accesibilidad</li></ul></div></article>
+        <article class="office office-indigo" data-group="build"><span class="office-icon">▦</span><div><p class="tag">DATOS</p><h3>DatabaseAMO</h3><p>Datos empresariales, PostgreSQL, Supabase, migraciones, permisos y trazabilidad.</p><ul><li>Modelado</li><li>RLS y seguridad</li><li>Migraciones</li></ul></div></article>
+        <article class="office office-red" data-group="core"><span class="office-icon">⛨</span><div><p class="tag">SEGURIDAD</p><h3>SecurityAMO</h3><p>Secretos, hardening, auditoría, permisos y controles antes de tratar un sistema como producción.</p><ul><li>Threat review</li><li>Hardening</li><li>Auditoría</li></ul></div></article>
+        <article class="office office-sky" data-group="build"><span class="office-icon">☁</span><div><p class="tag">INFRA</p><h3>InfraAMO</h3><p>Servidores, redes, despliegues, resiliencia, backups y observabilidad.</p><ul><li>Deploy</li><li>Resiliencia</li><li>Monitoreo</li></ul></div></article>
+        <article class="office office-teal" data-group="field"><span class="office-icon">⚙</span><div><p class="tag">OPERACIONES</p><h3>OperAMO</h3><p>Procesos, colas, continuidad, recuperación y mejora constante de la operación.</p><ul><li>Procesos</li><li>Supervisión</li><li>Recovery</li></ul></div></article>
+        <article class="office office-pink" data-group="business"><span class="office-icon">◎</span><div><p class="tag">CRECIMIENTO</p><h3>MarketingAMO</h3><p>Posicionamiento, contenido, campañas, analítica y experimentos de adquisición.</p><ul><li>Marca</li><li>Contenido</li><li>Campañas</li></ul></div></article>
+        <article class="office office-emerald" data-group="business"><span class="office-icon">▤</span><div><p class="tag">FINANZAS</p><h3>ContaduríaAMO</h3><p>Orden financiero, presupuestos, balances operativos, costes y lectura económica.</p><ul><li>Costes</li><li>Balances</li><li>Reportes</li></ul></div></article>
+        <article class="office office-purple" data-group="business"><span class="office-icon">⌕</span><div><p class="tag">INTELIGENCIA</p><h3>InvestigAMO</h3><p>Investigación, fuentes, OSINT responsable, análisis y evidencia para tomar mejores decisiones.</p><ul><li>Investigación</li><li>Fuentes</li><li>Informes</li></ul></div></article>
+        <article class="office office-amber" data-group="business"><span class="office-icon">↗</span><div><p class="tag">COBROS</p><h3>CobrAMO</h3><p>Puerta de cobro del ecosistema: referencias, métodos de pago y seguimiento de pagos verificados.</p><ul><li>Links de pago</li><li>Referencias</li><li>Confirmaciones</li></ul></div></article>
+        <article class="office office-lime" data-group="field"><span class="office-icon">⌖</span><div><p class="tag">TERRENO</p><h3>RagtAMO</h3><p>Captura y organización de reportes, mapas, evidencias y datos que nacen fuera de la oficina.</p><ul><li>Reportes</li><li>Mapas</li><li>Dashboards</li></ul></div></article>
+        <article class="office office-fuchsia" data-group="business"><span class="office-icon">▶</span><div><p class="tag">CONTENIDO</p><h3>VideAMO</h3><p>Video, edición, clips y producción multimedia pensada para comunicación y crecimiento.</p><ul><li>Edición</li><li>Clips</li><li>Producción</li></ul></div></article>
+        <article class="office office-yellow" data-group="field"><span class="office-icon">▣</span><div><p class="tag">CAPTURA</p><h3>CamarAMO</h3><p>Fotos, documentos, evidencia visual y captura estructurada desde dispositivos.</p><ul><li>Captura</li><li>Documentos</li><li>Sincronización</li></ul></div></article>
+        <article class="office office-green" data-group="field"><span class="office-icon">➜</span><div><p class="tag">MOVILIDAD</p><h3>ChoferAMO</h3><p>Rutas, choferes, logística, gastos, incidencias y operación móvil.</p><ul><li>Rutas</li><li>Flota</li><li>Incidentes</li></ul></div></article>
+      </div>
+    </section>
+
+    <section id="sistema" class="section shell system-section">
+      <div class="section-heading compact">
+        <div><p class="eyebrow">CÓMO TRABAJA</p><h2>Una cadena de valor, no una colección de bots.</h2></div>
+      </div>
+      <div class="loop">
+        <span>BUSCAR</span><i>→</i><span>ENTENDER</span><i>→</i><span>UBICAR</span><i>→</i><span>HACER</span><i>→</i><span>VERIFICAR</span><i>→</i><span>APRENDER</span><i>↻</i>
+      </div>
+      <div class="principles">
+        <article><b>01</b><h3>Una oficina dueña</h3><p>Cada trabajo tiene un responsable claro y puede sumar revisores sin diluir ownership.</p></article>
+        <article><b>02</b><h3>IA intercambiable</h3><p>Los datos, decisiones y procesos pertenecen al sistema, no a un único proveedor de IA.</p></article>
+        <article><b>03</b><h3>Estado real</h3><p>No se presenta un prototipo como producción. Lo que funciona se documenta; lo pendiente también.</p></article>
+        <article><b>04</b><h3>Aprender sin gastar por estar vivo</h3><p>Automatizar donde aporta valor, dormir cuando no hay trabajo y conservar contexto útil.</p></article>
+      </div>
+    </section>
+
+    <section id="clientes" class="section shell client-section">
+      <div class="client-card">
+        <div>
+          <p class="eyebrow">PARA CLIENTES</p>
+          <h2>No necesitás saber qué oficina necesitás.</h2>
+          <p>Traé el problema, la idea o el proceso que querés mejorar. EstructurAMO distribuye el trabajo entre las capacidades necesarias y lo convierte en una entrega concreta.</p>
+        </div>
+        <div class="client-steps">
+          <span><b>1</b> Contanos qué querés lograr</span>
+          <span><b>2</b> Diseñamos el camino</span>
+          <span><b>3</b> Construimos y verificamos</span>
+          <span><b>4</b> Entregamos y seguimos mejorando</span>
+        </div>
+        <a class="button button-primary" href="https://desarrollamo.com.ar/">Empezar</a>
+      </div>
+    </section>
+
+    <section id="participar" class="section shell participate">
+      <div>
+        <p class="eyebrow">ECOSISTEMA ABIERTO</p>
+        <h2>También hay lugar para quien quiera construir con nosotros.</h2>
+      </div>
+      <div class="participation-grid">
+        <article><span>◆</span><h3>Clientes</h3><p>Problemas reales que merecen mejores herramientas.</p></article>
+        <article><span>♟</span><h3>Colaboradores</h3><p>Personas que suman tiempo, ideas, oficio o conocimiento.</p></article>
+        <article><span>↗</span><h3>Aliados</h3><p>Empresas y profesionales que amplifican capacidades.</p></article>
+        <article><span>✦</span><h3>Comunidad</h3><p>Personas que creen en construir tecnología útil y accesible.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <div><span class="brand-inline">desarroll<strong>AMO</strong></span><p>Traducimos tus ideas a tecnología.</p></div>
+    <div class="footer-links"><a href="https://github.com/amoedo7">GitHub</a><a href="https://desarrollamo.com.ar/">Web</a><a href="https://www.instagram.com/desarrollamoficial">Instagram</a></div>
+  </footer>
+
+  <script src="./ecosistema.js"></script>
 </body>
 </html>
