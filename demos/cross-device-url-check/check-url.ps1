@@ -7,7 +7,7 @@ $status = 0
 $ok = $false
 
 try {
-  $response = Invoke-WebRequest -Uri $Url -Method Head -MaximumRedirection 5 -TimeoutSec 15 -UseBasicParsing
+  $response = Invoke-WebRequest -Uri $Url -Method Get -MaximumRedirection 5 -TimeoutSec 15 -UseBasicParsing
   $status = [int]$response.StatusCode
   $ok = ($status -ge 200 -and $status -lt 400)
 }
