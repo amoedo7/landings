@@ -2,51 +2,58 @@
 
 Repositorio activo para **presencia web, componentes reutilizables y demos funcionales** de DesarrollAMO.
 
-## Objetivo público
+## Qué queremos demostrar
 
 Este repositorio está orientado a clientes y personas que quieren evaluar qué puede construir DesarrollAMO.
 
 La prioridad es mostrar:
 
-- cosas que se pueden abrir;
-- código que se puede ejecutar;
-- productos desplegados;
-- capacidades respaldadas por implementaciones;
-- ejemplos compatibles con distintos dispositivos cuando tenga sentido.
+- herramientas que se pueden abrir o ejecutar;
+- código pequeño pero útil;
+- soluciones compatibles con distintos dispositivos;
+- contratos de salida consistentes;
+- pruebas automáticas cuando aportan confianza;
+- productos desplegados sólo cuando existe respaldo real.
 
-Las reglas completas están en [`PUBLIC_POSITIONING.md`](PUBLIC_POSITIONING.md).
+Las reglas públicas están en [`PUBLIC_POSITIONING.md`](PUBLIC_POSITIONING.md).
 
-## Estructura actual
+## Demos funcionales
+
+| Demo | Qué hace | Entornos |
+|---|---|---|
+| [Cross-device URL Check](demos/cross-device-url-check/) | estado HTTP + tiempo de respuesta con JSON común | Android/Termux, Linux, macOS, Windows, Python |
+| [File Integrity · SHA-256](demos/file-integrity/) | hash + tamaño de archivo con contrato común | Android/Termux, Linux, macOS, Windows, Python |
+| [Browser Data Toolbox](demos/browser-data-toolbox/) | JSON, SHA-256, Base64 e inspección de URL | navegador moderno |
+
+➡️ **[Abrir catálogo completo de demos](demos/)**
+
+## Validación automática
+
+El workflow `.github/workflows/demos-ci.yml` ejecuta la prueba de contrato de File Integrity en:
+
+- Ubuntu;
+- macOS;
+- Windows.
+
+La prueba verifica que implementaciones distintas devuelvan el mismo hash, tamaño, nombre de archivo y schema.
+
+## Estructura
 
 ```text
 landings/
-├── index.html                  portal público orientado a clientes
-├── ecosistema.css              interfaz responsive
+├── index.html
+├── ecosistema.css
 ├── demos/
-│   └── cross-device-url-check/ primera demo multiplataforma
-├── branding/                   identidad web reutilizable
-├── clientes/                   proyectos/entregas históricas
-├── plantilla_base/             base técnica histórica
-└── PUBLIC_POSITIONING.md       criterio de publicación pública
+│   ├── README.md
+│   ├── cross-device-url-check/
+│   ├── file-integrity/
+│   └── browser-data-toolbox/
+├── branding/
+├── clientes/
+├── plantilla_base/
+├── .github/workflows/demos-ci.yml
+└── PUBLIC_POSITIONING.md
 ```
-
-## Demo funcional: URL Check
-
-El primer ejemplo nuevo implementa la misma tarea y el mismo contrato JSON en tres runtimes:
-
-- Bash + curl para Android/Termux, Linux y macOS;
-- PowerShell para Windows;
-- Python 3 como alternativa multiplataforma.
-
-```json
-{"schema":"desarrollamo.url-check.v1","url":"https://desarrollamo.com.ar","status":200,"ok":true,"elapsed_ms":184}
-```
-
-Abrir: [`demos/cross-device-url-check/`](demos/cross-device-url-check/)
-
-## Branding compartido
-
-`branding/` centraliza progresivamente tokens, estilos y piezas reutilizables. La estética debe acompañar a la evidencia funcional, no sustituirla.
 
 ## Seguridad
 
