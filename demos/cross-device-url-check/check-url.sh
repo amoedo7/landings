@@ -18,5 +18,11 @@ else
   OK=false
 fi
 
-printf '{"schema":"desarrollamo.url-check.v1","url":"%s","status":"%s","ok":%s,"elapsed_ms":%s,"checked_at":"%s"}\n' \
-  "$URL" "$STATUS" "$OK" "$ELAPSED_MS" "$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+if [ "$STATUS" = "000" ]; then
+  STATUS_NUM=0
+else
+  STATUS_NUM=$((10#$STATUS))
+fi
+
+printf '{"schema":"desarrollamo.url-check.v1","url":"%s","status":%s,"ok":%s,"elapsed_ms":%s,"checked_at":"%s"}\n' \
+  "$URL" "$STATUS_NUM" "$OK" "$ELAPSED_MS" "$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
