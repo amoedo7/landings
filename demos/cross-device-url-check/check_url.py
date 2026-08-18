@@ -12,7 +12,7 @@ status = 0
 ok = False
 
 try:
-    request = Request(url, method="HEAD", headers={"User-Agent": "DesarrollAMO-URL-Check/1.0"})
+    request = Request(url, headers={"User-Agent": "DesarrollAMO-URL-Check/1.0"})
     with urlopen(request, timeout=15) as response:
         status = int(response.status)
         ok = 200 <= status < 400
