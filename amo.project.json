@@ -1,0 +1,17 @@
+{
+  "schema": "desarrollamo.project.v1",
+  "repository": "amoedo7/landings",
+  "name": "landings",
+  "ecosystem": "DesarrollAMO",
+  "type": "web-infrastructure",
+  "lifecycle": "active-reusable",
+  "visibility": "public",
+  "source_of_truth": "partial",
+  "production_url": null,
+  "related": ["amoedo7/DesarrollAmo"],
+  "reviewed_at": "2026-08-18",
+  "notes": [
+    "Contains historical client landings and reusable web assets.",
+    "branding/ is the provisional shared branding source."
+  ]
+}
