@@ -15,8 +15,6 @@ La prioridad es mostrar:
 - pruebas automáticas cuando aportan confianza;
 - productos desplegados sólo cuando existe respaldo real.
 
-Las reglas públicas están en [`PUBLIC_POSITIONING.md`](PUBLIC_POSITIONING.md).
-
 ## Demos funcionales
 
 | Demo | Qué hace | Entornos |
@@ -51,8 +49,7 @@ landings/
 ├── branding/
 ├── clientes/
 ├── plantilla_base/
-├── .github/workflows/demos-ci.yml
-└── PUBLIC_POSITIONING.md
+└── .github/workflows/demos-ci.yml
 ```
 
 ## Seguridad
