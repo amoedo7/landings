@@ -1,85 +1,63 @@
 # DesarrollAMO · Landings
 
-Repositorio operativo para **landings, sitios simples, plantillas y recursos web reutilizables** del ecosistema DesarrollAMO.
+Repositorio activo para **presencia web, componentes reutilizables y demos funcionales** de DesarrollAMO.
 
-## Estado
+## Objetivo público
 
-**Activo / reutilizable.** Desde agosto de 2026 también contiene la primera puerta de entrada visual al ecosistema.
+Este repositorio está orientado a clientes y personas que quieren evaluar qué puede construir DesarrollAMO.
 
-### Portal del ecosistema
+La prioridad es mostrar:
 
-- `index.html` — portada pública inspirada en la arquitectura por “pisos” de EstructurAMO.
-- `ecosistema.css` — identidad visual, responsive y componentes del portal.
-- `ecosistema.js` — filtros de oficinas, enlaces y animaciones ligeras.
-- `oficinas.html` — ficha pública de cada oficina con misión, entradas, entregables y forma de colaborar.
+- cosas que se pueden abrir;
+- código que se puede ejecutar;
+- productos desplegados;
+- capacidades respaldadas por implementaciones;
+- ejemplos compatibles con distintos dispositivos cuando tenga sentido.
 
-La portada está diseñada para explicar DesarrollAMO a una persona que llega por primera vez sin exigirle conocer DAMO, agentes, modelos o infraestructura.
+Las reglas completas están en [`PUBLIC_POSITIONING.md`](PUBLIC_POSITIONING.md).
 
-## Estructura
+## Estructura actual
 
 ```text
 landings/
-├── index.html                 portal DesarrollAMO
-├── oficinas.html              mapa de capacidades
-├── ecosistema.css             UI compartida del portal
-├── ecosistema.js              interacción
-├── branding/                  identidad reutilizable
-├── clientes/                  proyectos/entregas históricas
-└── plantilla_base/            base técnica histórica
+├── index.html                  portal público orientado a clientes
+├── ecosistema.css              interfaz responsive
+├── demos/
+│   └── cross-device-url-check/ primera demo multiplataforma
+├── branding/                   identidad web reutilizable
+├── clientes/                   proyectos/entregas históricas
+├── plantilla_base/             base técnica histórica
+└── PUBLIC_POSITIONING.md       criterio de publicación pública
 ```
 
-## Oficinas representadas
+## Demo funcional: URL Check
 
-La primera versión pública muestra:
+El primer ejemplo nuevo implementa la misma tarea y el mismo contrato JSON en tres runtimes:
 
-- EstructurAMO
-- IAMO / DAMO
-- DesarrolloAMO
-- WebAMO
-- DatabaseAMO
-- SecurityAMO
-- InfraAMO
-- OperAMO
-- MarketingAMO
-- ContaduríaAMO
-- InvestigAMO
-- CobrAMO
-- RagtAMO
-- VideAMO
-- CamarAMO
-- ChoferAMO
+- Bash + curl para Android/Termux, Linux y macOS;
+- PowerShell para Windows;
+- Python 3 como alternativa multiplataforma.
 
-Las oficinas son **capacidades organizacionales**, no necesariamente repositorios independientes.
+```json
+{"schema":"desarrollamo.url-check.v1","url":"https://desarrollamo.com.ar","status":200,"ok":true,"elapsed_ms":184}
+```
+
+Abrir: [`demos/cross-device-url-check/`](demos/cross-device-url-check/)
 
 ## Branding compartido
 
-`branding/` centraliza progresivamente piezas que antes se copiaban entre proyectos:
+`branding/` centraliza progresivamente tokens, estilos y piezas reutilizables. La estética debe acompañar a la evidencia funcional, no sustituirla.
 
-- tokens de marca;
-- firma HTML/CSS;
-- documentación de uso;
-- futura base para logos, footer, favicons, Open Graph y componentes.
+## Seguridad
 
-La definición sigue marcada como provisional hasta reconciliar de forma explícita todos los activos de producción.
+Este repo no debe contener secretos ni credenciales de clientes. Tokens, contraseñas, claves de API, archivos `.env` y datos sensibles nunca deben versionarse.
 
-## Regla DesarrollAMO
-
-Este repo debe contener **piezas reutilizables**, no secretos ni credenciales de clientes. Datos sensibles, claves de API, tokens, contraseñas y archivos `.env` nunca deben versionarse.
-
-## Relación con el ecosistema
-
-```text
-EstructurAMO
-     ↓
-landings ──→ portal / oficinas / branding
-     ↓
-WebAMO + MarketingAMO + DesarrolloAMO
-     ↓
-clientes / productos / presencia pública
-```
+## Producción
 
 Sitio principal: https://desarrollamo.com.ar/
 
+El contenido de este repositorio no debe asumirse automáticamente como la fuente de producción del dominio principal hasta que esa relación esté documentada y verificada.
+
 ---
 
-**DesarrollAMO** · Traducimos tus ideas a tecnología.
+**DesarrollAMO** · Software · automatización · sistemas
