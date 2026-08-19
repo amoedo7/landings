@@ -1,46 +1,63 @@
-# File Integrity · SHA-256
+<div align="center">
+  <img src="../../assets/github/multiplatform.svg" width="100%" alt="Herramientas multiplataforma DesarrollAMO" />
 
-Una misma verificación de integridad para **Android/Termux, Linux, macOS y Windows**.
+# 🔐 File Integrity · SHA-256
 
-La herramienta calcula el SHA-256 y tamaño de un archivo y devuelve el mismo contrato JSON desde Bash, PowerShell o Python.
+**Comprobá que un archivo sea exactamente el mismo, sin subirlo a ningún servicio.**
 
-## Contrato
+`Android / Termux` · `Linux` · `macOS` · `Windows` · `Python 3`
+</div>
+
+---
+
+## Qué hace
+
+Calcula la huella SHA-256 y el tamaño de un archivo. Las implementaciones Bash, PowerShell y Python comparten un contrato de salida común.
 
 ```json
-{"schema":"desarrollamo.file-integrity.v1","file":"documento.pdf","bytes":24819,"sha256":"...","checked_at":"2026-08-19T00:00:00Z"}
+{
+  "schema": "desarrollamo.file-integrity.v1",
+  "file": "documento.pdf",
+  "bytes": 24819,
+  "sha256": "...",
+  "checked_at": "2026-08-19T00:00:00Z"
+}
 ```
 
-## Android / Termux · Linux · macOS
+## Ejecutar
 
-```bash
-bash check-file.sh ./documento.pdf
-```
+| Entorno | Comando |
+|---|---|
+| Android / Termux · Linux · macOS | `bash check-file.sh ./documento.pdf` |
+| Windows PowerShell | `powershell -ExecutionPolicy Bypass -File .\check-file.ps1 .\documento.pdf` |
+| Python 3 | `python check_file.py ./documento.pdf` |
 
-## Windows PowerShell
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\check-file.ps1 .\documento.pdf
-```
-
-## Python 3 · multiplataforma
-
-```bash
-python check_file.py ./documento.pdf
-```
-
-## Autoprueba
+## Autoprueba de contrato
 
 ```bash
 python test_contract.py
 ```
 
-La prueba crea un archivo temporal y verifica que dos implementaciones distintas produzcan el mismo hash, tamaño, nombre y schema.
+La prueba crea un archivo temporal y comprueba que implementaciones distintas coincidan en:
 
-## Para qué sirve
+`schema` · `sha256` · `bytes` · `file`
 
-- comprobar que un archivo llegó sin cambios;
-- validar copias y respaldos;
+El repositorio también ejecuta esta validación en **Ubuntu, macOS y Windows** mediante GitHub Actions.
+
+## Casos de uso
+
 - verificar entregables entre dispositivos;
-- generar evidencia simple de integridad sin subir el archivo a ningún servicio.
+- validar copias y respaldos;
+- comprobar descargas o transferencias;
+- generar evidencia simple de integridad;
+- comparar archivos sin transmitir su contenido.
 
-No transmite el contenido del archivo: sólo calcula datos localmente.
+```text
+archivo local → SHA-256 + tamaño → evidencia verificable
+```
+
+**Contrato:** `desarrollamo.file-integrity.v1`
+
+---
+
+[← Volver a DesarrollAMO Labs](../README.md)
