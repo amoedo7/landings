@@ -14,19 +14,10 @@
   <link rel="stylesheet" href="./ecosistema.css" />
 </head>
 <body>
-  <div class="glow glow-a"></div>
-  <div class="glow glow-b"></div>
-
+  <div class="glow glow-a"></div><div class="glow glow-b"></div>
   <header class="topbar shell">
-    <a class="brand" href="#inicio" aria-label="DesarrollAMO inicio">
-      <span class="brand-mark">D</span>
-      <span class="brand-name">desarroll<strong>AMO</strong></span>
-    </a>
-    <nav aria-label="Navegación principal">
-      <a href="#capacidades">Capacidades</a>
-      <a href="#demos">Demos</a>
-      <a href="#metodo">Método</a>
-    </nav>
+    <a class="brand" href="#inicio" aria-label="DesarrollAMO inicio"><span class="brand-mark">D</span><span class="brand-name">desarroll<strong>AMO</strong></span></a>
+    <nav aria-label="Navegación principal"><a href="#capacidades">Capacidades</a><a href="#demos">Demos</a><a href="#metodo">Método</a></nav>
     <a class="button button-ghost" href="https://desarrollamo.com.ar/">Contacto</a>
   </header>
 
@@ -36,15 +27,9 @@
         <p class="eyebrow"><span></span> SOFTWARE · AUTOMATIZACIÓN · INTEGRACIONES</p>
         <h1>Construimos tecnología<br><em>que hace cosas.</em></h1>
         <p class="lead">Sitios, aplicaciones, scripts, APIs y automatizaciones diseñados alrededor del problema real. Menos presentación vacía; más herramientas que se pueden abrir, ejecutar, probar y mejorar.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#demos">Ver algo funcionando</a>
-          <a class="button button-secondary" href="https://desarrollamo.com.ar/">Contar un proyecto</a>
-        </div>
-        <div class="runtime-row" aria-label="Entornos de trabajo">
-          <span>WEB</span><span>ANDROID</span><span>TERMUX</span><span>WINDOWS</span><span>LINUX</span><span>APIs</span>
-        </div>
+        <div class="hero-actions"><a class="button button-primary" href="#demos">Ver algo funcionando</a><a class="button button-secondary" href="https://desarrollamo.com.ar/">Contar un proyecto</a></div>
+        <div class="runtime-row" aria-label="Entornos de trabajo"><span>WEB</span><span>ANDROID</span><span>TERMUX</span><span>WINDOWS</span><span>macOS</span><span>LINUX</span><span>APIs</span></div>
       </div>
-
       <div class="system-card" aria-label="Cómo convertimos una necesidad en una solución">
         <div class="system-top"><b>DESARROLLAMO</b><small>de la necesidad al sistema</small></div>
         <div class="floor floor-1"><b>ENTRADAS</b><span>idea · problema · proceso · datos</span></div>
@@ -57,14 +42,7 @@
     </section>
 
     <section id="capacidades" class="section shell">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">CAPACIDADES</p>
-          <h2>Elegimos la herramienta por el trabajo.</h2>
-        </div>
-        <p>No organizamos la propuesta alrededor de nombres internos. Mostramos capacidades que pueden convertirse en entregas verificables.</p>
-      </div>
-
+      <div class="section-head"><div><p class="eyebrow">CAPACIDADES</p><h2>Elegimos la herramienta por el trabajo.</h2></div><p>No organizamos la propuesta alrededor de nombres internos. Mostramos capacidades que pueden convertirse en entregas verificables.</p></div>
       <div class="cap-grid">
         <article><span>01</span><h3>Web y sistemas</h3><p>Landing pages, paneles, herramientas internas, formularios y aplicaciones web adaptables a celular y escritorio.</p><b>HTML · CSS · JavaScript · APIs</b></article>
         <article><span>02</span><h3>Apps y herramientas móviles</h3><p>Aplicaciones Android y utilidades que aprovechan el dispositivo, incluidos flujos de instalación y uso desde Termux.</p><b>Android · Kotlin/Java · Termux</b></article>
@@ -76,86 +54,43 @@
     </section>
 
     <section id="demos" class="section shell demos">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">PRUEBA, NO PROMESA</p>
-          <h2>Cosas que podés abrir o ejecutar.</h2>
-        </div>
-        <p>La cartera pública va a crecer con piezas pequeñas y grandes, pero todas tienen que demostrar algo concreto.</p>
-      </div>
+      <div class="section-head"><div><p class="eyebrow">DESARROLLAMO LABS</p><h2>Cosas que podés abrir o ejecutar.</h2></div><p>La cartera pública crece con piezas pequeñas y grandes, pero todas tienen que demostrar algo concreto.</p></div>
 
       <div class="demo-feature">
         <div class="demo-copy">
-          <span class="status"><i></i> DEMO FUNCIONAL</span>
-          <h3>Un mismo chequeo en Android, Linux, macOS y Windows.</h3>
-          <p>Este ejemplo comprueba una URL y devuelve el mismo esquema JSON usando Bash, PowerShell o Python. Cambia el dispositivo; no cambia el contrato de salida.</p>
-          <div class="pills"><span>Bash</span><span>PowerShell</span><span>Python 3</span><span>JSON común</span></div>
-          <a class="text-link" href="https://github.com/amoedo7/landings/tree/main/demos/cross-device-url-check">Abrir código y ejecutarlo →</a>
+          <span class="status"><i></i> PROYECTO DESTACADO</span>
+          <h3>MiDispositivo · tu equipo y tu red en un vistazo.</h3>
+          <p>Genera un reporte común desde Android/Termux, Windows, macOS y Linux con sistema, CPU, memoria, disco, IP local, gateway y DNS. La ubicación pública es opcional y aproximada por IP.</p>
+          <div class="pills"><span>Android</span><span>Windows</span><span>macOS</span><span>Linux</span><span>JSON común</span></div>
+          <a class="text-link" href="https://github.com/amoedo7/landings/tree/main/demos/midispositivo">Abrir MiDispositivo →</a>
         </div>
-        <div class="terminal" aria-label="Ejemplo de ejecución">
-          <div class="terminal-bar"><i></i><i></i><i></i><span>url-check</span></div>
-          <pre><code>$ bash check-url.sh https://desarrollamo.com.ar
+        <div class="terminal" aria-label="Ejemplo de reporte MiDispositivo">
+          <div class="terminal-bar"><i></i><i></i><i></i><span>midispositivo</span></div>
+          <pre><code>$ python midispositivo.py
 
-{"schema":"desarrollamo.url-check.v1",
- "url":"https://desarrollamo.com.ar",
- "status":200,
- "ok":true,
- "elapsed_ms":184}
+{"schema":"desarrollamo.midispositivo.v1",
+ "device":{"os":"Windows","logical_cores":8},
+ "network":{"local_ip":"192.168.1.42"},
+ "online":{"enabled":false}}
 
-# mismo contrato desde PowerShell o Python</code></pre>
+# sin MAC · sin SSID · sin GPS exacto por defecto</code></pre>
         </div>
       </div>
 
       <div class="proof-grid">
-        <a href="https://cobramo.netlify.app/" class="proof-card">
-          <span class="proof-kicker">DESPLEGADO</span>
-          <h3>CobrAMO</h3>
-          <p>Interfaz pública para centralizar alternativas y referencias de cobro.</p>
-          <b>Abrir producto →</b>
-        </a>
-        <a href="https://github.com/amoedo7/landings" class="proof-card">
-          <span class="proof-kicker">CÓDIGO</span>
-          <h3>Landings</h3>
-          <p>Infraestructura web reutilizable, branding y demos públicos de DesarrollAMO.</p>
-          <b>Ver repositorio →</b>
-        </a>
-        <a href="https://github.com/amoedo7" class="proof-card">
-          <span class="proof-kicker">TRAZABILIDAD</span>
-          <h3>GitHub</h3>
-          <p>Historial de desarrollo, prototipos, experimentos y piezas reutilizables.</p>
-          <b>Explorar código →</b>
-        </a>
+        <a href="https://github.com/amoedo7/landings/tree/main/demos/cross-device-url-check" class="proof-card"><span class="proof-kicker">MULTIPLATAFORMA</span><h3>URL Check</h3><p>Estado HTTP y tiempo de respuesta con el mismo contrato JSON en varios sistemas.</p><b>Abrir demo →</b></a>
+        <a href="https://github.com/amoedo7/landings/tree/main/demos/file-integrity" class="proof-card"><span class="proof-kicker">VERIFICABLE</span><h3>File Integrity</h3><p>SHA-256 y tamaño de archivos mediante Bash, PowerShell y Python, con autoprueba.</p><b>Abrir demo →</b></a>
+        <a href="https://github.com/amoedo7/landings/tree/main/demos/browser-data-toolbox" class="proof-card"><span class="proof-kicker">WEB LOCAL</span><h3>Data Toolbox</h3><p>JSON, SHA-256, Base64 e inspección de URLs sin backend.</p><b>Abrir demo →</b></a>
       </div>
     </section>
 
     <section id="metodo" class="section shell">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">MÉTODO</p>
-          <h2>De problema a producción.</h2>
-        </div>
-      </div>
-      <div class="steps">
-        <article><b>01</b><h3>Entender</h3><p>Qué tiene que pasar, para quién y bajo qué restricciones.</p></article>
-        <article><b>02</b><h3>Diseñar</h3><p>Elegimos el camino más corto que pueda crecer sin quedar atrapado.</p></article>
-        <article><b>03</b><h3>Construir</h3><p>Implementamos el flujo útil antes de llenar el proyecto de extras.</p></article>
-        <article><b>04</b><h3>Probar</h3><p>Verificamos comportamiento, compatibilidad y fallos previsibles.</p></article>
-        <article><b>05</b><h3>Desplegar</h3><p>La entrega tiene que poder usarse, no quedarse en una captura.</p></article>
-      </div>
+      <div class="section-head"><div><p class="eyebrow">MÉTODO</p><h2>De problema a producción.</h2></div></div>
+      <div class="steps"><article><b>01</b><h3>Entender</h3><p>Qué tiene que pasar, para quién y bajo qué restricciones.</p></article><article><b>02</b><h3>Diseñar</h3><p>Elegimos el camino más corto que pueda crecer sin quedar atrapado.</p></article><article><b>03</b><h3>Construir</h3><p>Implementamos el flujo útil antes de llenar el proyecto de extras.</p></article><article><b>04</b><h3>Probar</h3><p>Verificamos comportamiento, compatibilidad y fallos previsibles.</p></article><article><b>05</b><h3>Desplegar</h3><p>La entrega tiene que poder usarse, no quedarse en una captura.</p></article></div>
     </section>
 
-    <section class="cta shell">
-      <div>
-        <p class="eyebrow">¿TENÉS ALGO PARA RESOLVER?</p>
-        <h2>Mostranos el problema.<br>Construimos el camino.</h2>
-      </div>
-      <a class="button button-primary" href="https://desarrollamo.com.ar/">Empezar conversación</a>
-    </section>
+    <section class="cta shell"><div><p class="eyebrow">¿TENÉS ALGO PARA RESOLVER?</p><h2>Mostranos el problema.<br>Construimos el camino.</h2></div><a class="button button-primary" href="https://desarrollamo.com.ar/">Empezar conversación</a></section>
   </main>
-
-  <footer class="footer shell">
-    <div><span class="brand-name">desarroll<strong>AMO</strong></span><small>Software · automatización · sistemas</small></div>
-    <div class="footer-links"><a href="https://github.com/amoedo7">GitHub</a><a href="https://desarrollamo.com.ar/">Web</a></div>
-  </footer>
+  <footer class="footer shell"><div><span class="brand-name">desarroll<strong>AMO</strong></span><small>Software · automatización · sistemas</small></div><div class="footer-links"><a href="https://github.com/amoedo7">GitHub</a><a href="https://desarrollamo.com.ar/">Web</a></div></footer>
 </body>
 </html>
