@@ -33,6 +33,42 @@ A partir de ahí buscamos el camino técnico más directo, lo construimos, lo pr
 
 ---
 
+## Proyecto destacado · MiDispositivo
+
+<table>
+<tr>
+<td width="60%" valign="top">
+
+### 🖥️ Tu equipo. Tu red. En un vistazo.
+
+MiDispositivo genera un reporte común desde **Android/Termux, Windows, macOS y Linux** con:
+
+- sistema, arquitectura y CPU;
+- memoria y disco;
+- IP local, gateway y DNS;
+- IP pública, proveedor y ubicación aproximada por IP sólo cuando se activa el modo online;
+- visor HTML local con la identidad de DesarrollAMO.
+
+[**Abrir MiDispositivo →**](demos/midispositivo/)
+
+</td>
+<td width="40%" valign="top">
+
+```text
+Android ─┐
+Windows ─┤
+macOS ───┼→ JSON común → visor local
+Linux ───┘
+```
+
+`sin MAC` · `sin SSID` · `sin GPS exacto` por defecto
+
+</td>
+</tr>
+</table>
+
+---
+
 <div align="center">
   <img src="assets/github/labs.svg" width="100%" alt="DesarrollAMO Labs · Demos funcionales" />
 </div>
@@ -97,7 +133,7 @@ Cuando un flujo debe convivir con equipos diferentes, intentamos conservar **el 
 ```text
 necesidad
    ↓
-Android / Windows / Linux / Web
+Android / Windows / macOS / Linux / Web
    ↓
 implementaciones adecuadas a cada entorno
    ↓
@@ -108,11 +144,9 @@ Eso permite integrar dispositivos sin obligar a toda una operación a migrar a u
 
 ### Verificación automática
 
-El repositorio incluye GitHub Actions para validar el contrato de **File Integrity** en:
+El repositorio incluye GitHub Actions para validar **File Integrity** y el schema seguro por defecto de **MiDispositivo** en:
 
 `Ubuntu` · `macOS` · `Windows`
-
-La prueba compara el `schema`, el hash SHA-256, el tamaño y el nombre de archivo generado por implementaciones distintas.
 
 ---
 
@@ -136,7 +170,7 @@ La prueba compara el `schema`, el hash SHA-256, el tamaño y el nombre de archiv
 
 ## Stack que aparece en estas soluciones
 
-`Python` · `JavaScript` · `HTML/CSS` · `Android` · `Bash` · `PowerShell` · `Linux` · `Termux` · `GitHub Actions` · `PostgreSQL` · `Supabase` · `Netlify` · `APIs` · `JSON`
+`Python` · `JavaScript` · `HTML/CSS` · `Android` · `Bash` · `PowerShell` · `Linux` · `macOS` · `Termux` · `GitHub Actions` · `PostgreSQL` · `Supabase` · `Netlify` · `APIs` · `JSON`
 
 ## Estructura de este repositorio
 
@@ -145,6 +179,7 @@ landings/
 ├── assets/github/              identidad visual del showcase
 ├── branding/                   piezas reutilizables de marca
 ├── demos/                      herramientas públicas y verificables
+│   ├── midispositivo/
 │   ├── cross-device-url-check/
 │   ├── file-integrity/
 │   └── browser-data-toolbox/
