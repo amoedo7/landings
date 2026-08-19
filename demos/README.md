@@ -4,8 +4,40 @@
   <br />
 
   **Prueba, no promesa.**  
-  Herramientas pequeñas para mostrar cómo resolvemos problemas concretos.
+  Herramientas pequeñas y verificables para mostrar cómo resolvemos problemas concretos.
 </div>
+
+---
+
+## Proyecto destacado · MiDispositivo
+
+<table>
+<tr>
+<td width="60%" valign="top">
+
+### 🖥️ Tu equipo. Tu red. En un vistazo.
+
+MiDispositivo genera el mismo tipo de reporte desde **Android/Termux, Windows, macOS y Linux**.
+
+Incluye sistema, CPU, memoria, disco, IP local, gateway y DNS. La IP pública, proveedor y ubicación aproximada por IP son opcionales.
+
+[**Abrir MiDispositivo →**](midispositivo/)
+
+</td>
+<td width="40%" valign="top">
+
+```text
+Android ─┐
+Windows ─┤
+macOS ───┼→ JSON común → visor local
+Linux ───┘
+```
+
+`sin MAC` · `sin SSID` · `sin GPS exacto` por defecto
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -23,9 +55,6 @@ Comprueba disponibilidad HTTP y tiempo de respuesta manteniendo un contrato JSON
 **Dónde corre**  
 `Android / Termux` `Linux` `macOS` `Windows` `Python 3`
 
-**Qué demuestra**  
-Una misma tarea operativa puede adaptarse a varios dispositivos sin romper la salida que consume el resto del sistema.
-
 [**Abrir código e instrucciones →**](cross-device-url-check/)
 
 </td>
@@ -39,9 +68,6 @@ Comprueba que un archivo sea exactamente el mismo mediante hash, tamaño y nombr
 **Dónde corre**  
 `Bash` `PowerShell` `Python 3`
 
-**Qué demuestra**  
-Implementaciones diferentes pueden cumplir un contrato común y validarse automáticamente.
-
 [**Abrir código e instrucciones →**](file-integrity/)
 
 </td>
@@ -54,9 +80,6 @@ JSON, SHA-256, Base64 e inspección de URLs desde una sola interfaz.
 
 **Dónde corre**  
 `Navegador moderno`
-
-**Qué demuestra**  
-Una herramienta útil puede vivir completamente en cliente, sin cuenta, backend ni infraestructura innecesaria.
 
 [**Abrir demo y código →**](browser-data-toolbox/)
 
@@ -80,7 +103,7 @@ resultado observable
 forma de probarlo
 ```
 
-No buscamos llenar GitHub con scripts por cantidad. Buscamos construir una colección corta de piezas que expliquen, por sí mismas, **cómo trabaja DesarrollAMO**.
+No buscamos llenar GitHub con scripts por cantidad. Buscamos una colección corta de piezas que expliquen por sí mismas **cómo trabaja DesarrollAMO**.
 
 ### Criterios
 
@@ -89,6 +112,7 @@ No buscamos llenar GitHub con scripts por cantidad. Buscamos construir una colec
 - dependencias mínimas;
 - salida clara;
 - compatibilidad real cuando el caso lo requiere;
+- privacidad razonable por defecto;
 - nada de secretos o datos privados;
 - pruebas automáticas cuando aportan confianza.
 
