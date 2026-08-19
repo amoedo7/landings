@@ -1,24 +1,56 @@
-# Browser Data Toolbox
+<div align="center">
 
-Mini herramienta web **100% cliente-side**: se abre en un navegador y funciona sin backend ni dependencias externas.
+# 🧰 Browser Data Toolbox
 
-Incluye:
+**Una mini herramienta de DesarrollAMO Labs para trabajar con datos sin salir del navegador.**
 
-- validar, formatear y minificar JSON;
-- calcular SHA-256 de texto con Web Crypto;
-- codificar y decodificar Base64 UTF-8;
-- analizar una URL en protocolo, host, puerto, ruta, query y hash.
+`JSON` · `SHA-256` · `Base64` · `URL Inspector`
+
+</div>
+
+---
+
+## Qué podés hacer
+
+| Herramienta | Función |
+|---|---|
+| **JSON** | validar, formatear y minificar |
+| **SHA-256** | calcular la huella de un texto mediante Web Crypto |
+| **Base64** | codificar y decodificar texto UTF-8 |
+| **URL Inspector** | separar protocolo, host, puerto, ruta, query y fragmento |
 
 ## Ejecutar
 
-Descargá `index.html` y abrilo en cualquier navegador moderno.
+No hay instalación.
 
-No requiere instalación ni servidor.
+1. descargá [`index.html`](index.html);
+2. abrilo en un navegador moderno;
+3. empezá a usarlo.
 
-## Privacidad
+También puede servirse con cualquier servidor estático.
 
-Los datos procesados por esta demo permanecen en el navegador. El archivo no contiene llamadas de red para procesar el contenido ingresado.
+```bash
+python -m http.server 8080
+```
+
+Después abrí `http://localhost:8080`.
+
+## Privacidad por diseño
+
+El procesamiento de esta demo ocurre **en el navegador**. El archivo no necesita backend para analizar el contenido introducido.
+
+- sin cuenta;
+- sin base de datos;
+- sin dependencias externas para procesar los datos;
+- SHA-256 mediante Web Crypto;
+- responsive para celular y escritorio.
 
 ## Qué demuestra
 
-Una herramienta pequeña puede resolver tareas técnicas reales con una interfaz usable, responsive y sin infraestructura innecesaria.
+Una herramienta pequeña no tiene por qué sentirse improvisada. El objetivo de esta demo es combinar:
+
+**función real + interfaz cuidada + infraestructura mínima.**
+
+---
+
+[← Volver a DesarrollAMO Labs](../README.md)
