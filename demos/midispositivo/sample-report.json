@@ -1,0 +1,49 @@
+{
+  "schema": "desarrollamo.midispositivo.v1",
+  "generated_at": "2026-08-19T00:00:00+00:00",
+  "privacy": {
+    "online_lookup_requested": true,
+    "mac_addresses_collected": false,
+    "wifi_ssid_collected": false,
+    "exact_gps_collected": false
+  },
+  "device": {
+    "hostname": "EQUIPO-DEMO",
+    "os": "Windows",
+    "os_release": "Windows 11",
+    "os_version": "10.0",
+    "architecture": "AMD64",
+    "cpu": "Procesador de ejemplo",
+    "logical_cores": 8,
+    "memory_total_bytes": 17179869184,
+    "memory_available_bytes": 8589934592,
+    "disk": {
+      "root": "C:\\",
+      "total_bytes": 512000000000,
+      "free_bytes": 241000000000
+    },
+    "python": "3.13"
+  },
+  "network": {
+    "local_ip": "192.168.1.42",
+    "default_gateway": "192.168.1.1",
+    "dns_servers": ["1.1.1.1", "8.8.8.8"]
+  },
+  "online": {
+    "enabled": true,
+    "ok": true,
+    "public_ip": "203.0.113.42",
+    "provider": "Proveedor de ejemplo",
+    "asn": "AS64500",
+    "location": {
+      "city": "Ciudad aproximada",
+      "region": "Región",
+      "country": "País",
+      "timezone": "Europe/Copenhagen",
+      "latitude_approx": 55.68,
+      "longitude_approx": 12.57,
+      "method": "public-IP geolocation (approximate)"
+    },
+    "lookup_ms": 184
+  }
+}
