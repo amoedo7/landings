@@ -3,7 +3,20 @@ $schema = "desarrollamo.file-integrity.v1"
 try {
   $item = Get-Item -LiteralPath $File -ErrorAction Stop
   if ($item.PSIsContainer) { throw "Path is not a file: $File" }
-  $hash = (Get-FileHash -LiteralPath $item.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+
+  $stream = [System.IO.File]::OpenRead($item.FullName)
+  try {
+    $sha256 = [System.Security.Cryptography.SHA256]::Create()
+    try {
+      $hashBytes = $sha256.ComputeHash($stream)
+      $hash = ([System.BitConverter]::ToString($hashBytes)).Replace("-", "").ToLowerInvariant()
+    } finally {
+      $sha256.Dispose()
+    }
+  } finally {
+    $stream.Dispose()
+  }
+
   [ordered]@{
     schema = $schema
     file = $item.Name
