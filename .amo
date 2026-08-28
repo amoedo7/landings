@@ -1,0 +1,59 @@
+{
+  "schema": "desarrollamo.amo.v1",
+  "amo_version": "1.0.0",
+  "id": "landings",
+  "name": "landings",
+  "kind": "business-web-surface",
+  "origin": "native",
+  "membership": "candidate",
+  "trust": "inspected",
+  "unit": {
+    "purpose": "Mantener la superficie pública, demos y material verificable de DesarrollAMO.",
+    "responsibility": "Presentar capacidades y demos públicas sin convertir contenido comercial o evidencia visible en autoridad sobre pagos, firmas, distribución o estado global del ecosistema.",
+    "owner": "human_responsible",
+    "capabilities": ["public-web", "technical-demos", "business-showcase"]
+  },
+  "model": {
+    "inherits": [],
+    "context": ["README.md", "index.html", "demos/", ".github/workflows/demos-ci.yml"],
+    "rules": [
+      "La superficie pública no debe inventar resultados, clientes, ingresos ni estado operativo.",
+      "Los demos deben conservar regresiones deterministas antes de considerarse saludables.",
+      "landings no tiene autoridad para cambiar StoreAMO, su semilla, firmas ni distribución global.",
+      "Un CI verde no demuestra por sí solo que un despliegue externo esté accesible."
+    ]
+  },
+  "map": {
+    "parent": "raizamo",
+    "children": [],
+    "relations": [
+      {"type": "represents", "target": "desarrollamo", "strength": "medium"}
+    ],
+    "covers": ["index.html", "ecosistema.css", "assets/**", "branding/**", "clientes/**", "demos/**", "plantilla_base/**"]
+  },
+  "policy": {
+    "cross_domain_changes_require_external_gates": true,
+    "self_declared_pass_allowed": false
+  },
+  "provenance": {
+    "source_uri": "https://github.com/amoedo7/landings",
+    "source_type": "git-repository",
+    "source_ref": "main"
+  },
+  "health": {
+    "checks": [
+      {
+        "id": "landings-autocheck",
+        "type": "command",
+        "command": "bash scripts/autocheck.sh",
+        "cwd": ".",
+        "timeout_seconds": 300,
+        "description": "Valida el contrato canónico y ejecuta las regresiones deterministas existentes de las demos públicas."
+      }
+    ]
+  },
+  "evidence": {
+    "status": "inspected",
+    "refs": ["README.md", ".github/workflows/demos-ci.yml", "scripts/autocheck.sh"]
+  }
+}
