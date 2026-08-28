@@ -4,13 +4,28 @@ on:
   push:
     paths:
       - 'demos/**'
+      - '.amo'
+      - 'scripts/autocheck.sh'
       - '.github/workflows/demos-ci.yml'
   pull_request:
     paths:
       - 'demos/**'
+      - '.amo'
+      - 'scripts/autocheck.sh'
       - '.github/workflows/demos-ci.yml'
 
 jobs:
+  canonical-autocheck:
+    name: Canonical AutoCheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Run canonical AutoCheck
+        run: bash scripts/autocheck.sh
+
   file-integrity-contract:
     name: File integrity · ${{ matrix.os }}
     strategy:
