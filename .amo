@@ -15,7 +15,7 @@
   },
   "model": {
     "inherits": [],
-    "context": ["README.md", "index.html", "demos/", ".github/workflows/demos-ci.yml"],
+    "context": ["README.md", "RECOVERY.md", "index.html", "demos/", ".github/workflows/demos-ci.yml"],
     "rules": [
       "La superficie pública no debe inventar resultados, clientes, ingresos ni estado operativo.",
       "Los demos deben conservar regresiones deterministas antes de considerarse saludables.",
@@ -54,6 +54,6 @@
   },
   "evidence": {
     "status": "inspected",
-    "refs": ["README.md", ".github/workflows/demos-ci.yml", "scripts/autocheck.sh"]
+    "refs": ["README.md", "RECOVERY.md", ".github/workflows/demos-ci.yml", "scripts/autocheck.sh"]
   }
 }
