@@ -60,10 +60,15 @@ section{padding:72px 0}.section-title{font-size:clamp(36px,5vw,67px);line-height
 .rule{padding:30px;border:1px solid #3f5745;background:linear-gradient(135deg,#1a261e,#101712);display:grid;grid-template-columns:1fr auto;align-items:center;gap:20px}.rule strong{font-size:clamp(28px,4vw,48px);letter-spacing:-.05em}.rule span{color:#aebdaf}.footer{padding:36px 0 52px;border-top:1px solid var(--line)}.footerin{display:flex;justify-content:space-between;align-items:center;gap:24px}.amo{display:flex;align-items:center;gap:12px}.amo a{display:inline-flex;background:#fff;padding:8px 10px;border-radius:8px}.amo img{width:220px}.amo small{display:block;color:#899a8c}.fine{max-width:500px;text-align:right;color:#728176;font-size:11px}
 @media(max-width:900px){.navlinks{display:none}.hero,.cases,.rule{grid-template-columns:1fr}.flow{grid-template-columns:1fr 1fr}.compare{grid-template-columns:1fr}.hero{padding-top:68px}.hero-side{max-width:680px}}
 @media(max-width:600px){.flow,.principles{grid-template-columns:1fr}.hero h1{font-size:52px}.footerin{display:block}.fine{text-align:left;margin-top:18px}.amo img{width:190px}}
+
+.inventory-top{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:26px}.countbox{padding:16px;border:1px solid var(--line);background:#101712}.countbox strong{display:block;font-size:27px}.countbox span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:24px 0 18px}.filterbtn{padding:8px 10px;border:1px solid #3e5144;background:#111914;color:#dfe8e0;font-weight:800;cursor:pointer}.filterbtn.active{background:var(--green);color:#0d140f;border-color:var(--green)}.projectgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.projectcard{border:1px solid var(--line);background:#0f1611;padding:16px;min-height:170px;display:flex;flex-direction:column}.projectcard h3{font-size:19px;margin:14px 0 6px}.projectcard p{color:var(--muted);font-size:12px;margin:0 0 15px}.projectcard .meta{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-top:auto}.status{font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.06em;padding:5px 7px;border:1px solid #3c5142}.status.checklist{color:#baff82;border-color:#5c7c50}.status.auditar{color:#7dd3fc;border-color:#38566a}.status.verificar-url{color:#ffd166;border-color:#6b5a2b}.status.sin-url{color:#909b93;border-color:#3d4840}.projectlink{font-size:11px;font-weight:800;color:#cfe1d1}.legend{font-size:12px;color:#8d9b90;margin-top:14px}.gate{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}.gatebox{padding:18px;border:1px solid var(--line);background:#111914}.gatebox b{display:block;margin-bottom:6px}.gatebox span{color:var(--muted);font-size:13px}
+@media(max-width:900px){.inventory-top{grid-template-columns:repeat(3,1fr)}.projectgrid{grid-template-columns:1fr 1fr}.gate{grid-template-columns:1fr}}
+@media(max-width:600px){.inventory-top{grid-template-columns:1fr 1fr}.projectgrid{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
-<nav class="nav"><div class="wrap navin"><a class="brand" href="/"><span class="mark">C</span>Complet<b>AMO</b></a><div class="navlinks"><a href="#como">Cómo funciona</a><a href="#casos">Casos</a><a href="#criterio">Criterio</a></div><a class="navcta" href="https://desarrollamo.com.ar/" target="_blank" rel="noopener">DesarrollAMO ↗</a></div></nav>
+<nav class="nav"><div class="wrap navin"><a class="brand" href="/"><span class="mark">C</span>Complet<b>AMO</b></a><div class="navlinks"><a href="#como">Cómo funciona</a><a href="#casos">Casos</a><a href="#criterio">Criterio</a><a href="#inventario">Inventario</a></div><a class="navcta" href="https://desarrollamo.com.ar/" target="_blank" rel="noopener">DesarrollAMO ↗</a></div></nav>
 <main>
 <section class="wrap hero">
 <div><div class="kicker">CompetAMO → CompletAMO</div><h1>El siguiente nivel,<br>antes de tocar producción.</h1><p class="lead">Tomamos una web real, la auditamos, construimos una versión siguiente en paralelo y la comparamos contra el sitio actual. <strong>Sólo migra lo que realmente mejora el producto.</strong></p></div>
@@ -91,6 +96,50 @@ section{padding:72px 0}.section-title{font-size:clamp(36px,5vw,67px);line-height
 </div>
 <div class="rule" style="margin-top:16px"><div><strong>Paridad no es victoria.</strong><br><span>Primero cerramos brechas. Después buscamos algo que tenga sentido sólo para ese proyecto.</span></div><a class="btn" href="/viverolaquerencia/">Verlo aplicado →</a></div>
 </div></section>
+
+<section id="inventario"><div class="wrap">
+<div class="kicker">04 · inventario DesarrollAMO</div>
+<h2 class="section-title">Todo entra al tablero.<br>No todo está listo todavía.</h2>
+<p class="section-lead">La galería pública es la fuente de proyectos. <strong>MisPrecios</strong> define la familia y el estándar. <strong>QA + OPERACION</strong> son puertas transversales: un proyecto no se considera CompletAMO listo hasta que tenga propuesta, evidencia y checklist.</p>
+<div class="inventory-top" id="counts"></div>
+<div class="gate">
+<div class="gatebox"><b>Familias de producto</b><span>WEB · CV · APP · PLUGGINS. Las “Herramientas” de la galería quedan separadas hasta decidir si son plugin, app o una familia propia.</span></div>
+<div class="gatebox"><b>Capas obligatorias</b><span>OPERACION y QA no son categorías de cliente: atraviesan todos los proyectos y determinan si algo es migrable/entregable.</span></div>
+</div>
+<div class="filters" id="filters"></div>
+<div class="projectgrid" id="projectgrid"></div>
+<div class="legend">Estados: <b>Checklist</b> = caso ya tiene propuesta + control específico · <b>Auditar</b> = URL pública lista para siguiente pase · <b>Verificar URL</b> = el crawl inicial falló · <b>Sin URL</b> = primero necesita superficie navegable.</div>
+</div></section>
+
 </main>
 <footer class="footer"><div class="wrap footerin"><div class="amo"><a href="https://desarrollamo.com.ar/" target="_blank" rel="noopener noreferrer sponsored"><img src="https://cdn.jsdelivr.net/gh/desarrollamo/branding@v1.3.0/assets/logo/horizontal.svg" alt="DesarrollAMO"></a><small>Tecnología con alma.</small></div><div class="fine">CompletAMO es un laboratorio de propuestas de DesarrollAMO. Los casos permanecen en <code>noindex</code> mientras sean versiones paralelas no aprobadas para producción.</div></div></footer>
+
+<script>
+(async function(){
+  const data=await fetch('/projects.json').then(r=>r.json());
+  const projects=data.projects||[];
+  const families=['TODOS','WEB','CV','APP','PLUGGINS','HERRAMIENTA','INTERNO'];
+  const labels={WEB:'WEB',CV:'CV',APP:'APP',PLUGGINS:'PLUGGINS',HERRAMIENTA:'HERRAMIENTAS',INTERNO:'INTERNO'};
+  const count=f=>projects.filter(p=>p.family===f).length;
+  const counts=document.getElementById('counts');
+  counts.innerHTML=['WEB','CV','APP','PLUGGINS','HERRAMIENTA','INTERNO'].map(f=>'<div class="countbox"><strong>'+count(f)+'</strong><span>'+labels[f]+'</span></div>').join('');
+  const filters=document.getElementById('filters'), grid=document.getElementById('projectgrid');
+  let current='TODOS';
+  function render(){
+    filters.innerHTML=families.map(f=>'<button class="filterbtn '+(f===current?'active':'')+'" data-f="'+f+'">'+(f==='TODOS'?'Todos':labels[f])+'</button>').join('');
+    const list=current==='TODOS'?projects:projects.filter(p=>p.family===current);
+    grid.innerHTML=list.map(p=>{
+      const statusLabel={checklist:'Checklist',auditar:'Auditar', 'verificar-url':'Verificar URL','sin-url':'Sin URL'}[p.state]||p.state;
+      let action='';
+      if(p.state==='checklist') action='<a class="projectlink" href="/'+p.slug+'/">Abrir caso →</a>';
+      else if(p.url) action='<a class="projectlink" href="'+p.url+'" target="_blank" rel="noopener">Actual ↗</a>';
+      else action='<span class="projectlink">Pendiente</span>';
+      return '<article class="projectcard"><span class="tag">'+p.family+'</span><h3>'+p.name+'</h3><p>/'+p.slug+'/</p><div class="meta"><span class="status '+p.state+'">'+statusLabel+'</span>'+action+'</div></article>';
+    }).join('');
+    filters.querySelectorAll('[data-f]').forEach(b=>b.onclick=()=>{current=b.dataset.f;render()});
+  }
+  render();
+})().catch(function(){document.getElementById('projectgrid').innerHTML='<div class="projectcard"><h3>No se pudo cargar el inventario.</h3></div>'});
+</script>
+
 </body></html>
