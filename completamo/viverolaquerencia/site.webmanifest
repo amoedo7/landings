@@ -1,0 +1,14 @@
+{
+  "name":"La Querencia · Siguiente nivel",
+  "short_name":"La Querencia",
+  "description":"Propuesta paralela CompletAMO para Vivero La Querencia.",
+  "start_url":"/viverolaquerencia/",
+  "scope":"/viverolaquerencia/",
+  "display":"standalone",
+  "background_color":"#f2eee5",
+  "theme_color":"#ebe6db",
+  "icons":[
+    {"src":"https://viverolaquerencia.com.ar/assets/images/favicon-32.png","sizes":"32x32","type":"image/png"},
+    {"src":"https://viverolaquerencia.com.ar/assets/images/apple-touch-icon.png","sizes":"180x180","type":"image/png"}
+  ]
+}
