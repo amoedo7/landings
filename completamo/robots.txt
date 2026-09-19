@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://completamo.netlify.app/sitemap.xml
