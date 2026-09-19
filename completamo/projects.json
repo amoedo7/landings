@@ -7,371 +7,477 @@
       "family": "WEB",
       "url": "https://viverolaquerencia.com.ar/",
       "slug": "viverolaquerencia",
-      "state": "checklist"
+      "state": "complete",
+      "case_url": "/viverolaquerencia/",
+      "checklist_url": "/viverolaquerencia/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Reliance Travel",
       "family": "WEB",
       "url": "https://reliancetravel.netlify.app/",
       "slug": "reliancetravel",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/reliancetravel/",
+      "checklist_url": "/reliancetravel/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "RemerasCo",
       "family": "WEB",
       "url": "https://remeraco.com.ar/",
       "slug": "remerasco",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/remerasco/",
+      "checklist_url": "/remerasco/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "CasaBosco Arquitectura",
       "family": "WEB",
       "url": "https://casaboscoarq.com.ar/",
       "slug": "casabosco",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/casabosco/",
+      "checklist_url": "/casabosco/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Krow Rosario",
       "family": "WEB",
       "url": "https://krowrosario.netlify.app/",
       "slug": "krowrosario",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/krowrosario/",
+      "checklist_url": "/krowrosario/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Empanadas Caseritas",
       "family": "WEB",
       "url": "https://empanadascaseritas.netlify.app/",
       "slug": "empanadascaseritas",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/empanadascaseritas/",
+      "checklist_url": "/empanadascaseritas/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Yoga con Jocha",
       "family": "WEB",
       "url": "https://jochalongo.netlify.app/",
       "slug": "yogaconjocha",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/yogaconjocha/",
+      "checklist_url": "/yogaconjocha/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Gespasa Argentina",
       "family": "WEB",
       "url": "https://gespasa-ar.netlify.app/",
       "slug": "gespasargentina",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/gespasargentina/",
+      "checklist_url": "/gespasargentina/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Erika Boveri",
       "family": "WEB",
       "url": "https://erikaboveri.netlify.app/",
       "slug": "erikaboveri",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/erikaboveri/",
+      "checklist_url": "/erikaboveri/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Tarot con Kima",
       "family": "WEB",
       "url": "https://kima33.netlify.app/",
       "slug": "tarotconkima",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/tarotconkima/",
+      "checklist_url": "/tarotconkima/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Eros DJ",
       "family": "WEB",
       "url": "https://djeros.netlify.app/",
       "slug": "erosdj",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/erosdj/",
+      "checklist_url": "/erosdj/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Logan",
       "family": "WEB",
       "url": "https://loganproject.netlify.app/",
       "slug": "logan",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/logan/",
+      "checklist_url": "/logan/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Move DJ",
       "family": "WEB",
       "url": "https://movedj.netlify.app/",
       "slug": "movedj",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/movedj/",
+      "checklist_url": "/movedj/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Peluquería Silvina",
       "family": "WEB",
       "url": "https://peluqueriasilvina.netlify.app/",
       "slug": "peluqueriasilvina",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/peluqueriasilvina/",
+      "checklist_url": "/peluqueriasilvina/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "El Máquina Barbershop",
       "family": "WEB",
       "url": "https://elmaquinabarbershop.netlify.app/",
       "slug": "elmaquinabarbershop",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/elmaquinabarbershop/",
+      "checklist_url": "/elmaquinabarbershop/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Fierro Argentino",
       "family": "WEB",
       "url": "https://fierroargentino.netlify.app/",
       "slug": "fierroargentino",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/fierroargentino/",
+      "checklist_url": "/fierroargentino/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Martí Bermejo",
       "family": "WEB",
       "url": "https://martibermejo.netlify.app/",
       "slug": "martibermejo",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/martibermejo/",
+      "checklist_url": "/martibermejo/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Makana",
       "family": "WEB",
       "url": "https://makanafavelado.netlify.app/",
       "slug": "makana",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/makana/",
+      "checklist_url": "/makana/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Mercedes Yáñez · Reinvención",
       "family": "WEB",
       "url": "https://reinvencionmer.netlify.app/",
       "slug": "reinvencionmer",
-      "state": "verificar-url"
+      "state": "verify-url",
+      "case_url": "/reinvencionmer/",
+      "checklist_url": "/reinvencionmer/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Proyecto Estampa",
       "family": "WEB",
       "url": "https://proyectoestampa.netlify.app/",
       "slug": "proyectoestampa",
-      "state": "verificar-url"
+      "state": "verify-url",
+      "case_url": "/proyectoestampa/",
+      "checklist_url": "/proyectoestampa/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Lukas",
       "family": "WEB",
       "url": null,
       "slug": "lukas",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/lukas/",
+      "checklist_url": "/lukas/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Julia Inés Sidor",
       "family": "CV",
       "url": "https://cvjuliasidor.netlify.app/",
       "slug": "cvjuliasidor",
-      "state": "verificar-url"
+      "state": "verify-url",
+      "case_url": "/cvjuliasidor/",
+      "checklist_url": "/cvjuliasidor/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Lola Jimeno Fernández",
       "family": "CV",
       "url": "https://cvlolajimenofernandez.netlify.app/",
       "slug": "cvlolajimenofernandez",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/cvlolajimenofernandez/",
+      "checklist_url": "/cvlolajimenofernandez/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Marcos Rubial",
       "family": "CV",
       "url": "https://cvmarcosrubial.netlify.app/",
       "slug": "cvmarcosrubial",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/cvmarcosrubial/",
+      "checklist_url": "/cvmarcosrubial/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Nadia Martín",
       "family": "CV",
       "url": "https://cvnadiamartin.netlify.app/",
       "slug": "cvnadiamartin",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/cvnadiamartin/",
+      "checklist_url": "/cvnadiamartin/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Felipe Ignacio Rubio",
       "family": "CV",
       "url": "https://cvfeliperubio.netlify.app/",
       "slug": "cvfeliperubio",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/cvfeliperubio/",
+      "checklist_url": "/cvfeliperubio/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Agustín Vitelli",
       "family": "CV",
       "url": "https://cvagustinvitelli.netlify.app/",
       "slug": "cvagustinvitelli",
-      "state": "auditar"
+      "state": "audited",
+      "case_url": "/cvagustinvitelli/",
+      "checklist_url": "/cvagustinvitelli/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Archivo de imágenes IA",
       "family": "INTERNO",
       "url": null,
       "slug": "archivo-imagenes-ia",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/archivo-imagenes-ia/",
+      "checklist_url": "/archivo-imagenes-ia/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Identidad DesarrollAMO",
       "family": "INTERNO",
       "url": null,
       "slug": "identidad-desarrollamo",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/identidad-desarrollamo/",
+      "checklist_url": "/identidad-desarrollamo/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "StoreAMO",
       "family": "APP",
       "url": null,
       "slug": "storeamo",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/storeamo/",
+      "checklist_url": "/storeamo/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "GeneralAMO",
       "family": "APP",
       "url": null,
       "slug": "generalamo",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/generalamo/",
+      "checklist_url": "/generalamo/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "MesaAMO",
       "family": "APP",
       "url": null,
       "slug": "mesaamo",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/mesaamo/",
+      "checklist_url": "/mesaamo/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Chessi",
       "family": "APP",
       "url": null,
       "slug": "chessi",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/chessi/",
+      "checklist_url": "/chessi/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "WifiAMO",
       "family": "APP",
       "url": null,
       "slug": "wifiamo",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/wifiamo/",
+      "checklist_url": "/wifiamo/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "NfcAMO",
       "family": "APP",
       "url": null,
       "slug": "nfcamo",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/nfcamo/",
+      "checklist_url": "/nfcamo/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "CalculAMO",
       "family": "APP",
       "url": null,
       "slug": "calculamo",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/calculamo/",
+      "checklist_url": "/calculamo/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "CronAMO",
       "family": "APP",
       "url": null,
       "slug": "cronamo",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/cronamo/",
+      "checklist_url": "/cronamo/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "TemporizAMO",
       "family": "APP",
       "url": null,
       "slug": "temporizamo",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/temporizamo/",
+      "checklist_url": "/temporizamo/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "NotasAMO",
       "family": "APP",
       "url": null,
       "slug": "notasamo",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/notasamo/",
+      "checklist_url": "/notasamo/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "TareasAMO",
       "family": "APP",
       "url": null,
       "slug": "tareasamo",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/tareasamo/",
+      "checklist_url": "/tareasamo/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "ConversAMO",
       "family": "APP",
       "url": null,
       "slug": "conversamo",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/conversamo/",
+      "checklist_url": "/conversamo/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "QrAMO",
       "family": "APP",
       "url": null,
       "slug": "qramo",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/qramo/",
+      "checklist_url": "/qramo/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "RedAMO",
       "family": "APP",
       "url": null,
       "slug": "redamo",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/redamo/",
+      "checklist_url": "/redamo/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Ordenar Excel a JSON",
       "family": "HERRAMIENTA",
       "url": null,
       "slug": "ordenar-excel-json",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/ordenar-excel-json/",
+      "checklist_url": "/ordenar-excel-json/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Renombrador masivo",
       "family": "HERRAMIENTA",
       "url": null,
       "slug": "renombrador-masivo",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/renombrador-masivo/",
+      "checklist_url": "/renombrador-masivo/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Comparador de imágenes",
       "family": "HERRAMIENTA",
       "url": null,
       "slug": "comparador-imagenes",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/comparador-imagenes/",
+      "checklist_url": "/comparador-imagenes/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Generador de presupuestos",
       "family": "HERRAMIENTA",
       "url": null,
       "slug": "generador-presupuestos",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/generador-presupuestos/",
+      "checklist_url": "/generador-presupuestos/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Auditor web básico",
       "family": "HERRAMIENTA",
       "url": null,
       "slug": "auditor-web-basico",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/auditor-web-basico/",
+      "checklist_url": "/auditor-web-basico/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Certificados a JSON",
       "family": "HERRAMIENTA",
       "url": null,
       "slug": "certificados-json",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/certificados-json/",
+      "checklist_url": "/certificados-json/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Limpieza de productos",
       "family": "HERRAMIENTA",
       "url": null,
       "slug": "limpieza-productos",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/limpieza-productos/",
+      "checklist_url": "/limpieza-productos/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Generador de landings",
       "family": "HERRAMIENTA",
       "url": null,
       "slug": "generador-landings",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/generador-landings/",
+      "checklist_url": "/generador-landings/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "TermuxNow.sh",
       "family": "HERRAMIENTA",
       "url": null,
       "slug": "termuxnow",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/termuxnow/",
+      "checklist_url": "/termuxnow/CHECKLIST-CLIENTES.html"
     },
     {
       "name": "Mi PC PowerShell",
       "family": "HERRAMIENTA",
       "url": null,
       "slug": "mi-pc-powershell",
-      "state": "sin-url"
+      "state": "intake",
+      "case_url": "/mi-pc-powershell/",
+      "checklist_url": "/mi-pc-powershell/CHECKLIST-CLIENTES.html"
     }
   ]
 }
