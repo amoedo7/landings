@@ -125,6 +125,17 @@ section{padding:78px 0}.kicker{font-size:11px;color:var(--grass);font-weight:900
 @media(max-width:900px){.navstatus{margin-left:auto}.navlinks{display:none}.skin-stage{right:8px;width:220px}.rank-lab{grid-template-columns:1fr}.rank-preview{grid-template-columns:220px 1fr}}
 @media(max-width:640px){.navstatus{position:fixed;left:0;right:0;top:98px;margin:0;border-left:0;border-right:0;justify-content:center;z-index:38}.hero{padding-top:82px}.skin-stage{right:50%;transform:translateX(50%);bottom:76px;width:210px;height:300px}.skin-caption{right:50%;transform:translateX(50%);white-space:nowrap}.rank-preview{grid-template-columns:1fr}.rank-canvas-wrap{width:min(100%,260px);margin:auto}.rank-selectors{grid-template-columns:1fr 1fr}.skin-control{grid-template-columns:1fr}.skin-control label{grid-column:auto}}
 
+
+.product-art-wrap{height:230px;margin:-21px -21px 18px;border-bottom:3px solid #263d2e;background:radial-gradient(circle at 50% 46%,rgba(121,223,98,.10),transparent 58%),#0d1711;display:grid;place-items:center;overflow:hidden}
+.product-art{width:86%;height:205px;object-fit:contain;filter:drop-shadow(0 18px 18px rgba(0,0,0,.38));transition:transform .25s ease,filter .25s ease}.product:hover .product-art{transform:translateY(-5px) scale(1.035);filter:drop-shadow(0 24px 22px rgba(0,0,0,.46))}
+.creator-art{width:100%;height:220px;object-fit:contain;margin:-8px 0 12px;filter:drop-shadow(0 18px 18px rgba(0,0,0,.35))}
+.rank-badge{position:absolute;right:10px;top:10px;width:84px;height:84px;object-fit:contain;z-index:4;filter:drop-shadow(0 10px 10px rgba(0,0,0,.38))}
+.loadout-art{position:absolute;left:6px;bottom:4px;width:105px;height:105px;object-fit:contain;z-index:4;opacity:.92;filter:drop-shadow(0 10px 10px rgba(0,0,0,.38));pointer-events:none}
+.rank-buy{margin-top:14px;width:100%}
+.asset-credit{font-size:10px;color:#718576;margin-top:7px}
+.amo-footer{padding:34px 0 46px;background:#07100a;border-top:4px solid #22382a}.amo-footer-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}.amo-brand{display:flex;align-items:center;gap:14px}.amo-brand img{width:min(230px,60vw);height:auto;display:block}.amo-brand-copy{display:grid;gap:4px;color:#d9e7dd}.amo-brand-copy strong{font-size:13px}.amo-brand-copy span{font-size:12px;color:#8ea093}.amo-footnote{font-size:11px;color:#718275;max-width:520px;text-align:right}
+@media(max-width:640px){.product-art-wrap{height:205px}.product-art{height:185px}.creator-art{height:190px}.rank-badge{width:68px;height:68px}.loadout-art{width:92px;height:92px}.amo-footer-inner{display:grid}.amo-footnote{text-align:left}}
+
 </style>
 </head>
 <body>
@@ -190,7 +201,7 @@ section{padding:78px 0}.kicker{font-size:11px;color:var(--grass);font-weight:900
     <div class="innovation-note">La skin se obtiene por username mediante MCHeads. Para una futura cuenta vinculada conviene resolver por UUID.</div>
   </div>
   <div class="card rank-preview">
-    <div class="rank-canvas-wrap vip" id="rankCanvasWrap"><canvas id="skinRank" width="240" height="320"></canvas></div>
+    <div class="rank-canvas-wrap vip" id="rankCanvasWrap"><img class="rank-badge" id="rankBadge" src="https://maincash.net/img/rank-vip.png" alt="Insignia actual del rango VIP de Maincash"><img class="loadout-art" id="loadoutArt" src="https://maincash.net/img/kit-diamante.png" alt="Kit Diamante actual de Maincash"><canvas id="skinRank" width="240" height="320"></canvas></div>
     <div class="rank-meta">
       <div class="rank-title" id="previewRank">VIP</div>
       <div class="price" id="previewPrice">$6.500 ARS</div>
@@ -201,13 +212,15 @@ section{padding:78px 0}.kicker{font-size:11px;color:var(--grass);font-weight:900
         <div><strong>Tótems:</strong> 2</div>
         <div><strong>XP:</strong> 20</div>
       </div>
+      <a id="rankBuy" class="btn rank-buy" href="https://mpago.la/2hNi47J" target="_blank" rel="noopener nofollow external">Comprar VIP · pago oficial ↗</a>
+      <div class="asset-credit">La skin es interactiva. Insignia y arte de kit se cargan desde los assets públicos actuales de maincash.net.</div>
     </div>
   </div>
 </div>
 
 <div class="creator-grid">
-<article class="card creator youtube"><span class="tag">CREADORES</span><div class="rank-title">YOUTUBER</div><p>Rango publicado por Maincash para creadores. La propuesta correcta es convertirlo en una solicitud clara con requisitos y contacto oficial del staff.</p><a class="btn dark" href="https://maincash.net/#tienda" target="_blank" rel="noopener nofollow external">Ver sitio oficial</a></article>
-<article class="card creator stream"><span class="tag">CREADORES</span><div class="rank-title">STREAMER</div><p>También existe públicamente. Falta un canal oficial enlazado para pedirlo sin depender de que el usuario adivine dónde contactar.</p><a class="btn dark" href="https://maincash.net/#tienda" target="_blank" rel="noopener nofollow external">Ver sitio oficial</a></article>
+<article class="card creator youtube"><span class="tag">CREADORES</span><img class="creator-art" src="https://maincash.net/img/rank-youtuber.png" alt="Insignia actual del rango YouTuber de Maincash" loading="lazy"><div class="rank-title">YOUTUBER</div><p>Rango publicado por Maincash para creadores. La propuesta correcta es convertirlo en una solicitud clara con requisitos y contacto oficial del staff.</p><a class="btn dark" href="https://maincash.net/#tienda" target="_blank" rel="noopener nofollow external">Solicitar en sitio oficial ↗</a></article>
+<article class="card creator stream"><span class="tag">CREADORES</span><img class="creator-art" src="https://maincash.net/img/rank-streamer.png" alt="Insignia actual del rango Streamer de Maincash" loading="lazy"><div class="rank-title">STREAMER</div><p>También existe públicamente. Falta un canal oficial enlazado para pedirlo sin depender de que el usuario adivine dónde contactar.</p><a class="btn dark" href="https://maincash.net/#tienda" target="_blank" rel="noopener nofollow external">Solicitar en sitio oficial ↗</a></article>
 </div>
 </div></section>
 
@@ -215,16 +228,16 @@ section{padding:78px 0}.kicker{font-size:11px;color:var(--grass);font-weight:900
 <div class="kicker">03 · tienda completa</div><h2>Diez productos.<br>Precio visible. Pago oficial.</h2>
 <p class="lead">Los precios y links de abajo fueron verificados en los links públicos de Mercado Pago enlazados desde maincash.net. Los pagos van a <strong>MAINCASH</strong>; DesarrollAMO no recibe dinero. Esta demo sólo reorganiza el funnel.</p>
 <div class="product-grid">
-<article class="card product"><span class="tag">RANGO</span><div class="product-title">VIP</div><div class="price">$6.500 ARS</div><p>Entrada al ecosistema premium con kit diario.</p><a class="btn" href="https://mpago.la/2hNi47J" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
-<article class="card product"><span class="tag">RANGO</span><div class="product-title">VIP+</div><div class="price">$15.000 ARS</div><p>Kit mejorado y progresión superior al VIP.</p><a class="btn" href="https://mpago.la/2hvi5LM" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
-<article class="card product"><span class="tag">RANGO</span><div class="product-title">DESTRUCTOR</div><div class="price">$65.000 ARS</div><p>Salto fuerte en equipo, recursos y utilidades.</p><a class="btn" href="https://mpago.la/2EYuxcq" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
-<article class="card product"><span class="tag">RANGO</span><div class="product-title">CELESTIAL</div><div class="price">$150.000 ARS</div><p>El rango superior publicado actualmente.</p><a class="btn" href="https://mpago.la/1BX94gm" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
-<article class="card product"><span class="tag">KIT · UN USO</span><div class="product-title">ELYTRAS</div><div class="price">$15.000 ARS</div><p>Kit de un solo uso, reclamable dentro del servidor.</p><a class="btn blue" href="https://mpago.la/1ahTKf3" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
-<article class="card product"><span class="tag">KIT · UN USO</span><div class="product-title">NETHERITE</div><div class="price">$6.500 ARS</div><p>Kit Netherite publicado por Maincash.</p><a class="btn blue" href="https://mpago.la/12Ng1mA" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
-<article class="card product"><span class="tag">KIT · UN USO</span><div class="product-title">DIAMANTE</div><div class="price">$3.500 ARS</div><p>Kit Diamante publicado por Maincash.</p><a class="btn blue" href="https://mpago.la/1fYjzNS" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
-<article class="card product"><span class="tag">COINS</span><div class="product-title">10 MILLONES</div><div class="price">$6.500 ARS</div><p>Paquete de coins con checkout público oficial.</p><a class="btn gold" href="https://mpago.la/1Wmvcr8" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
-<article class="card product"><span class="tag">COINS</span><div class="product-title">150 MILLONES</div><div class="price">$15.000 ARS</div><p>Paquete intermedio publicado por Maincash.</p><a class="btn gold" href="https://mpago.la/2F7fcKX" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
-<article class="card product"><span class="tag">COINS</span><div class="product-title">500 MILLONES</div><div class="price">$150.000 ARS</div><p>Paquete superior listado actualmente en maincash.net.</p><a class="btn gold" href="https://mpago.la/1fcXY1S" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
+<article class="card product"><div class="product-art-wrap"><img class="product-art" src="https://maincash.net/img/rank-vip.png" alt="Insignia actual del rango VIP de Maincash" loading="lazy"></div><span class="tag">RANGO</span><div class="product-title">VIP</div><div class="price">$6.500 ARS</div><p>Entrada al ecosistema premium con kit diario.</p><a class="btn" href="https://mpago.la/2hNi47J" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
+<article class="card product"><div class="product-art-wrap"><img class="product-art" src="https://maincash.net/img/rank-vip-plus.png" alt="Insignia actual del rango VIP Plus de Maincash" loading="lazy"></div><span class="tag">RANGO</span><div class="product-title">VIP+</div><div class="price">$15.000 ARS</div><p>Kit mejorado y progresión superior al VIP.</p><a class="btn" href="https://mpago.la/2hvi5LM" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
+<article class="card product"><div class="product-art-wrap"><img class="product-art" src="https://maincash.net/img/rank-destructor.png" alt="Insignia actual del rango Destructor de Maincash" loading="lazy"></div><span class="tag">RANGO</span><div class="product-title">DESTRUCTOR</div><div class="price">$65.000 ARS</div><p>Salto fuerte en equipo, recursos y utilidades.</p><a class="btn" href="https://mpago.la/2EYuxcq" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
+<article class="card product"><div class="product-art-wrap"><img class="product-art" src="https://maincash.net/img/rank-celestial.png" alt="Insignia actual del rango Celestial de Maincash" loading="lazy"></div><span class="tag">RANGO</span><div class="product-title">CELESTIAL</div><div class="price">$150.000 ARS</div><p>El rango superior publicado actualmente.</p><a class="btn" href="https://mpago.la/1BX94gm" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
+<article class="card product"><div class="product-art-wrap"><img class="product-art" src="https://maincash.net/img/kit-elytras.png" alt="Elytras encantadas actuales de Maincash" loading="lazy"></div><span class="tag">KIT · UN USO</span><div class="product-title">ELYTRAS</div><div class="price">$15.000 ARS</div><p>Kit de un solo uso, reclamable dentro del servidor.</p><a class="btn blue" href="https://mpago.la/1ahTKf3" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
+<article class="card product"><div class="product-art-wrap"><img class="product-art" src="https://maincash.net/img/kit-netherite.png" alt="Kit Netherite actual de Maincash" loading="lazy"></div><span class="tag">KIT · UN USO</span><div class="product-title">NETHERITE</div><div class="price">$6.500 ARS</div><p>Kit Netherite publicado por Maincash.</p><a class="btn blue" href="https://mpago.la/12Ng1mA" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
+<article class="card product"><div class="product-art-wrap"><img class="product-art" src="https://maincash.net/img/kit-diamante.png" alt="Kit Diamante actual de Maincash" loading="lazy"></div><span class="tag">KIT · UN USO</span><div class="product-title">DIAMANTE</div><div class="price">$3.500 ARS</div><p>Kit Diamante publicado por Maincash.</p><a class="btn blue" href="https://mpago.la/1fYjzNS" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
+<article class="card product"><div class="product-art-wrap"><img class="product-art" src="https://maincash.net/img/coins-10m-v2.png" alt="Arte actual del paquete de 10 millones de coins de Maincash" loading="lazy"></div><span class="tag">COINS</span><div class="product-title">10 MILLONES</div><div class="price">$6.500 ARS</div><p>Paquete de coins con checkout público oficial.</p><a class="btn gold" href="https://mpago.la/1Wmvcr8" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
+<article class="card product"><div class="product-art-wrap"><img class="product-art" src="https://maincash.net/img/coins-150m-v2.png" alt="Arte actual del paquete de 150 millones de coins de Maincash" loading="lazy"></div><span class="tag">COINS</span><div class="product-title">150 MILLONES</div><div class="price">$15.000 ARS</div><p>Paquete intermedio publicado por Maincash.</p><a class="btn gold" href="https://mpago.la/2F7fcKX" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
+<article class="card product"><div class="product-art-wrap"><img class="product-art" src="https://maincash.net/img/coins-500m.png" alt="Arte actual del paquete de 500 millones de coins de Maincash" loading="lazy"></div><span class="tag">COINS</span><div class="product-title">500 MILLONES</div><div class="price">$150.000 ARS</div><p>Paquete superior listado actualmente en maincash.net.</p><a class="btn gold" href="https://mpago.la/1fcXY1S" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
 </div>
 <p class="product-note" style="margin-top:16px">Precios verificados el 18/09/2026 mediante los links públicos de Mercado Pago del sitio oficial. Pueden cambiar; el checkout de Mercado Pago es la referencia final.</p>
 </div></section>
@@ -283,17 +296,17 @@ section{padding:78px 0}.kicker{font-size:11px;color:var(--grass);font-weight:900
 <section><div class="wrap"><div class="cta"><h2>La diferencia ya no es “hacer una web más linda”. Es convertir la web en parte del servidor.</h2><a class="btn" href="https://desarrollamo.com.ar/" target="_blank" rel="noopener">DesarrollAMO ↗</a></div></div></section>
 </main>
 
-<footer class="footer"><div class="wrap footrow"><div>Concepto no oficial para Maincash · DesarrollAMO · 2026</div><div>No afiliado a Maincash, Mojang Studios ni Microsoft.</div></div></footer>
+<footer class="amo-footer"><div class="wrap amo-footer-inner"><div class="amo-brand"><a href="https://desarrollamo.com.ar/" target="_blank" rel="noopener noreferrer sponsored"><img src="https://cdn.jsdelivr.net/gh/desarrollamo/branding@v1.3.0/assets/logo/horizontal.svg" alt="DesarrollAMO" loading="lazy"></a><div class="amo-brand-copy"><strong>Tecnología con alma.</strong><span>Diseño, producto y desarrollo de esta propuesta conceptual.</span></div></div><div class="amo-footnote">Concepto no oficial para Maincash · 2026 · No afiliado a Mojang Studios ni Microsoft. Los assets de producto mostrados se sirven desde el sitio público actual de Maincash.</div></div></footer>
 <div class="toast" id="toast">Copiado</div>
 <script>
 (function(){
   var heroViewer=null, rankViewer=null;
   var currentSkin='MHF_Steve';
   var ranks={
-    'VIP':{cls:'vip',price:'$6.500 ARS',desc:'Entrada al ecosistema premium con kit diario.',items:['Armadura: Diamante III','Manzanas: 8','Tótems: 2','XP: 20']},
-    'VIP+':{cls:'vipplus',price:'$15.000 ARS',desc:'Kit mejorado y progresión superior al VIP.',items:['Armadura: Diamante MAX','Manzanas: 16','Tótems: 3','XP: 50']},
-    'Destructor':{cls:'destructor',price:'$65.000 ARS',desc:'Salto fuerte en equipo, recursos y utilidades.',items:['Armadura: Netherite VII','Manzanas: 32','Tótems: 5','XP: 64']},
-    'Celestial':{cls:'celestial',price:'$150.000 ARS',desc:'El rango superior publicado actualmente.',items:['Armadura: Netherite X','Manzanas: 64','Tótems: 5','XP: 64']}
+    'VIP':{cls:'vip',price:'$6.500 ARS',desc:'Entrada al ecosistema premium con kit diario.',badge:'https://maincash.net/img/rank-vip.png',loadout:'https://maincash.net/img/kit-diamante.png',buy:'https://mpago.la/2hNi47J',items:['Armadura: Diamante III','Manzanas: 8','Tótems: 2','XP: 20']},
+    'VIP+':{cls:'vipplus',price:'$15.000 ARS',desc:'Kit mejorado y progresión superior al VIP.',badge:'https://maincash.net/img/rank-vip-plus.png',loadout:'https://maincash.net/img/kit-diamante.png',buy:'https://mpago.la/2hvi5LM',items:['Armadura: Diamante MAX','Manzanas: 16','Tótems: 3','XP: 50']},
+    'Destructor':{cls:'destructor',price:'$65.000 ARS',desc:'Salto fuerte en equipo, recursos y utilidades.',badge:'https://maincash.net/img/rank-destructor.png',loadout:'https://maincash.net/img/kit-netherite.png',buy:'https://mpago.la/2EYuxcq',items:['Armadura: Netherite VII','Manzanas: 32','Tótems: 5','XP: 64']},
+    'Celestial':{cls:'celestial',price:'$150.000 ARS',desc:'El rango superior publicado actualmente.',badge:'https://maincash.net/img/rank-celestial.png',loadout:'https://maincash.net/img/kit-netherite.png',buy:'https://mpago.la/1BX94gm',items:['Armadura: Netherite X','Manzanas: 64','Tótems: 5','XP: 64']}
   };
   function skinUrl(name){return 'https://mc-heads.net/skin/'+encodeURIComponent(name||'MHF_Steve');}
   function initSkins(){
@@ -317,6 +330,9 @@ section{padding:78px 0}.kicker{font-size:11px;color:var(--grass);font-weight:900
     var w=document.getElementById('rankCanvasWrap');w.className='rank-canvas-wrap '+d.cls;
     document.getElementById('previewRank').textContent=name.toUpperCase();
     document.getElementById('previewPrice').textContent=d.price;document.getElementById('previewDesc').textContent=d.desc;
+    document.getElementById('rankBadge').src=d.badge;document.getElementById('rankBadge').alt='Insignia actual del rango '+name+' de Maincash';
+    document.getElementById('loadoutArt').src=d.loadout;document.getElementById('loadoutArt').alt='Arte de kit asociado al rango '+name+' en la propuesta';
+    var buy=document.getElementById('rankBuy');buy.href=d.buy;buy.textContent='Comprar '+name+' · pago oficial ↗';
     document.getElementById('rankEquipment').innerHTML=d.items.map(function(x){var p=x.split(':');return '<div><strong>'+p[0]+':</strong>'+p.slice(1).join(':')+'</div>'}).join('');
   }
   window.addEventListener('load',function(){initSkins();});
