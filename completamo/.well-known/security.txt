@@ -1,0 +1,4 @@
+Contact: https://desarrollamo.com.ar/
+Preferred-Languages: es, en
+Canonical: https://completamo.netlify.app/.well-known/security.txt
+Expires: 2027-09-19T00:00:00.000Z
