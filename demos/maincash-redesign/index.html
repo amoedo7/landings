@@ -3,90 +3,279 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Concepto no oficial de rediseño para Maincash, preparado por DesarrollAMO.">
-<title>Maincash — Concepto de rediseño · DesarrollAMO</title>
-<style>
-:root{--bg:#07110d;--panel:#0c1b14;--panel2:#10231a;--line:#20472f;--text:#f6fbf7;--muted:#a8baae;--lime:#8dfc71;--cyan:#68d6ff;--gold:#ffcc66;--danger:#ff8a80;--r:22px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 75% 10%,#163524 0,transparent 27%),radial-gradient(circle at 15% 25%,#102d35 0,transparent 24%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.topnote{background:#dbff63;color:#09120c;text-align:center;padding:8px 14px;font-size:13px;font-weight:800;letter-spacing:.02em}.nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(7,17,13,.82);border-bottom:1px solid rgba(141,252,113,.14)}.navin{height:72px;display:flex;align-items:center;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-weight:950;letter-spacing:-.04em;font-size:20px}.cube{width:35px;height:35px;display:grid;place-items:center;background:linear-gradient(135deg,#8dfc71,#3cbf6a);color:#07110d;box-shadow:inset -6px -6px 0 rgba(0,0,0,.18);font-weight:1000}.navlinks{display:flex;gap:20px;margin-left:auto;color:#bfd0c4;font-size:14px}.navcta{border:1px solid #3f7d54;border-radius:999px;padding:10px 15px;background:#10251a;font-weight:800}.hero{min-height:720px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:48px;padding:74px 0 60px}.eyebrow{display:inline-flex;gap:9px;align-items:center;border:1px solid #285a3b;background:#0c1c14;border-radius:999px;padding:7px 11px;color:#cbead2;font-size:12px;font-weight:800}.dot{width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 16px var(--lime)}h1{font-size:clamp(54px,8vw,108px);line-height:.86;letter-spacing:-.075em;margin:20px 0 24px;max-width:800px}.hero p{font-size:20px;color:#b9c9bd;max-width:680px}.accent{color:var(--lime)}.joinbox{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:30px}.join{border:1px solid #2c5d3d;background:linear-gradient(180deg,#10251a,#0b1a13);border-radius:18px;padding:17px;text-align:left;color:white;cursor:pointer;transition:.2s}.join:hover{transform:translateY(-2px);border-color:#79db69}.join small{display:block;color:#83a38d;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.12em}.join strong{display:block;font-size:17px;margin-top:5px}.micro{font-size:12px;color:#789181;margin-top:10px}.visual{position:relative;min-height:510px;border:1px solid #244e35;border-radius:32px;overflow:hidden;background:linear-gradient(#081c27 0 33%,#183c2b 33% 56%,#2f4428 56%);box-shadow:0 36px 100px rgba(0,0,0,.35)}.sky{position:absolute;inset:0;background:linear-gradient(135deg,rgba(104,214,255,.17),transparent 42%)}.moon{position:absolute;width:110px;height:110px;border-radius:50%;background:#f5eec8;right:58px;top:52px;box-shadow:0 0 50px rgba(255,245,190,.18)}.mount{position:absolute;left:-5%;right:-5%;bottom:34%;height:38%;clip-path:polygon(0 100%,0 75%,9% 60%,15% 66%,23% 44%,31% 60%,40% 28%,49% 56%,58% 39%,66% 62%,78% 29%,87% 52%,100% 41%,100% 100%);background:#162c21}.ground{position:absolute;left:0;right:0;bottom:0;height:40%;background:linear-gradient(#3b5c2f 0 14%,#4b3626 14% 100%);box-shadow:inset 0 12px 0 #577536}.portal{position:absolute;left:50%;bottom:76px;transform:translateX(-50%);width:160px;height:245px;border:25px solid #221a31;background:radial-gradient(circle at 50% 50%,#d55cff,#6025c9 65%,#321a78);box-shadow:0 0 55px #ad42ff88,inset 0 0 30px #ff99ff88}.portal:after{content:"";position:absolute;inset:-25px;border:1px solid #8dfc7150}.floatcard{position:absolute;left:24px;right:24px;bottom:22px;display:flex;align-items:center;justify-content:space-between;gap:15px;background:rgba(6,15,11,.86);border:1px solid #315a3f;border-radius:17px;padding:14px 16px;backdrop-filter:blur(10px)}.serverstate{font-weight:900}.serverstate span{display:block;font-size:12px;color:#8da398;font-weight:600}.live{color:var(--lime)}section{padding:88px 0}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.16em;color:var(--lime);font-weight:900}.sectiontitle{font-size:clamp(36px,5vw,64px);letter-spacing:-.055em;line-height:.98;margin:12px 0 18px}.lead{color:#9fb2a5;font-size:18px;max-width:730px}.statusgrid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:14px;margin-top:34px}.card{border:1px solid #214831;background:linear-gradient(180deg,#0d1d15,#0a1711);border-radius:var(--r);padding:24px}.card big{font-size:34px;font-weight:950;letter-spacing:-.04em}.card small{display:block;color:#8da096;margin-top:4px}.statusline{display:flex;gap:10px;align-items:center}.pill{display:inline-flex;align-items:center;gap:7px;border:1px solid #2c5a3d;border-radius:999px;padding:6px 9px;font-size:12px;color:#b8cfc0}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px}.feature{min-height:220px}.num{color:#5e8069;font-weight:900;font-size:13px}.feature h3{font-size:26px;letter-spacing:-.035em;margin:48px 0 10px}.feature p{color:#97a99e}.compare{overflow:auto;border:1px solid #214831;border-radius:24px;margin-top:34px;background:#09150f}.table{min-width:850px;display:grid;grid-template-columns:1.3fr repeat(4,1fr)}.cell{padding:18px 16px;border-right:1px solid #193a27;border-bottom:1px solid #193a27}.cell:nth-child(5n){border-right:0}.head{background:#10251a;font-weight:950}.rowlabel{color:#a6b9ac;font-weight:800}.yes{color:var(--lime);font-weight:900}.rankname{font-size:18px}.tag{display:inline-block;padding:5px 8px;border-radius:8px;background:#182f20;color:#d5ead9;font-size:11px;font-weight:800}.storegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}.product{position:relative;overflow:hidden;min-height:300px}.product:before{content:"";position:absolute;width:150px;height:150px;border-radius:50%;filter:blur(25px);background:#75e85b22;right:-30px;top:-30px}.product h3{font-size:28px;margin:80px 0 6px}.price{font-size:13px;color:#7e9687}.demobtn{margin-top:22px;width:100%;border:1px solid #315e40;background:#142b1d;color:#9eb2a3;border-radius:12px;padding:12px;font-weight:850;cursor:not-allowed}.proof{display:grid;grid-template-columns:1fr 1fr;gap:16px}.proof .card{min-height:250px}.bigquote{font-size:30px;line-height:1.15;letter-spacing:-.04em;margin:16px 0}.steps{counter-reset:item;display:grid;gap:10px;margin-top:24px}.step{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-top:1px solid #1c3a29}.step:before{counter-increment:item;content:"0" counter(item);color:var(--lime);font-weight:900}.faq details{border-top:1px solid #214831;padding:18px 0}.faq summary{cursor:pointer;font-weight:850}.faq p{color:#94a79b}.cta{background:linear-gradient(135deg,#9dff78,#6bdc99);color:#08100a;border-radius:30px;padding:44px;display:flex;justify-content:space-between;align-items:center;gap:25px}.cta h2{font-size:clamp(34px,5vw,62px);line-height:.95;letter-spacing:-.055em;margin:0;max-width:690px}.cta a{background:#09120c;color:white;border-radius:999px;padding:14px 20px;font-weight:900;white-space:nowrap}.footer{padding:40px 0 60px;color:#789181;font-size:13px}.footrow{display:flex;justify-content:space-between;gap:20px;border-top:1px solid #1b3b28;padding-top:24px}.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,30px);opacity:0;z-index:50;background:#eaffdd;color:#0b170e;border-radius:999px;padding:10px 16px;font-weight:850;transition:.25s;pointer-events:none}.toast.show{opacity:1;transform:translate(-50%,0)}
-@media(max-width:850px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:48px}.visual{min-height:430px}.statusgrid,.features,.storegrid,.proof{grid-template-columns:1fr}.joinbox{grid-template-columns:1fr}.cta{display:block}.cta a{display:inline-block;margin-top:24px}.footrow{display:block}.hero{min-height:auto}section{padding:64px 0}}
-</style>
+<meta name="theme-color" content="#0b140e">
+<meta name="description" content="Concepto no oficial de experiencia web para Maincash: servidor Minecraft Java + Bedrock, tienda, rangos, kits, coins y estado en vivo. Propuesta de DesarrollAMO.">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://maincash.netlify.app/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="Maincash · concepto no oficial">
+<meta property="og:title" content="Maincash Minecraft Experience · Concepto DesarrollAMO">
+<meta property="og:description" content="Una propuesta no oficial para convertir la web de Maincash en una experiencia Minecraft más clara, viva y comprable.">
+<meta property="og:url" content="https://maincash.netlify.app/">
+<meta property="og:image" content="https://maincash.netlify.app/og-maincash.svg">
+<meta property="og:image:type" content="image/svg+xml">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Maincash Minecraft Experience, concepto no oficial de DesarrollAMO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Maincash Minecraft Experience · Concepto DesarrollAMO">
+<meta name="twitter:description" content="Servidor, estado en vivo, tienda, rangos y acceso Java + Bedrock en una experiencia más Minecraft.">
+<meta name="twitter:image" content="https://maincash.netlify.app/og-maincash.svg">
+<title>Maincash Minecraft Experience · Concepto no oficial</title>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "@id":"https://maincash.netlify.app/#website",
+      "url":"https://maincash.netlify.app/",
+      "name":"Maincash Minecraft Experience · Concepto no oficial",
+      "description":"Propuesta no oficial de rediseño y producto para Maincash, creada por DesarrollAMO.",
+      "inLanguage":"es-AR"
+    },
+    {
+      "@type":"VideoGame",
+      "@id":"https://maincash.netlify.app/#minecraft",
+      "name":"Minecraft",
+      "gamePlatform":["Java Edition","Bedrock Edition"],
+      "playMode":"MultiPlayer",
+      "gameServer":{
+        "@type":"GameServer",
+        "@id":"https://maincash.netlify.app/#server",
+        "name":"Maincash",
+        "url":"https://maincash.net/",
+        "serverStatus":"https://schema.org/Online",
+        "game":{"@id":"https://maincash.netlify.app/#minecraft"}
+      }
+    },
+    {
+      "@type":"FAQPage",
+      "@id":"https://maincash.netlify.app/#faq",
+      "mainEntity":[
+        {"@type":"Question","name":"¿Cómo entro desde Java Edition?","acceptedAnswer":{"@type":"Answer","text":"Agregá Play.maincash.net como dirección del servidor. El puerto estándar es 25565."}},
+        {"@type":"Question","name":"¿Cómo entro desde Bedrock Edition?","acceptedAnswer":{"@type":"Answer","text":"Agregá play.maincash.net y usá el puerto 19132."}},
+        {"@type":"Question","name":"¿Cómo funciona una compra hoy?","acceptedAnswer":{"@type":"Answer","text":"Los links públicos actuales llevan a Mercado Pago de MAINCASH. Después del pago, el sitio oficial indica contactar a un administrador dentro del servidor para activar el rango, kit o coins."}},
+        {"@type":"Question","name":"¿Esta web es oficial?","acceptedAnswer":{"@type":"Answer","text":"No. Es un concepto no oficial preparado por DesarrollAMO para mostrar una posible evolución del producto."}}
+      ]
+    }
+  ]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-<style id="minecraft-overdrive">
-:root{--mc-grass:#74c65b;--mc-grass-dark:#3b7f3a;--mc-stone:#6d746f;--mc-dirt:#704a2f;--mc-wood:#9b6a3e;--mc-sky:#75c9ef;--mc-diamond:#6fe4ff}
-body{background:
-linear-gradient(rgba(5,12,8,.72),rgba(5,12,8,.86)),
-repeating-linear-gradient(0deg,transparent 0 31px,rgba(255,255,255,.035) 32px),
-repeating-linear-gradient(90deg,transparent 0 31px,rgba(255,255,255,.035) 32px),
-#0c1710!important}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:
-linear-gradient(180deg,rgba(117,201,239,.09) 0 30%,transparent 30%),
-linear-gradient(90deg,rgba(116,198,91,.045) 50%,transparent 50%);background-size:auto,64px 64px;image-rendering:pixelated}
-.topnote{font-family:"Press Start 2P",monospace!important;font-size:9px!important;line-height:1.6!important;border-bottom:4px solid #3c712f!important;box-shadow:0 4px 0 #172417!important}
-.nav{border-bottom:4px solid #263f2b!important}
-.brand,.sectiontitle,h1,.product h3,.feature h3,.cta h2{font-family:"Press Start 2P",monospace!important;letter-spacing:-.035em!important}
-h1{line-height:1.08!important;font-size:clamp(38px,6.2vw,82px)!important;text-shadow:0 5px 0 #122416,0 10px 28px rgba(0,0,0,.4)!important}
-.cube{border-radius:0!important;border:4px solid #2d5d31!important;box-shadow:inset -7px -7px 0 rgba(0,0,0,.22),0 4px 0 #101810!important}
-.navcta,.join,.demobtn,.tag,.pill,.eyebrow{border-radius:0!important}
-.navcta,.join{box-shadow:0 5px 0 #132116!important}
-.card,.compare,.visual,.cta{border-radius:0!important;box-shadow:0 10px 0 rgba(0,0,0,.32),0 22px 50px rgba(0,0,0,.24)!important}
-.card{background:
-linear-gradient(rgba(255,255,255,.015),rgba(0,0,0,.06)),
-repeating-linear-gradient(0deg,transparent 0 23px,rgba(255,255,255,.018) 24px),
-#102019!important}
-.visual{border:6px solid #243b29!important;background:
-linear-gradient(#76c8ee 0 30%,#caecf3 30% 31%,#5f9e4e 31% 38%,#3c6d35 38% 40%,#60442f 40% 100%)!important}
-.visual:before{content:"";position:absolute;left:0;right:0;bottom:0;height:38%;background:
-linear-gradient(90deg,rgba(255,255,255,.05) 50%,transparent 50%),
-linear-gradient(rgba(0,0,0,.08) 50%,transparent 50%);
-background-size:48px 48px;mix-blend-mode:overlay;pointer-events:none}
-.visual:after{content:"MUNDO SURVIVAL";position:absolute;right:18px;top:18px;padding:10px 12px;background:#18291e;border:4px solid #3f5d47;color:#dfffe4;font-family:"Press Start 2P",monospace;font-size:9px;box-shadow:0 5px 0 rgba(0,0,0,.25)}
-.portal{border-radius:0!important;border-color:#251833!important;box-shadow:0 0 0 6px #160e1d,0 0 55px #ad42ff88,inset 0 0 30px #ff99ff88!important}
-.floatcard{border-radius:0!important;border:4px solid #324e38!important;background:rgba(9,20,12,.94)!important;box-shadow:0 5px 0 rgba(0,0,0,.32)!important}
-.table{gap:6px!important;background:#0b1610!important;padding:6px!important}
-.cell{border:3px solid #28402f!important;background:#122119!important}
-.cell.head{background:#1a2f21!important;color:#ddffe3!important;font-family:"Press Start 2P",monospace!important;font-size:10px!important}
-.tag{background:#25382a!important;border:3px solid #496050!important;color:#e3fbe7!important}
-.product:after{content:"";position:absolute;width:72px;height:72px;right:16px;top:16px;border:4px solid #4d6754;background:
-linear-gradient(135deg,transparent 0 30%,rgba(111,228,255,.6) 31% 45%,transparent 46%),
-#1b2b20;box-shadow:inset -8px -8px 0 rgba(0,0,0,.18)}
-.cta{background:
-linear-gradient(rgba(255,255,255,.08),rgba(0,0,0,.04)),
-linear-gradient(180deg,#8dee72,#59b64e)!important;border:6px solid #2f6c35!important;box-shadow:0 8px 0 #173b1b!important}
-.cta a{border-radius:0!important;border:4px solid #26352b!important;box-shadow:0 5px 0 rgba(0,0,0,.3)!important}
-@media(max-width:850px){h1{font-size:clamp(32px,10vw,58px)!important}.topnote{font-size:7px!important}.visual{min-height:470px!important}}
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg:#08110b;--bg2:#0d1810;--panel:#112019;--panel2:#17291f;--line:#2d4937;--text:#f2fff4;--muted:#a7bbaa;
+--grass:#79df62;--grass2:#48a846;--diamond:#6de4ff;--gold:#ffd46a;--red:#ff7777;--purple:#c171ff;--stone:#66706a;
+--shadow:0 8px 0 rgba(0,0,0,.35),0 22px 60px rgba(0,0,0,.30)
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:
+radial-gradient(circle at 18% 5%,rgba(121,223,98,.09),transparent 28rem),
+radial-gradient(circle at 88% 2%,rgba(109,228,255,.07),transparent 26rem),
+linear-gradient(180deg,#101a13,#08110b);line-height:1.5;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.12;background-image:
+linear-gradient(rgba(255,255,255,.13) 1px,transparent 1px),
+linear-gradient(90deg,rgba(255,255,255,.13) 1px,transparent 1px);background-size:32px 32px;mask-image:linear-gradient(#000,transparent 88%)}
+a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1180px,calc(100% - 30px));margin:auto}
+.pixel,h1,h2,.brand,.product-title,.rank-title,.hero-stat strong{font-family:"Press Start 2P",monospace}
+.notice{background:linear-gradient(#a8ff78,#71da5b);color:#10200d;border-bottom:4px solid #376d32;text-align:center;padding:9px 12px;font-family:"Press Start 2P",monospace;font-size:8px;line-height:1.6}
+.nav{position:sticky;top:0;z-index:40;background:rgba(8,17,11,.90);backdrop-filter:blur(12px);border-bottom:4px solid #1f3426}
+.navin{min-height:72px;display:flex;align-items:center;gap:22px}.brand{display:flex;align-items:center;gap:12px;font-size:14px}.brandmark{width:38px;height:38px;display:grid;place-items:center;color:#12200f;background:#77d95d;border:4px solid #2d5d2e;box-shadow:inset -7px -7px 0 rgba(0,0,0,.18),0 4px 0 #0b120c}
+.navlinks{display:flex;gap:20px;margin-left:auto;color:#c6d8ca;font-size:13px;font-weight:800}.navlinks a:hover{color:white}.navcta{padding:11px 14px;background:#79df62;color:#10200d;border:4px solid #2d6334;box-shadow:0 4px 0 #112317;font-weight:900;text-transform:uppercase}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center;padding:64px 0 46px;min-height:710px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:9px 11px;background:#13241a;border:3px solid #34513c;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}.dot{width:10px;height:10px;background:#7fff79;border:2px solid #c9ffc6;box-shadow:0 0 14px #7fff79}
+h1{font-size:clamp(34px,5.8vw,76px);line-height:1.1;letter-spacing:-.035em;margin:20px 0;text-shadow:0 5px 0 #0f2013}.accent{color:var(--grass)}.hero-copy{font-size:19px;color:#c8d9cc;max-width:680px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:14px 17px;border:4px solid #2d6334;background:linear-gradient(#8df47a,#59c452);color:#0c170d;box-shadow:0 5px 0 #16311a;font-weight:900;text-transform:uppercase;cursor:pointer;transition:.15s}.btn:hover{transform:translateY(-2px);filter:brightness(1.05)}.btn.blue{background:linear-gradient(#9beaff,#5fc6e8);border-color:#356d7f;box-shadow:0 5px 0 #173b46}.btn.dark{background:#17251c;border-color:#3a5242;color:#effff1;box-shadow:0 5px 0 #080d09}.btn.gold{background:linear-gradient(#ffe798,#f1c95d);border-color:#8a6c1d;box-shadow:0 5px 0 #473609}
+.connect-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}.connect{background:#101f17;border:4px solid #304a38;padding:15px;box-shadow:var(--shadow)}.connect small{display:block;color:#91a997;text-transform:uppercase;font-weight:900;font-size:10px;letter-spacing:.1em}.connect strong{display:block;margin:6px 0 12px;font-size:17px;word-break:break-all}
+.world{position:relative;min-height:520px;border:6px solid #263d2d;background:linear-gradient(#76c9ef 0 32%,#dff5ff 32% 34%,#6ea758 34% 43%,#496b39 43% 46%,#6f5037 46% 100%);box-shadow:var(--shadow);overflow:hidden;image-rendering:pixelated}
+.world:before{content:"";position:absolute;left:0;right:0;bottom:0;height:54%;background:
+linear-gradient(90deg,rgba(255,255,255,.045) 50%,transparent 50%),
+linear-gradient(rgba(0,0,0,.06) 50%,transparent 50%);background-size:48px 48px}
+.sun{position:absolute;right:38px;top:35px;width:76px;height:76px;background:#ffe787;border:6px solid #fff2b5}.cloud{position:absolute;top:88px;left:54px;width:110px;height:32px;background:white;border:6px solid #d9edf2;box-shadow:36px -16px 0 white,36px -16px 0 6px #d9edf2,72px 0 0 white,72px 0 0 6px #d9edf2}
+.hill{position:absolute;left:-4%;bottom:38%;width:66%;height:33%;background:#477d43;clip-path:polygon(0 100%,0 70%,18% 55%,30% 64%,45% 27%,58% 60%,72% 42%,88% 71%,100% 58%,100% 100%);border-bottom:10px solid #345c33}
+.tree{position:absolute;left:54px;bottom:116px;width:48px;height:116px;background:#795238;border:6px solid #523723}.tree:before{content:"";position:absolute;left:-34px;top:-64px;width:110px;height:78px;background:#4f9a4b;border:6px solid #326330;box-shadow:22px -26px 0 #4f9a4b,22px -26px 0 6px #326330}
+.house{position:absolute;left:145px;bottom:112px;width:165px;height:112px;background:#98714b;border:6px solid #5c432c}.house:before{content:"";position:absolute;left:-14px;top:-54px;width:181px;height:54px;background:#864b32;border:6px solid #5b3121;clip-path:polygon(5% 100%,50% 0,95% 100%)}.house:after{content:"";position:absolute;left:64px;bottom:0;width:40px;height:68px;background:#684123;border-left:6px solid #462a17;border-right:6px solid #462a17}
+.steve{position:absolute;right:125px;bottom:105px;width:90px;height:158px}.steve .head{position:absolute;left:20px;top:0;width:50px;height:50px;background:#e7b789;border:6px solid #bb855b}.steve .hair{position:absolute;left:15px;top:-4px;width:60px;height:24px;background:#4e2c1a;border:6px solid #321a0f;z-index:2}.steve .body{position:absolute;left:18px;top:50px;width:54px;height:58px;background:#4abed7;border:6px solid #287b8e}.steve .arm{position:absolute;top:57px;width:16px;height:51px;background:#e7b789;border:6px solid #bb855b}.steve .arm.l{left:0}.steve .arm.r{right:0}.steve .leg{position:absolute;bottom:0;width:22px;height:58px;background:#4457bc;border:6px solid #29357b}.steve .leg.l{left:19px}.steve .leg.r{right:19px}
+.ore{position:absolute;right:34px;bottom:112px;width:86px;height:72px;background:#77706a;border:6px solid #53504c}.ore:after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,transparent 0 20%,#6de4ff 21% 30%,transparent 31% 52%,#6de4ff 53% 63%,transparent 64%),linear-gradient(45deg,transparent 0 58%,#6de4ff 59% 69%,transparent 70%);opacity:.95}
+.hud{position:absolute;left:22px;top:22px;width:245px;padding:14px;background:rgba(10,20,13,.94);border:4px solid #3b5443;box-shadow:0 5px 0 rgba(0,0,0,.35)}.hud small{display:block;color:#9ab1a0;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.hero-stat strong{display:block;margin:9px 0;font-size:16px}.pill{display:inline-flex;padding:7px 9px;border:3px solid #405b48;background:#1a2b20;font-size:11px;font-weight:900}
+section{padding:78px 0}.kicker{font-size:11px;color:var(--grass);font-weight:900;text-transform:uppercase;letter-spacing:.13em}h2{font-size:clamp(25px,4vw,46px);line-height:1.2;letter-spacing:-.025em;margin:12px 0 18px}.lead{color:#b6c8bb;font-size:18px;max-width:820px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}.card{background:linear-gradient(180deg,#13231a,#0d1812);border:4px solid #2f4937;padding:21px;box-shadow:var(--shadow);position:relative;overflow:hidden}.card h3{margin:16px 0 8px;font-size:21px}.card p{color:#aebfb2;margin:0}.statbig{font-size:28px;font-weight:950;letter-spacing:-.03em}.statbig.live{color:#8cff82}.num{font-family:"Press Start 2P",monospace;color:#64816c;font-size:9px}
+.tablewrap{overflow:auto;margin-top:28px;border:4px solid #2f4937;background:#0c1710;box-shadow:var(--shadow)}.table{min-width:900px;display:grid;grid-template-columns:1.3fr repeat(4,1fr);gap:4px;padding:4px}.cell{padding:15px;background:#13231a;border:2px solid #233b2b;display:flex;align-items:center;justify-content:center;text-align:center}.cell.head{font-family:"Press Start 2P",monospace;font-size:9px;background:#1d3224}.cell.label{justify-content:flex-start;color:#c8d9cc;font-weight:900}.yes{color:#8bff84;font-weight:900}.price{font-family:"Press Start 2P",monospace;color:var(--gold);font-size:13px;margin:8px 0 14px}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}.product{min-height:300px}.product:before{content:"";position:absolute;right:-25px;top:-25px;width:120px;height:120px;border:4px solid #455d4c;background:linear-gradient(135deg,transparent 0 30%,rgba(109,228,255,.45) 31% 44%,transparent 45%),#1a2a20;transform:rotate(8deg);opacity:.65}.tag{display:inline-block;padding:6px 8px;border:3px solid #465d4e;background:#213227;color:#d8eadc;font-size:10px;font-weight:900;text-transform:uppercase}.product-title{font-size:16px;line-height:1.35;margin:54px 0 10px}.product p{min-height:48px}.product .btn{margin-top:12px;width:100%;font-size:12px;padding:12px 10px}.product-note{font-size:11px;color:#819688;margin-top:10px}
+.creator-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}.creator{min-height:220px;background:linear-gradient(135deg,#16261d,#101a14)}.creator .rank-title{font-size:17px;margin:44px 0 12px}.creator.youtube{border-color:#6b3a3a}.creator.stream{border-color:#5b3d6f}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}.step{padding:22px;background:#13231a;border:4px solid #2f4937;box-shadow:var(--shadow)}.step strong{display:block;font-family:"Press Start 2P",monospace;font-size:11px;color:var(--gold);margin-bottom:12px}.step p{color:#b5c5b8;margin:0}
+.community{display:grid;grid-template-columns:1.25fr .75fr;gap:14px;margin-top:28px}.community .panel{min-height:260px}.empty{display:grid;place-items:center;text-align:center;min-height:190px;padding:24px;border:3px dashed #3f5747;color:#91a696;background:rgba(255,255,255,.015)}.empty strong{display:block;color:#d8e8dc;margin-bottom:8px}.scorelist{display:grid;gap:9px;margin-top:15px}.score{display:grid;grid-template-columns:38px 1fr auto;gap:10px;align-items:center;padding:10px;background:#1a2a20;border:3px solid #304638}.score .rank{font-family:"Press Start 2P",monospace;font-size:9px;color:var(--gold)}.score .value{color:#8ca092;font-size:12px}
+.faq{display:grid;gap:10px;margin-top:24px}.faq details{background:#13231a;border:4px solid #304a38;padding:16px 18px;box-shadow:0 5px 0 rgba(0,0,0,.25)}.faq summary{font-weight:900;cursor:pointer}.faq p{color:#b5c7b9}
+.compare-flow{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}.quote{font-size:25px;font-weight:900;letter-spacing:-.03em;margin:12px 0}.mini-steps{display:grid;gap:8px;margin-top:16px}.mini-steps div{padding:11px 12px;border-top:2px solid #294033;color:#c6d5ca}
+.cta{display:flex;justify-content:space-between;align-items:center;gap:22px;padding:34px;background:linear-gradient(#96f47c,#65c95c);color:#0b160d;border:6px solid #326f38;box-shadow:0 8px 0 #17341b}.cta h2{margin:0;max-width:760px;font-size:clamp(23px,3vw,38px)}.cta .btn{background:#142018;color:#effff1;border-color:#304238;box-shadow:0 5px 0 #0a0f0b}
+.footer{padding:34px 0 50px;color:#8da093;font-size:12px}.footrow{display:flex;justify-content:space-between;gap:20px;border-top:3px solid #23392a;padding-top:20px}
+.toast{position:fixed;left:50%;bottom:18px;transform:translate(-50%,30px);opacity:0;z-index:60;background:#e9ffe8;color:#10200d;border:4px solid #4f7c55;padding:10px 14px;font-weight:900;box-shadow:0 5px 0 rgba(0,0,0,.3);transition:.2s}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:900px){.navlinks{display:none}.hero{grid-template-columns:1fr;min-height:auto;padding-top:42px}.grid4{grid-template-columns:1fr 1fr}.grid3,.product-grid,.steps,.community,.compare-flow{grid-template-columns:1fr 1fr}.world{min-height:470px}.connect-grid{grid-template-columns:1fr}}
+@media(max-width:640px){.grid4,.grid3,.product-grid,.steps,.community,.compare-flow,.creator-grid{grid-template-columns:1fr}.notice{font-size:7px}.brand{font-size:11px}.navcta{font-size:10px}.hero{padding-top:34px}.world{min-height:430px}.hud{width:210px}.cta{display:block}.cta .btn{margin-top:20px}.footrow{display:block}.tablewrap{margin-left:-15px;margin-right:-15px}}
 </style>
 </head>
 <body>
-<div class="topnote">CONCEPTO NO OFICIAL · PROPUESTA DE REDISEÑO PREPARADA POR DESARROLLAMO</div>
-<nav class="nav"><div class="wrap navin"><a class="brand" href="#inicio"><span class="cube">M</span> MAINCASH <span style="color:#607b68;font-weight:700">/ concept</span></a><div class="navlinks"><a href="#experiencia">Experiencia</a><a href="#rangos">Rangos</a><a href="#tienda">Tienda</a><a href="#mejoras">Mejoras</a></div><a class="navcta" href="#jugar">Jugar ahora</a></div></nav>
+<div class="notice">CONCEPTO NO OFICIAL · PRECIOS Y LINKS VERIFICADOS EN FUENTES PÚBLICAS · DESARROLLAMO</div>
+<nav class="nav"><div class="wrap navin"><a class="brand" href="#inicio"><span class="brandmark">M</span> MAINCASH</a><div class="navlinks"><a href="#server">Servidor</a><a href="#rangos">Rangos</a><a href="#tienda">Tienda</a><a href="#entrar">Cómo entrar</a><a href="#comunidad">Comunidad</a></div><a class="navcta" href="#tienda">Tienda</a></div></nav>
+
 <main id="inicio">
 <div class="wrap hero">
-<div><span class="eyebrow"><span class="dot"></span><span id="heroStatus">Consultando servidor…</span></span><h1>ENTRÁ.<br><span class="accent">CONSTRUÍ.</span><br>DEJÁ MARCA.</h1><p>Una experiencia de entrada más clara para Maincash: servidor, comunidad y tienda reunidos en una sola interfaz pensada para convertir visitas en jugadores.</p><div class="joinbox" id="jugar"><button class="join" data-copy="Play.maincash.net"><small>Java Edition · 25565</small><strong>Play.maincash.net ↗</strong></button><button class="join" data-copy="play.maincash.net"><small>Bedrock Edition · 19132</small><strong>play.maincash.net ↗</strong></button></div><div class="micro">Tocá una dirección para copiarla. Los datos provienen del sitio público actual de Maincash.</div></div>
-<div class="visual" aria-label="Escena conceptual estilo voxel"><div class="sky"></div><div class="moon"></div><div class="mount"></div><div class="ground"></div><div class="portal"></div><div class="floatcard"><div class="serverstate"><span>ESTADO EN TIEMPO REAL</span><strong id="stateText">Consultando…</strong></div><div class="pill" id="playersPill">Jugadores: —</div></div></div>
+<div>
+<span class="eyebrow"><span class="dot"></span><span id="heroStatus">Consultando servidor…</span></span>
+<h1>ENTRÁ.<br><span class="accent">CRECÉ.</span><br>DEJÁ MARCA.</h1>
+<p class="hero-copy">Una propuesta para que Maincash deje de sentirse como una landing y empiece a sentirse como <strong>entrar al servidor</strong>: estado vivo, acceso Java + Bedrock, tienda completa, rangos comparables y compra oficial sin perder contexto.</p>
+<div class="hero-actions"><a class="btn" href="#entrar">Jugar ahora</a><a class="btn gold" href="#tienda">Abrir tienda</a><a class="btn dark" href="#comunidad">Ver comunidad</a></div>
+<div class="connect-grid">
+<div class="connect"><small>Java Edition · puerto 25565</small><strong>Play.maincash.net</strong><button class="btn" data-copy="Play.maincash.net">Copiar IP Java</button></div>
+<div class="connect"><small>Bedrock Edition · puerto 19132</small><strong>play.maincash.net:19132</strong><button class="btn blue" data-copy="play.maincash.net:19132">Copiar IP Bedrock</button></div>
 </div>
-<section id="experiencia"><div class="wrap"><div class="kicker">01 · servidor vivo</div><h2 class="sectiontitle">Antes de vender,<br>demostramos que <span class="accent">está pasando algo.</span></h2><p class="lead">El sitio actual explica cómo entrar. Esta propuesta agrega contexto vivo, jerarquía y acciones inmediatas sin inventar estadísticas.</p><div class="statusgrid"><div class="card"><div class="statusline"><span class="dot"></span><span class="serverstate">Java <span>play.maincash.net</span></span></div><big id="javaOnline">—</big><small id="javaDetail">Consultando estado público…</small></div><div class="card"><span class="kicker">EDICIONES</span><big>Java + Bedrock</big><small>Acceso claro desde PC, consola compatible y móvil.</small></div><div class="card"><span class="kicker">ACCIÓN</span><big>1 toque</big><small>Copiar IP sin buscarla entre párrafos.</small></div></div><div class="features"><div class="card feature"><div class="num">01 / EXPLORÁ</div><h3>Un mundo por descubrir.</h3><p>La promesa principal se conserva, pero se vuelve visual y concreta desde el primer scroll.</p></div><div class="card feature"><div class="num">02 / CRECÉ</div><h3>Tu progreso importa.</h3><p>Rangos y kits se explican con comparación, no con bloques largos de texto.</p></div><div class="card feature"><div class="num">03 / COMPARTÍ</div><h3>Comunidad visible.</h3><p>La interfaz queda preparada para Discord, eventos, rankings y contenido real de jugadores.</p></div></div></div></section>
-<section id="rangos"><div class="wrap"><div class="kicker">02 · decisión rápida</div><h2 class="sectiontitle">Los rangos se entienden<br><span class="accent">de un vistazo.</span></h2><p class="lead">La información de los rangos públicos actuales se reorganiza para comparar beneficios. No se muestran precios porque el sitio público no los expone.</p><div class="compare"><div class="table"><div class="cell head">Beneficio</div><div class="cell head rankname">VIP</div><div class="cell head rankname">VIP+</div><div class="cell head rankname">Destructor</div><div class="cell head rankname">Celestial</div><div class="cell rowlabel">Armadura diaria</div><div class="cell">Diamante III</div><div class="cell">Diamante MAX</div><div class="cell">Netherite VII</div><div class="cell">Netherite X</div><div class="cell rowlabel">Manzanas de oro</div><div class="cell">8</div><div class="cell">16</div><div class="cell">32</div><div class="cell">64</div><div class="cell rowlabel">Tótems</div><div class="cell">2</div><div class="cell">3</div><div class="cell">5</div><div class="cell">5</div><div class="cell rowlabel">XP</div><div class="cell">20</div><div class="cell">50</div><div class="cell">64</div><div class="cell">64</div><div class="cell rowlabel">Comandos extra publicados</div><div class="cell">—</div><div class="cell">—</div><div class="cell">—</div><div class="cell yes">✓ Incluidos</div><div class="cell rowlabel">Precio</div><div class="cell"><span class="tag">NO PUBLICADO</span></div><div class="cell"><span class="tag">NO PUBLICADO</span></div><div class="cell"><span class="tag">NO PUBLICADO</span></div><div class="cell"><span class="tag">NO PUBLICADO</span></div></div></div></div></section>
-<section id="tienda"><div class="wrap"><div class="kicker">03 · tienda</div><h2 class="sectiontitle">Menos fricción.<br>Más <span class="accent">confianza.</span></h2><p class="lead">Esta demo no procesa compras. Muestra cómo ordenar la tienda antes de conectar precios reales, Mercado Pago y acreditación.</p><div class="storegrid"><article class="card product"><span class="tag">KIT · UN USO</span><h3>Elytras</h3><div class="price">Precio real pendiente de publicar</div><button class="demobtn" disabled>Compra deshabilitada en demo</button></article><article class="card product"><span class="tag">KIT · UN USO</span><h3>Netherite</h3><div class="price">Precio real pendiente de publicar</div><button class="demobtn" disabled>Compra deshabilitada en demo</button></article><article class="card product"><span class="tag">KIT · UN USO</span><h3>Diamante</h3><div class="price">Precio real pendiente de publicar</div><button class="demobtn" disabled>Compra deshabilitada en demo</button></article></div></div></section>
-<section id="mejoras"><div class="wrap"><div class="kicker">04 · por qué convierte mejor</div><h2 class="sectiontitle">La mejora no es “más efectos”.<br>Es <span class="accent">menos dudas.</span></h2><div class="proof"><div class="card"><div class="kicker">ANTES</div><div class="bigquote">“Comprar” antes de conocer el precio.</div><div class="steps"><div class="step">Leer una lista larga de beneficios.</div><div class="step">Salir a Mercado Pago para descubrir el valor.</div><div class="step">Después, pedir activación manual.</div></div></div><div class="card"><div class="kicker">PROPUESTA</div><div class="bigquote">Elegir, comparar, pagar y acreditar con contexto.</div><div class="steps"><div class="step">Precio y beneficio visibles juntos.</div><div class="step">Jugador identificado antes del checkout.</div><div class="step">Webhook de pago preparado para acreditación automática.</div></div></div></div></div></section>
-<section><div class="wrap faq"><div class="kicker">05 · preguntas</div><h2 class="sectiontitle">Lo que falta para convertir<br>el concepto en <span class="accent">producto.</span></h2><details open><summary>¿Esto reemplaza al sitio real?</summary><p>No. Es una propuesta no oficial y aislada, creada para mostrar una dirección de diseño y producto sin tocar maincash.net.</p></details><details><summary>¿Los jugadores online son inventados?</summary><p>No. La demo intenta consultar un endpoint público de estado. Si la consulta falla, muestra que el estado no está disponible.</p></details><details><summary>¿Los botones compran rangos?</summary><p>No. Están deshabilitados deliberadamente. Para producción habría que cargar precios reales y conectar el flujo de cobro del propietario.</p></details><details><summary>¿Qué sería lo siguiente?</summary><p>Confirmar identidad visual, reglas del servidor, precios, Discord, política de compras y mecanismo real de acreditación. Después sí: producción.</p></details></div></section>
-<section><div class="wrap"><div class="cta"><h2>Una web de servidor debería sentirse como <strong>entrar al servidor.</strong></h2><a href="https://desarrollamo.com.ar/" rel="noopener">DesarrollAMO ↗</a></div></div></section>
+</div>
+<div class="world" aria-label="Escena conceptual inspirada en un mundo de bloques">
+<div class="sun"></div><div class="cloud"></div><div class="hill"></div><div class="tree"></div><div class="house"></div><div class="ore"></div>
+<div class="steve"><div class="hair"></div><div class="head"></div><div class="body"></div><div class="arm l"></div><div class="arm r"></div><div class="leg l"></div><div class="leg r"></div></div>
+<div class="hud"><small>Estado en tiempo real</small><div class="hero-stat"><strong id="stateText">CONSULTANDO…</strong></div><span class="pill" id="playersPill">Jugadores: —</span></div>
+</div>
+</div>
+
+<section id="server"><div class="wrap">
+<div class="kicker">01 · servidor vivo</div><h2>La web tiene que demostrar<br>que el mundo está vivo.</h2>
+<p class="lead">Maincash ya tiene una propuesta clara. Esta versión pone arriba lo que un jugador necesita para decidir: ¿está online?, ¿cómo entro?, ¿qué edición uso?, ¿qué puedo comprar?</p>
+<div class="grid4">
+<div class="card"><div class="num">SERVER</div><h3 class="statbig" id="javaOnline">—</h3><p id="javaDetail">Consultando estado público…</p></div>
+<div class="card"><div class="num">EDICIONES</div><h3 class="statbig">Java + Bedrock</h3><p>Misma marca, entrada específica por plataforma.</p></div>
+<div class="card"><div class="num">ACCESO</div><h3 class="statbig">1 toque</h3><p>La IP se copia sin buscarla ni hacer scroll extra.</p></div>
+<div class="card"><div class="num">TIENDA</div><h3 class="statbig">10 pagos</h3><p>Diez productos públicos ya tienen checkout oficial de Mercado Pago.</p></div>
+</div>
+</div></section>
+
+<section id="rangos"><div class="wrap">
+<div class="kicker">02 · rangos</div><h2>Comparar primero.<br>Comprar después.</h2>
+<p class="lead">Los cuatro rangos pagos siguen la información publicada por Maincash, pero ahora el usuario entiende escalones y precio sin abrir diez bloques de texto.</p>
+<div class="tablewrap"><div class="table">
+<div class="cell head">Beneficio</div><div class="cell head">VIP</div><div class="cell head">VIP+</div><div class="cell head">Destructor</div><div class="cell head">Celestial</div>
+<div class="cell label">Precio actual</div><div class="cell price">$6.500</div><div class="cell price">$15.000</div><div class="cell price">$65.000</div><div class="cell price">$150.000</div>
+<div class="cell label">Armadura diaria</div><div class="cell">Diamante III</div><div class="cell">Diamante MAX</div><div class="cell">Netherite VII</div><div class="cell">Netherite X</div>
+<div class="cell label">Manzanas de oro</div><div class="cell">8</div><div class="cell">16</div><div class="cell">32</div><div class="cell">64</div>
+<div class="cell label">Tótems</div><div class="cell">2</div><div class="cell">3</div><div class="cell">5</div><div class="cell">5</div>
+<div class="cell label">XP</div><div class="cell">20</div><div class="cell">50</div><div class="cell">64</div><div class="cell">64</div>
+<div class="cell label">Utilidades extra</div><div class="cell">Base</div><div class="cell">Mejoradas</div><div class="cell">Avanzadas</div><div class="cell yes">Máximas</div>
+</div></div>
+
+<div class="creator-grid">
+<article class="card creator youtube"><span class="tag">CREADORES</span><div class="rank-title">YOUTUBER</div><p>Rango publicado por Maincash para creadores. La propuesta correcta es convertirlo en una solicitud clara con requisitos y contacto oficial del staff.</p><a class="btn dark" href="https://maincash.net/#tienda" target="_blank" rel="noopener nofollow external">Ver sitio oficial</a></article>
+<article class="card creator stream"><span class="tag">CREADORES</span><div class="rank-title">STREAMER</div><p>También existe públicamente. Falta un canal oficial enlazado para pedirlo sin depender de que el usuario adivine dónde contactar.</p><a class="btn dark" href="https://maincash.net/#tienda" target="_blank" rel="noopener nofollow external">Ver sitio oficial</a></article>
+</div>
+</div></section>
+
+<section id="tienda"><div class="wrap">
+<div class="kicker">03 · tienda completa</div><h2>Diez productos.<br>Precio visible. Pago oficial.</h2>
+<p class="lead">Los precios y links de abajo fueron verificados en los links públicos de Mercado Pago enlazados desde maincash.net. Los pagos van a <strong>MAINCASH</strong>; DesarrollAMO no recibe dinero. Esta demo sólo reorganiza el funnel.</p>
+<div class="product-grid">
+<article class="card product"><span class="tag">RANGO</span><div class="product-title">VIP</div><div class="price">$6.500 ARS</div><p>Entrada al ecosistema premium con kit diario.</p><a class="btn" href="https://mpago.la/2hNi47J" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
+<article class="card product"><span class="tag">RANGO</span><div class="product-title">VIP+</div><div class="price">$15.000 ARS</div><p>Kit mejorado y progresión superior al VIP.</p><a class="btn" href="https://mpago.la/2hvi5LM" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
+<article class="card product"><span class="tag">RANGO</span><div class="product-title">DESTRUCTOR</div><div class="price">$65.000 ARS</div><p>Salto fuerte en equipo, recursos y utilidades.</p><a class="btn" href="https://mpago.la/2EYuxcq" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
+<article class="card product"><span class="tag">RANGO</span><div class="product-title">CELESTIAL</div><div class="price">$150.000 ARS</div><p>El rango superior publicado actualmente.</p><a class="btn" href="https://mpago.la/1BX94gm" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
+<article class="card product"><span class="tag">KIT · UN USO</span><div class="product-title">ELYTRAS</div><div class="price">$15.000 ARS</div><p>Kit de un solo uso, reclamable dentro del servidor.</p><a class="btn blue" href="https://mpago.la/1ahTKf3" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
+<article class="card product"><span class="tag">KIT · UN USO</span><div class="product-title">NETHERITE</div><div class="price">$6.500 ARS</div><p>Kit Netherite publicado por Maincash.</p><a class="btn blue" href="https://mpago.la/12Ng1mA" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
+<article class="card product"><span class="tag">KIT · UN USO</span><div class="product-title">DIAMANTE</div><div class="price">$3.500 ARS</div><p>Kit Diamante publicado por Maincash.</p><a class="btn blue" href="https://mpago.la/1fYjzNS" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
+<article class="card product"><span class="tag">COINS</span><div class="product-title">10 MILLONES</div><div class="price">$6.500 ARS</div><p>Paquete de coins con checkout público oficial.</p><a class="btn gold" href="https://mpago.la/1Wmvcr8" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
+<article class="card product"><span class="tag">COINS</span><div class="product-title">150 MILLONES</div><div class="price">$15.000 ARS</div><p>Paquete intermedio publicado por Maincash.</p><a class="btn gold" href="https://mpago.la/2F7fcKX" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
+<article class="card product"><span class="tag">COINS</span><div class="product-title">500 MILLONES</div><div class="price">$150.000 ARS</div><p>Paquete superior listado actualmente en maincash.net.</p><a class="btn gold" href="https://mpago.la/1fcXY1S" target="_blank" rel="noopener nofollow external">Pago oficial ↗</a><div class="product-note">Mercado Pago · receptor: MAINCASH</div></article>
+</div>
+<p class="product-note" style="margin-top:16px">Precios verificados el 18/09/2026 mediante los links públicos de Mercado Pago del sitio oficial. Pueden cambiar; el checkout de Mercado Pago es la referencia final.</p>
+</div></section>
+
+<section id="entrar"><div class="wrap">
+<div class="kicker">04 · cómo entrar</div><h2>Java y Bedrock,<br>sin adivinar puertos.</h2>
+<div class="steps">
+<div class="step"><strong>01 · JAVA</strong><p>Multijugador → Agregar servidor → dirección <b>Play.maincash.net</b>. Puerto estándar: <b>25565</b>.</p></div>
+<div class="step"><strong>02 · BEDROCK</strong><p>Servidores → Agregar servidor → dirección <b>play.maincash.net</b> y puerto <b>19132</b>.</p></div>
+<div class="step"><strong>03 · ENTRAR</strong><p>Guardar → conectar → comprobar que estás en Maincash. Si falla, volver al estado en vivo de esta página.</p></div>
+</div>
+</div></section>
+
+<section id="compra"><div class="wrap">
+<div class="kicker">05 · cómo funciona la compra hoy</div><h2>El funnel real,<br>sin ocultar el paso manual.</h2>
+<div class="steps">
+<div class="step"><strong>01 · ELEGÍ</strong><p>Seleccioná un rango, kit o paquete de coins y revisá el precio visible antes de salir de la web.</p></div>
+<div class="step"><strong>02 · PAGÁ</strong><p>El botón abre el link oficial de Mercado Pago publicado por Maincash. El receptor mostrado es MAINCASH.</p></div>
+<div class="step"><strong>03 · ACREDITÁ</strong><p>El sitio oficial indica contactar a un administrador dentro del servidor para activar rango, kit o coins. La automatización requiere credenciales del propietario.</p></div>
+</div>
+</div></section>
+
+<section id="comunidad"><div class="wrap">
+<div class="kicker">06 · comunidad viva</div><h2>Lo siguiente para ganar<br>no es más decoración.</h2>
+<p class="lead">Discord, eventos, galería real y ranking son los diferenciadores fuertes. La interfaz ya está preparada, pero no inventamos datos que el propietario todavía no conectó.</p>
+<div class="community">
+<div class="card panel"><span class="tag">DISCORD + EVENTOS</span><div class="empty"><div><strong>Integración preparada</strong>Falta el invite/ID oficial de Discord y una fuente real de eventos. Cuando el dueño los entregue, este módulo puede mostrar miembros, actividad y próximos eventos.</div></div></div>
+<div class="card panel"><span class="tag">TOP JUGADORES</span><div class="scorelist">
+<div class="score"><span class="rank">#01</span><span>API del servidor</span><span class="value">no conectada</span></div>
+<div class="score"><span class="rank">#02</span><span>Kills / coins / tiempo</span><span class="value">sin inventar</span></div>
+<div class="score"><span class="rank">#03</span><span>Ranking automático</span><span class="value">listo para integrar</span></div>
+</div></div>
+</div>
+</div></section>
+
+<section id="mejoras"><div class="wrap">
+<div class="kicker">07 · por qué esto ya compite mejor</div><h2>Paridad en venta.<br>Ventaja en decisión.</h2>
+<div class="compare-flow">
+<div class="card"><div class="kicker">COMPETENCIA ACTUAL</div><div class="quote">Tiene checkout real, pero obliga a recorrer listas largas.</div><div class="mini-steps"><div>10 links de Mercado Pago funcionales.</div><div>Compra con acreditación manual.</div><div>Sin estado del servidor en vivo.</div><div>Sin comparación rápida entre rangos.</div></div></div>
+<div class="card"><div class="kicker">PROPUESTA DESARROLLAMO</div><div class="quote">Mismo checkout oficial + mejor decisión antes de pagar.</div><div class="mini-steps"><div>10 productos y precios visibles.</div><div>Estado del servidor en tiempo real.</div><div>Tabla de rangos y acceso Java/Bedrock.</div><div>Arquitectura lista para webhook cuando el propietario autorice credenciales.</div></div></div>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<div class="kicker">08 · preguntas frecuentes</div><h2>Compra, acceso y estado.</h2>
+<div class="faq" id="faq">
+<details open><summary>¿Esta web es oficial?</summary><p>No. Es una propuesta no oficial de DesarrollAMO. Los enlaces de pago apuntan a los links públicos oficiales que Maincash publica actualmente y Mercado Pago identifica al receptor como MAINCASH.</p></details>
+<details><summary>¿Cómo entro desde Java?</summary><p>Usá <b>Play.maincash.net</b>. Java usa el puerto estándar 25565.</p></details>
+<details><summary>¿Cómo entro desde Bedrock?</summary><p>Usá <b>play.maincash.net</b> con puerto <b>19132</b>.</p></details>
+<details><summary>¿Cómo funciona la compra?</summary><p>Elegís un producto, abrís el pago oficial en Mercado Pago y, según el sitio oficial actual, después contactás a un administrador dentro del servidor para acreditar la compra.</p></details>
+<details><summary>¿Por qué no se acredita automáticamente?</summary><p>Para automatizar la acreditación hacen falta credenciales y acceso al backend/servidor del propietario de Maincash. Esta demo no simula ni inventa ese acceso.</p></details>
+<details><summary>¿Los jugadores online son reales?</summary><p>La página consulta un endpoint público de estado. Si la consulta falla, muestra “estado no disponible” en lugar de inventar una cifra.</p></details>
+</div>
+</div></section>
+
+<section><div class="wrap"><div class="cta"><h2>La diferencia ya no es “hacer una web más linda”. Es convertir la web en parte del servidor.</h2><a class="btn" href="https://desarrollamo.com.ar/" target="_blank" rel="noopener">DesarrollAMO ↗</a></div></div></section>
 </main>
+
 <footer class="footer"><div class="wrap footrow"><div>Concepto no oficial para Maincash · DesarrollAMO · 2026</div><div>No afiliado a Maincash, Mojang Studios ni Microsoft.</div></div></footer>
-<div class="toast" id="toast">Dirección copiada</div>
+<div class="toast" id="toast">Copiado</div>
 <script>
 (function(){
   var toast=document.getElementById('toast');
-  document.querySelectorAll('[data-copy]').forEach(function(btn){btn.addEventListener('click',function(){var v=btn.getAttribute('data-copy');navigator.clipboard.writeText(v).then(function(){toast.textContent='Copiado: '+v;toast.classList.add('show');setTimeout(function(){toast.classList.remove('show')},1800)}).catch(function(){toast.textContent=v;toast.classList.add('show');setTimeout(function(){toast.classList.remove('show')},2200)})})});
-  var url='https://api.mcstatus.io/v2/status/java/play.maincash.net';
-  fetch(url,{headers:{accept:'application/json'}}).then(function(r){if(!r.ok)throw new Error('status');return r.json()}).then(function(d){
-    var online=Boolean(d.online);var count=d.players&&typeof d.players.online==='number'?d.players.online:null;var max=d.players&&typeof d.players.max==='number'?d.players.max:null;
-    document.getElementById('heroStatus').textContent=online?(count!==null?count+' jugadores online':'Servidor Java online'):'Servidor Java fuera de línea';
-    document.getElementById('stateText').textContent=online?'ONLINE':'OFFLINE';document.getElementById('stateText').className=online?'live':'';
-    document.getElementById('playersPill').textContent=count!==null?'Jugadores: '+count+(max!==null?' / '+max:''):'Jugadores: no informado';
-    document.getElementById('javaOnline').textContent=online?'ONLINE':'OFFLINE';document.getElementById('javaDetail').textContent=count!==null?count+' jugadores conectados'+(max!==null?' de '+max:''):'El endpoint no informó cantidad de jugadores.';
-  }).catch(function(){document.getElementById('heroStatus').textContent='Estado no disponible';document.getElementById('stateText').textContent='NO DISPONIBLE';document.getElementById('playersPill').textContent='Jugadores: —';document.getElementById('javaOnline').textContent='—';document.getElementById('javaDetail').textContent='No se pudo consultar el estado público en este momento.'});
+  document.querySelectorAll('[data-copy]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var v=btn.getAttribute('data-copy');
+      navigator.clipboard.writeText(v).then(function(){
+        toast.textContent='Copiado: '+v;toast.classList.add('show');setTimeout(function(){toast.classList.remove('show')},1800);
+      }).catch(function(){
+        toast.textContent=v;toast.classList.add('show');setTimeout(function(){toast.classList.remove('show')},2200);
+      });
+    });
+  });
+  fetch('https://api.mcstatus.io/v2/status/java/play.maincash.net',{headers:{accept:'application/json'}})
+    .then(function(r){if(!r.ok)throw new Error('status');return r.json()})
+    .then(function(d){
+      var online=Boolean(d.online), count=d.players&&typeof d.players.online==='number'?d.players.online:null, max=d.players&&typeof d.players.max==='number'?d.players.max:null;
+      document.getElementById('heroStatus').textContent=online?(count!==null?count+' jugadores online':'Servidor Java online'):'Servidor Java fuera de línea';
+      document.getElementById('stateText').textContent=online?'ONLINE':'OFFLINE';
+      document.getElementById('stateText').className=online?'live':'';
+      document.getElementById('playersPill').textContent=count!==null?'Jugadores: '+count+(max!==null?' / '+max:''):'Jugadores: no informado';
+      document.getElementById('javaOnline').textContent=online?'ONLINE':'OFFLINE';
+      document.getElementById('javaOnline').className='statbig '+(online?'live':'');
+      document.getElementById('javaDetail').textContent=count!==null?count+' conectados'+(max!==null?' de '+max:''):'El endpoint no informó cantidad de jugadores.';
+    })
+    .catch(function(){
+      document.getElementById('heroStatus').textContent='Estado no disponible';
+      document.getElementById('stateText').textContent='NO DISPONIBLE';
+      document.getElementById('playersPill').textContent='Jugadores: —';
+      document.getElementById('javaOnline').textContent='—';
+      document.getElementById('javaDetail').textContent='No se pudo consultar el estado público en este momento.';
+    });
 })();
 </script>
 </body>
