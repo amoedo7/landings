@@ -1,0 +1,377 @@
+{
+  "updated": "2026-09-18",
+  "source": "https://desarrollamo.com.ar/galeria",
+  "projects": [
+    {
+      "name": "Vivero La Querencia",
+      "family": "WEB",
+      "url": "https://viverolaquerencia.com.ar/",
+      "slug": "viverolaquerencia",
+      "state": "checklist"
+    },
+    {
+      "name": "Reliance Travel",
+      "family": "WEB",
+      "url": "https://reliancetravel.netlify.app/",
+      "slug": "reliancetravel",
+      "state": "auditar"
+    },
+    {
+      "name": "RemerasCo",
+      "family": "WEB",
+      "url": "https://remeraco.com.ar/",
+      "slug": "remerasco",
+      "state": "auditar"
+    },
+    {
+      "name": "CasaBosco Arquitectura",
+      "family": "WEB",
+      "url": "https://casaboscoarq.com.ar/",
+      "slug": "casabosco",
+      "state": "auditar"
+    },
+    {
+      "name": "Krow Rosario",
+      "family": "WEB",
+      "url": "https://krowrosario.netlify.app/",
+      "slug": "krowrosario",
+      "state": "auditar"
+    },
+    {
+      "name": "Empanadas Caseritas",
+      "family": "WEB",
+      "url": "https://empanadascaseritas.netlify.app/",
+      "slug": "empanadascaseritas",
+      "state": "auditar"
+    },
+    {
+      "name": "Yoga con Jocha",
+      "family": "WEB",
+      "url": "https://jochalongo.netlify.app/",
+      "slug": "yogaconjocha",
+      "state": "auditar"
+    },
+    {
+      "name": "Gespasa Argentina",
+      "family": "WEB",
+      "url": "https://gespasa-ar.netlify.app/",
+      "slug": "gespasargentina",
+      "state": "auditar"
+    },
+    {
+      "name": "Erika Boveri",
+      "family": "WEB",
+      "url": "https://erikaboveri.netlify.app/",
+      "slug": "erikaboveri",
+      "state": "auditar"
+    },
+    {
+      "name": "Tarot con Kima",
+      "family": "WEB",
+      "url": "https://kima33.netlify.app/",
+      "slug": "tarotconkima",
+      "state": "auditar"
+    },
+    {
+      "name": "Eros DJ",
+      "family": "WEB",
+      "url": "https://djeros.netlify.app/",
+      "slug": "erosdj",
+      "state": "auditar"
+    },
+    {
+      "name": "Logan",
+      "family": "WEB",
+      "url": "https://loganproject.netlify.app/",
+      "slug": "logan",
+      "state": "auditar"
+    },
+    {
+      "name": "Move DJ",
+      "family": "WEB",
+      "url": "https://movedj.netlify.app/",
+      "slug": "movedj",
+      "state": "auditar"
+    },
+    {
+      "name": "Peluquería Silvina",
+      "family": "WEB",
+      "url": "https://peluqueriasilvina.netlify.app/",
+      "slug": "peluqueriasilvina",
+      "state": "auditar"
+    },
+    {
+      "name": "El Máquina Barbershop",
+      "family": "WEB",
+      "url": "https://elmaquinabarbershop.netlify.app/",
+      "slug": "elmaquinabarbershop",
+      "state": "auditar"
+    },
+    {
+      "name": "Fierro Argentino",
+      "family": "WEB",
+      "url": "https://fierroargentino.netlify.app/",
+      "slug": "fierroargentino",
+      "state": "auditar"
+    },
+    {
+      "name": "Martí Bermejo",
+      "family": "WEB",
+      "url": "https://martibermejo.netlify.app/",
+      "slug": "martibermejo",
+      "state": "auditar"
+    },
+    {
+      "name": "Makana",
+      "family": "WEB",
+      "url": "https://makanafavelado.netlify.app/",
+      "slug": "makana",
+      "state": "auditar"
+    },
+    {
+      "name": "Mercedes Yáñez · Reinvención",
+      "family": "WEB",
+      "url": "https://reinvencionmer.netlify.app/",
+      "slug": "reinvencionmer",
+      "state": "verificar-url"
+    },
+    {
+      "name": "Proyecto Estampa",
+      "family": "WEB",
+      "url": "https://proyectoestampa.netlify.app/",
+      "slug": "proyectoestampa",
+      "state": "verificar-url"
+    },
+    {
+      "name": "Lukas",
+      "family": "WEB",
+      "url": null,
+      "slug": "lukas",
+      "state": "sin-url"
+    },
+    {
+      "name": "Julia Inés Sidor",
+      "family": "CV",
+      "url": "https://cvjuliasidor.netlify.app/",
+      "slug": "cvjuliasidor",
+      "state": "verificar-url"
+    },
+    {
+      "name": "Lola Jimeno Fernández",
+      "family": "CV",
+      "url": "https://cvlolajimenofernandez.netlify.app/",
+      "slug": "cvlolajimenofernandez",
+      "state": "auditar"
+    },
+    {
+      "name": "Marcos Rubial",
+      "family": "CV",
+      "url": "https://cvmarcosrubial.netlify.app/",
+      "slug": "cvmarcosrubial",
+      "state": "auditar"
+    },
+    {
+      "name": "Nadia Martín",
+      "family": "CV",
+      "url": "https://cvnadiamartin.netlify.app/",
+      "slug": "cvnadiamartin",
+      "state": "auditar"
+    },
+    {
+      "name": "Felipe Ignacio Rubio",
+      "family": "CV",
+      "url": "https://cvfeliperubio.netlify.app/",
+      "slug": "cvfeliperubio",
+      "state": "auditar"
+    },
+    {
+      "name": "Agustín Vitelli",
+      "family": "CV",
+      "url": "https://cvagustinvitelli.netlify.app/",
+      "slug": "cvagustinvitelli",
+      "state": "auditar"
+    },
+    {
+      "name": "Archivo de imágenes IA",
+      "family": "INTERNO",
+      "url": null,
+      "slug": "archivo-imagenes-ia",
+      "state": "sin-url"
+    },
+    {
+      "name": "Identidad DesarrollAMO",
+      "family": "INTERNO",
+      "url": null,
+      "slug": "identidad-desarrollamo",
+      "state": "sin-url"
+    },
+    {
+      "name": "StoreAMO",
+      "family": "APP",
+      "url": null,
+      "slug": "storeamo",
+      "state": "sin-url"
+    },
+    {
+      "name": "GeneralAMO",
+      "family": "APP",
+      "url": null,
+      "slug": "generalamo",
+      "state": "sin-url"
+    },
+    {
+      "name": "MesaAMO",
+      "family": "APP",
+      "url": null,
+      "slug": "mesaamo",
+      "state": "sin-url"
+    },
+    {
+      "name": "Chessi",
+      "family": "APP",
+      "url": null,
+      "slug": "chessi",
+      "state": "sin-url"
+    },
+    {
+      "name": "WifiAMO",
+      "family": "APP",
+      "url": null,
+      "slug": "wifiamo",
+      "state": "sin-url"
+    },
+    {
+      "name": "NfcAMO",
+      "family": "APP",
+      "url": null,
+      "slug": "nfcamo",
+      "state": "sin-url"
+    },
+    {
+      "name": "CalculAMO",
+      "family": "APP",
+      "url": null,
+      "slug": "calculamo",
+      "state": "sin-url"
+    },
+    {
+      "name": "CronAMO",
+      "family": "APP",
+      "url": null,
+      "slug": "cronamo",
+      "state": "sin-url"
+    },
+    {
+      "name": "TemporizAMO",
+      "family": "APP",
+      "url": null,
+      "slug": "temporizamo",
+      "state": "sin-url"
+    },
+    {
+      "name": "NotasAMO",
+      "family": "APP",
+      "url": null,
+      "slug": "notasamo",
+      "state": "sin-url"
+    },
+    {
+      "name": "TareasAMO",
+      "family": "APP",
+      "url": null,
+      "slug": "tareasamo",
+      "state": "sin-url"
+    },
+    {
+      "name": "ConversAMO",
+      "family": "APP",
+      "url": null,
+      "slug": "conversamo",
+      "state": "sin-url"
+    },
+    {
+      "name": "QrAMO",
+      "family": "APP",
+      "url": null,
+      "slug": "qramo",
+      "state": "sin-url"
+    },
+    {
+      "name": "RedAMO",
+      "family": "APP",
+      "url": null,
+      "slug": "redamo",
+      "state": "sin-url"
+    },
+    {
+      "name": "Ordenar Excel a JSON",
+      "family": "HERRAMIENTA",
+      "url": null,
+      "slug": "ordenar-excel-json",
+      "state": "sin-url"
+    },
+    {
+      "name": "Renombrador masivo",
+      "family": "HERRAMIENTA",
+      "url": null,
+      "slug": "renombrador-masivo",
+      "state": "sin-url"
+    },
+    {
+      "name": "Comparador de imágenes",
+      "family": "HERRAMIENTA",
+      "url": null,
+      "slug": "comparador-imagenes",
+      "state": "sin-url"
+    },
+    {
+      "name": "Generador de presupuestos",
+      "family": "HERRAMIENTA",
+      "url": null,
+      "slug": "generador-presupuestos",
+      "state": "sin-url"
+    },
+    {
+      "name": "Auditor web básico",
+      "family": "HERRAMIENTA",
+      "url": null,
+      "slug": "auditor-web-basico",
+      "state": "sin-url"
+    },
+    {
+      "name": "Certificados a JSON",
+      "family": "HERRAMIENTA",
+      "url": null,
+      "slug": "certificados-json",
+      "state": "sin-url"
+    },
+    {
+      "name": "Limpieza de productos",
+      "family": "HERRAMIENTA",
+      "url": null,
+      "slug": "limpieza-productos",
+      "state": "sin-url"
+    },
+    {
+      "name": "Generador de landings",
+      "family": "HERRAMIENTA",
+      "url": null,
+      "slug": "generador-landings",
+      "state": "sin-url"
+    },
+    {
+      "name": "TermuxNow.sh",
+      "family": "HERRAMIENTA",
+      "url": null,
+      "slug": "termuxnow",
+      "state": "sin-url"
+    },
+    {
+      "name": "Mi PC PowerShell",
+      "family": "HERRAMIENTA",
+      "url": null,
+      "slug": "mi-pc-powershell",
+      "state": "sin-url"
+    }
+  ]
+}
