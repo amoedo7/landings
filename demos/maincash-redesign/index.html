@@ -66,6 +66,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script defer src="https://cdn.jsdelivr.net/npm/skinview3d@3.4.2/bundles/skinview3d.bundle.js"></script>
 <style>
 :root{
 --bg:#08110b;--bg2:#0d1810;--panel:#112019;--panel2:#17291f;--line:#2d4937;--text:#f2fff4;--muted:#a7bbaa;
@@ -115,11 +116,20 @@ section{padding:78px 0}.kicker{font-size:11px;color:var(--grass);font-weight:900
 .toast{position:fixed;left:50%;bottom:18px;transform:translate(-50%,30px);opacity:0;z-index:60;background:#e9ffe8;color:#10200d;border:4px solid #4f7c55;padding:10px 14px;font-weight:900;box-shadow:0 5px 0 rgba(0,0,0,.3);transition:.2s}.toast.show{opacity:1;transform:translate(-50%,0)}
 @media(max-width:900px){.navlinks{display:none}.hero{grid-template-columns:1fr;min-height:auto;padding-top:42px}.grid4{grid-template-columns:1fr 1fr}.grid3,.product-grid,.steps,.community,.compare-flow{grid-template-columns:1fr 1fr}.world{min-height:470px}.connect-grid{grid-template-columns:1fr}}
 @media(max-width:640px){.grid4,.grid3,.product-grid,.steps,.community,.compare-flow,.creator-grid{grid-template-columns:1fr}.notice{font-size:7px}.brand{font-size:11px}.navcta{font-size:10px}.hero{padding-top:34px}.world{min-height:430px}.hud{width:210px}.cta{display:block}.cta .btn{margin-top:20px}.footrow{display:block}.tablewrap{margin-left:-15px;margin-right:-15px}}
+
+.navstatus{display:flex;align-items:center;gap:8px;margin-left:auto;padding:8px 10px;border:3px solid #33503b;background:#14231a;font-size:10px;font-weight:900;white-space:nowrap}.navstatus .live-dot{width:8px;height:8px;background:#7fff79;border:2px solid #c8ffc4}.navstatus .offline{background:#ff7777;border-color:#ffc1c1}.navstatus b{color:#fff}.navstatus em{font-style:normal;color:#8fa493;font-weight:700}
+.skin-control{margin-top:14px;padding:12px;background:#101f17;border:4px solid #304a38;display:grid;grid-template-columns:1fr auto;gap:8px;box-shadow:0 5px 0 rgba(0,0,0,.28)}.skin-control label{grid-column:1/-1;font-size:10px;font-weight:900;color:#9bb09f;text-transform:uppercase;letter-spacing:.08em}.skin-control input{min-width:0;background:#08110b;color:#effff2;border:3px solid #385342;padding:12px;font-weight:800;outline:none}.skin-control input:focus{border-color:#79df62}.skin-control button{padding:10px 12px;font-size:10px}
+.skin-stage{position:absolute;right:35px;bottom:88px;width:250px;height:350px;z-index:4;filter:drop-shadow(0 20px 16px rgba(0,0,0,.38))}.skin-stage canvas{width:100%!important;height:100%!important;display:block;cursor:grab}.skin-stage canvas:active{cursor:grabbing}.skin-fallback{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:#d8e8dc;background:rgba(7,15,10,.58);border:3px dashed #45604d;font-size:11px;font-weight:900;z-index:-1}.skin-caption{position:absolute;right:22px;bottom:22px;z-index:5;padding:9px 11px;background:rgba(9,18,12,.94);border:3px solid #3c5644;font-size:10px;font-weight:900}.skin-caption span{color:#79df62}
+.rank-lab{display:grid;grid-template-columns:.85fr 1.15fr;gap:14px;margin-top:24px}.rank-preview{min-height:360px;display:grid;grid-template-columns:240px 1fr;gap:18px;align-items:center}.rank-canvas-wrap{height:320px;border:4px solid #34503c;background:radial-gradient(circle at 50% 48%,rgba(121,223,98,.16),transparent 48%),#0a1510;position:relative;overflow:hidden}.rank-canvas-wrap:before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:24px 24px;pointer-events:none}.rank-canvas-wrap.vip{box-shadow:inset 0 0 45px rgba(121,223,98,.18)}.rank-canvas-wrap.vipplus{box-shadow:inset 0 0 50px rgba(109,228,255,.22)}.rank-canvas-wrap.destructor{box-shadow:inset 0 0 60px rgba(255,119,119,.24)}.rank-canvas-wrap.celestial{box-shadow:inset 0 0 70px rgba(193,113,255,.30)}.rank-canvas-wrap canvas{width:100%!important;height:100%!important;position:relative;z-index:2}.rank-meta .rank-title{font-size:17px;margin:0 0 10px}.rank-meta p{color:#b5c7b8}.rank-selectors{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:16px}.rankpick{padding:10px 8px;border:3px solid #405847;background:#17261c;color:#e7f4e9;font-size:10px;font-weight:900;cursor:pointer}.rankpick.active{background:#79df62;color:#10200d;border-color:#3d783e}.rank-equipment{display:grid;gap:8px;margin-top:14px}.rank-equipment div{padding:9px 10px;background:#1a2a20;border:3px solid #304738;color:#c9d8cc;font-size:12px}.rank-equipment strong{color:#fff}
+.innovation-note{margin-top:12px;font-size:11px;color:#829787}
+@media(max-width:900px){.navstatus{margin-left:auto}.navlinks{display:none}.skin-stage{right:8px;width:220px}.rank-lab{grid-template-columns:1fr}.rank-preview{grid-template-columns:220px 1fr}}
+@media(max-width:640px){.navstatus{position:fixed;left:0;right:0;top:98px;margin:0;border-left:0;border-right:0;justify-content:center;z-index:38}.hero{padding-top:82px}.skin-stage{right:50%;transform:translateX(50%);bottom:76px;width:210px;height:300px}.skin-caption{right:50%;transform:translateX(50%);white-space:nowrap}.rank-preview{grid-template-columns:1fr}.rank-canvas-wrap{width:min(100%,260px);margin:auto}.rank-selectors{grid-template-columns:1fr 1fr}.skin-control{grid-template-columns:1fr}.skin-control label{grid-column:auto}}
+
 </style>
 </head>
 <body>
 <div class="notice">CONCEPTO NO OFICIAL · PRECIOS Y LINKS VERIFICADOS EN FUENTES PÚBLICAS · DESARROLLAMO</div>
-<nav class="nav"><div class="wrap navin"><a class="brand" href="#inicio"><span class="brandmark">M</span> MAINCASH</a><div class="navlinks"><a href="#server">Servidor</a><a href="#rangos">Rangos</a><a href="#tienda">Tienda</a><a href="#entrar">Cómo entrar</a><a href="#comunidad">Comunidad</a></div><a class="navcta" href="#tienda">Tienda</a></div></nav>
+<nav class="nav"><div class="wrap navin"><a class="brand" href="#inicio"><span class="brandmark">M</span> MAINCASH</a><div class="navlinks"><a href="#server">Servidor</a><a href="#rangos">Rangos</a><a href="#tienda">Tienda</a><a href="#entrar">Cómo entrar</a><a href="#comunidad">Comunidad</a></div><div class="navstatus" id="navStatus"><span class="live-dot" id="navDot"></span><b id="navState">CONSULTANDO</b><span id="navPlayers">— jugadores</span><em id="navRtt">API — ms</em></div><a class="navcta" href="#tienda">Tienda</a></div></nav>
 
 <main id="inicio">
 <div class="wrap hero">
@@ -132,10 +142,12 @@ section{padding:78px 0}.kicker{font-size:11px;color:var(--grass);font-weight:900
 <div class="connect"><small>Java Edition · puerto 25565</small><strong>Play.maincash.net</strong><button class="btn" data-copy="Play.maincash.net">Copiar IP Java</button></div>
 <div class="connect"><small>Bedrock Edition · puerto 19132</small><strong>play.maincash.net:19132</strong><button class="btn blue" data-copy="play.maincash.net:19132">Copiar IP Bedrock</button></div>
 </div>
+<div class="skin-control"><label for="skinName">Tu personaje en Maincash</label><input id="skinName" maxlength="16" autocomplete="off" spellcheck="false" placeholder="Nombre Java, ej. Steve"><button class="btn dark" id="loadSkin" type="button">Ver mi skin 3D</button></div>
 </div>
 <div class="world" aria-label="Escena conceptual inspirada en un mundo de bloques">
 <div class="sun"></div><div class="cloud"></div><div class="hill"></div><div class="tree"></div><div class="house"></div><div class="ore"></div>
-<div class="steve"><div class="hair"></div><div class="head"></div><div class="body"></div><div class="arm l"></div><div class="arm r"></div><div class="leg l"></div><div class="leg r"></div></div>
+<div class="steve" style="display:none"><div class="hair"></div><div class="head"></div><div class="body"></div><div class="arm l"></div><div class="arm r"></div><div class="leg l"></div><div class="leg r"></div></div>
+<div class="skin-stage"><div class="skin-fallback">Cargando skin 3D…</div><canvas id="skinHero" width="250" height="350"></canvas></div><div class="skin-caption">ARRASTRÁ PARA GIRAR · <span id="skinLabel">STEVE</span></div>
 <div class="hud"><small>Estado en tiempo real</small><div class="hero-stat"><strong id="stateText">CONSULTANDO…</strong></div><span class="pill" id="playersPill">Jugadores: —</span></div>
 </div>
 </div>
@@ -163,6 +175,35 @@ section{padding:78px 0}.kicker{font-size:11px;color:var(--grass);font-weight:900
 <div class="cell label">XP</div><div class="cell">20</div><div class="cell">50</div><div class="cell">64</div><div class="cell">64</div>
 <div class="cell label">Utilidades extra</div><div class="cell">Base</div><div class="cell">Mejoradas</div><div class="cell">Avanzadas</div><div class="cell yes">Máximas</div>
 </div></div>
+
+<div class="rank-lab">
+  <div class="card">
+    <div class="kicker">PREVIEW 3D DE IDENTIDAD</div>
+    <h3 style="font-size:22px;margin:14px 0">Tu skin + tu rango.</h3>
+    <p>Probá tu nombre Java y cambiá de rango. La skin es real; el panel de equipamiento usa los beneficios públicos del rango sin inventar modelos 3D que el servidor no entregó.</p>
+    <div class="rank-selectors">
+      <button class="rankpick active" data-rank="VIP">VIP</button>
+      <button class="rankpick" data-rank="VIP+">VIP+</button>
+      <button class="rankpick" data-rank="Destructor">Destructor</button>
+      <button class="rankpick" data-rank="Celestial">Celestial</button>
+    </div>
+    <div class="innovation-note">La skin se obtiene por username mediante MCHeads. Para una futura cuenta vinculada conviene resolver por UUID.</div>
+  </div>
+  <div class="card rank-preview">
+    <div class="rank-canvas-wrap vip" id="rankCanvasWrap"><canvas id="skinRank" width="240" height="320"></canvas></div>
+    <div class="rank-meta">
+      <div class="rank-title" id="previewRank">VIP</div>
+      <div class="price" id="previewPrice">$6.500 ARS</div>
+      <p id="previewDesc">Entrada al ecosistema premium con kit diario.</p>
+      <div class="rank-equipment" id="rankEquipment">
+        <div><strong>Armadura:</strong> Diamante III</div>
+        <div><strong>Manzanas:</strong> 8</div>
+        <div><strong>Tótems:</strong> 2</div>
+        <div><strong>XP:</strong> 20</div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="creator-grid">
 <article class="card creator youtube"><span class="tag">CREADORES</span><div class="rank-title">YOUTUBER</div><p>Rango publicado por Maincash para creadores. La propuesta correcta es convertirlo en una solicitud clara con requisitos y contacto oficial del staff.</p><a class="btn dark" href="https://maincash.net/#tienda" target="_blank" rel="noopener nofollow external">Ver sitio oficial</a></article>
@@ -246,7 +287,44 @@ section{padding:78px 0}.kicker{font-size:11px;color:var(--grass);font-weight:900
 <div class="toast" id="toast">Copiado</div>
 <script>
 (function(){
+  var heroViewer=null, rankViewer=null;
+  var currentSkin='MHF_Steve';
+  var ranks={
+    'VIP':{cls:'vip',price:'$6.500 ARS',desc:'Entrada al ecosistema premium con kit diario.',items:['Armadura: Diamante III','Manzanas: 8','Tótems: 2','XP: 20']},
+    'VIP+':{cls:'vipplus',price:'$15.000 ARS',desc:'Kit mejorado y progresión superior al VIP.',items:['Armadura: Diamante MAX','Manzanas: 16','Tótems: 3','XP: 50']},
+    'Destructor':{cls:'destructor',price:'$65.000 ARS',desc:'Salto fuerte en equipo, recursos y utilidades.',items:['Armadura: Netherite VII','Manzanas: 32','Tótems: 5','XP: 64']},
+    'Celestial':{cls:'celestial',price:'$150.000 ARS',desc:'El rango superior publicado actualmente.',items:['Armadura: Netherite X','Manzanas: 64','Tótems: 5','XP: 64']}
+  };
+  function skinUrl(name){return 'https://mc-heads.net/skin/'+encodeURIComponent(name||'MHF_Steve');}
+  function initSkins(){
+    if(!window.skinview3d) return;
+    try{
+      heroViewer=new skinview3d.SkinViewer({canvas:document.getElementById('skinHero'),width:250,height:350,skin:skinUrl(currentSkin)});
+      heroViewer.autoRotate=true;heroViewer.zoom=.82;heroViewer.fov=55;heroViewer.animation=new skinview3d.WalkingAnimation();heroViewer.animation.speed=.45;
+      rankViewer=new skinview3d.SkinViewer({canvas:document.getElementById('skinRank'),width:240,height:320,skin:skinUrl(currentSkin)});
+      rankViewer.autoRotate=true;rankViewer.zoom=.86;rankViewer.fov=55;rankViewer.animation=new skinview3d.IdleAnimation();
+    }catch(e){console.warn('Skin viewer unavailable',e)}
+  }
+  function loadSkinName(name){
+    name=(name||'').trim();
+    if(!/^[A-Za-z0-9_]{1,16}$/.test(name)){toast.textContent='Nombre Java inválido';toast.classList.add('show');setTimeout(function(){toast.classList.remove('show')},1800);return;}
+    currentSkin=name;document.getElementById('skinLabel').textContent=name.toUpperCase();
+    var u=skinUrl(name);if(heroViewer)heroViewer.loadSkin(u);if(rankViewer)rankViewer.loadSkin(u);
+  }
+  function selectRank(name){
+    var d=ranks[name];if(!d)return;
+    document.querySelectorAll('.rankpick').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-rank')===name)});
+    var w=document.getElementById('rankCanvasWrap');w.className='rank-canvas-wrap '+d.cls;
+    document.getElementById('previewRank').textContent=name.toUpperCase();
+    document.getElementById('previewPrice').textContent=d.price;document.getElementById('previewDesc').textContent=d.desc;
+    document.getElementById('rankEquipment').innerHTML=d.items.map(function(x){var p=x.split(':');return '<div><strong>'+p[0]+':</strong>'+p.slice(1).join(':')+'</div>'}).join('');
+  }
+  window.addEventListener('load',function(){initSkins();});
+
   var toast=document.getElementById('toast');
+  document.getElementById('loadSkin').addEventListener('click',function(){loadSkinName(document.getElementById('skinName').value)});
+  document.getElementById('skinName').addEventListener('keydown',function(e){if(e.key==='Enter')loadSkinName(this.value)});
+  document.querySelectorAll('.rankpick').forEach(function(b){b.addEventListener('click',function(){selectRank(this.getAttribute('data-rank'))})});
   document.querySelectorAll('[data-copy]').forEach(function(btn){
     btn.addEventListener('click',function(){
       var v=btn.getAttribute('data-copy');
@@ -257,7 +335,8 @@ section{padding:78px 0}.kicker{font-size:11px;color:var(--grass);font-weight:900
       });
     });
   });
-  fetch('https://api.mcstatus.io/v2/status/java/play.maincash.net',{headers:{accept:'application/json'}})
+  var statusStart=performance.now();
+  fetch('https://api.mcstatus.io/v2/status/java/play.maincash.net?query=false',{headers:{accept:'application/json'}})
     .then(function(r){if(!r.ok)throw new Error('status');return r.json()})
     .then(function(d){
       var online=Boolean(d.online), count=d.players&&typeof d.players.online==='number'?d.players.online:null, max=d.players&&typeof d.players.max==='number'?d.players.max:null;
@@ -268,6 +347,11 @@ section{padding:78px 0}.kicker{font-size:11px;color:var(--grass);font-weight:900
       document.getElementById('javaOnline').textContent=online?'ONLINE':'OFFLINE';
       document.getElementById('javaOnline').className='statbig '+(online?'live':'');
       document.getElementById('javaDetail').textContent=count!==null?count+' conectados'+(max!==null?' de '+max:''):'El endpoint no informó cantidad de jugadores.';
+      var rtt=Math.round(performance.now()-statusStart);
+      document.getElementById('navState').textContent=online?'ONLINE':'OFFLINE';
+      document.getElementById('navPlayers').textContent=count!==null?count+' jugadores':'jugadores —';
+      document.getElementById('navRtt').textContent='API '+rtt+' ms';
+      document.getElementById('navDot').className='live-dot'+(online?'':' offline');
     })
     .catch(function(){
       document.getElementById('heroStatus').textContent='Estado no disponible';
@@ -275,6 +359,10 @@ section{padding:78px 0}.kicker{font-size:11px;color:var(--grass);font-weight:900
       document.getElementById('playersPill').textContent='Jugadores: —';
       document.getElementById('javaOnline').textContent='—';
       document.getElementById('javaDetail').textContent='No se pudo consultar el estado público en este momento.';
+      document.getElementById('navState').textContent='SIN DATOS';
+      document.getElementById('navPlayers').textContent='jugadores —';
+      document.getElementById('navRtt').textContent='API — ms';
+      document.getElementById('navDot').className='live-dot offline';
     });
 })();
 </script>
