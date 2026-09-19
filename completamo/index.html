@@ -5,36 +5,92 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,follow">
 <meta name="theme-color" content="#0b0f0d">
-<title>CompletAMO · Casos CompetAMO</title>
-<meta name="description" content="Propuestas competitivas y comparativas desarrolladas por DesarrollAMO.">
+<title>CompletAMO · El siguiente nivel antes de tocar producción</title>
+<meta name="description" content="CompletAMO muestra versiones siguientes de sitios reales: auditoría, mejora competitiva, validación paralela y migración sólo cuando la propuesta gana.">
+<link rel="canonical" href="https://completamo.netlify.app/">
+<link rel="alternate" hreflang="es-AR" href="https://completamo.netlify.app/">
+<link rel="alternate" hreflang="x-default" href="https://completamo.netlify.app/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:site_name" content="CompletAMO">
+<meta property="og:title" content="CompletAMO · Mejorar antes de migrar">
+<meta property="og:description" content="Una web actual. Una versión siguiente en paralelo. Sólo se migra lo que demuestra ser mejor.">
+<meta property="og:url" content="https://completamo.netlify.app/">
+<meta property="og:image" content="https://completamo.netlify.app/og-completamo.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="CompletAMO, laboratorio de mejora competitiva de DesarrollAMO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CompletAMO · Mejorar antes de migrar">
+<meta name="twitter:description" content="Versiones siguientes de sitios reales, validadas en paralelo antes de tocar producción.">
+<meta name="twitter:image" content="https://completamo.netlify.app/og-completamo.svg">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"CollectionPage",
+  "@id":"https://completamo.netlify.app/#page",
+  "url":"https://completamo.netlify.app/",
+  "name":"CompletAMO",
+  "description":"Laboratorio de propuestas competitivas y evolución de sitios de DesarrollAMO.",
+  "inLanguage":"es-AR",
+  "creator":{"@type":"Organization","name":"DesarrollAMO","url":"https://desarrollamo.com.ar/"},
+  "hasPart":[
+    {
+      "@type":"CreativeWork",
+      "name":"La Querencia · Siguiente nivel",
+      "url":"https://completamo.netlify.app/viverolaquerencia/",
+      "about":{"@type":"GardenStore","name":"La Querencia","url":"https://viverolaquerencia.com.ar/"}
+    }
+  ]
+}
+</script>
 <style>
-:root{--bg:#0b0f0d;--panel:#121813;--line:#27352b;--text:#f4f8f4;--muted:#9dac9f;--accent:#a8e063}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 15% 0,#1e3020 0,transparent 30rem),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif}
-.wrap{width:min(1100px,calc(100% - 32px));margin:auto}.nav{padding:22px 0;border-bottom:1px solid var(--line)}.brand{font-weight:900;letter-spacing:-.04em;font-size:24px}.brand span{color:var(--accent)}.hero{padding:100px 0 60px}.kicker{color:var(--accent);font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.16em}h1{font-size:clamp(48px,8vw,100px);line-height:.92;letter-spacing:-.07em;margin:18px 0 24px}.lead{font-size:20px;line-height:1.6;color:#bcc8be;max-width:720px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;padding:20px 0 90px}.card{display:block;padding:28px;border:1px solid var(--line);background:linear-gradient(180deg,#131a14,#0f1510);color:inherit;text-decoration:none;min-height:280px;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#5b785f}.tag{display:inline-block;padding:6px 8px;border:1px solid #405442;color:#b9c9bb;font-size:11px;font-weight:800;text-transform:uppercase}.card h2{font-size:32px;margin:52px 0 10px;letter-spacing:-.04em}.card p{color:var(--muted);line-height:1.6}.open{margin-top:24px;color:var(--accent);font-weight:900}.empty{opacity:.5}.footer{border-top:1px solid var(--line);padding:32px 0 50px;color:#809084;font-size:12px}
-@media(max-width:720px){.grid{grid-template-columns:1fr}.hero{padding-top:70px}}
+:root{--bg:#090e0b;--panel:#111814;--panel2:#17211a;--line:#293a30;--text:#f4f8f4;--muted:#9eaea1;--green:#a9e56a;--sky:#7dd3fc;--pink:#ff5aa5;--yellow:#ffd166}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:
+radial-gradient(circle at 12% 0,rgba(169,229,106,.13),transparent 28rem),
+radial-gradient(circle at 88% 10%,rgba(125,211,252,.08),transparent 28rem),
+var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 32px));margin:auto}.nav{position:sticky;top:0;z-index:30;background:rgba(9,14,11,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.navin{min-height:72px;display:flex;align-items:center;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-size:20px;font-weight:950;letter-spacing:-.04em}.mark{width:34px;height:34px;display:grid;place-items:center;background:linear-gradient(135deg,var(--sky),var(--pink));color:#0a0e0b;font-weight:1000;box-shadow:inset -6px -6px 0 rgba(0,0,0,.13)}.brand b{color:var(--green)}.navlinks{display:flex;gap:19px;margin-left:auto;color:#bbc9be;font-size:13px;font-weight:800}.navcta{padding:10px 13px;border:1px solid #49644f;background:#162019;font-weight:850}
+.hero{padding:94px 0 62px;display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:end}.kicker{color:var(--green);font-size:11px;font-weight:900;letter-spacing:.15em;text-transform:uppercase}.hero h1{font-size:clamp(52px,8vw,106px);line-height:.9;letter-spacing:-.075em;margin:16px 0 24px;max-width:840px}.lead{font-size:20px;color:#bdc9bf;max-width:760px}.hero-side{border:1px solid var(--line);background:linear-gradient(180deg,#121a15,#0d130f);padding:24px}.hero-side strong{display:block;font-size:28px;letter-spacing:-.04em;margin:8px 0}.hero-side p{color:var(--muted);margin:0}.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}.principle{padding:11px;border:1px solid #304238;background:#0d140f;color:#b9c7bc;font-size:12px}.principle b{display:block;color:white;margin-bottom:4px}
+section{padding:72px 0}.section-title{font-size:clamp(36px,5vw,67px);line-height:.98;letter-spacing:-.055em;margin:12px 0 16px}.section-lead{max-width:800px;color:#aab8ad;font-size:18px}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}.step{min-height:210px;padding:21px;border:1px solid var(--line);background:#111914}.step .num{color:var(--green);font-size:11px;font-weight:950}.step h3{font-size:22px;letter-spacing:-.035em;margin:44px 0 9px}.step p{color:var(--muted);font-size:14px;margin:0}
+.cases{display:grid;grid-template-columns:1.35fr .65fr;gap:16px;margin-top:30px}.case{border:1px solid var(--line);background:linear-gradient(180deg,#141d17,#0e1511);padding:26px;position:relative;overflow:hidden}.case:after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;right:-120px;top:-120px;background:radial-gradient(circle,rgba(169,229,106,.13),transparent 66%)}.tag{display:inline-flex;padding:6px 8px;border:1px solid #415646;color:#bfd0c1;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}.case h3{font-size:40px;letter-spacing:-.05em;margin:52px 0 8px}.case p{color:var(--muted);max-width:650px}.wins{display:flex;gap:7px;flex-wrap:wrap;margin:20px 0}.win{padding:6px 8px;background:#19231c;border:1px solid #324439;font-size:11px;color:#cbd8cd}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 15px;border:1px solid #5d775f;background:var(--green);color:#10170f;font-weight:900}.btn.secondary{background:transparent;color:#eaf2eb}.empty{opacity:.55;display:flex;flex-direction:column;justify-content:space-between}.empty h3{font-size:31px}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}.compare-card{border:1px solid var(--line);padding:24px;background:#101712}.compare-card h3{font-size:24px;margin:8px 0 14px}.compare-card ul{padding-left:18px;color:#abb9ae}.compare-card li{margin:9px 0}.compare-card.next{border-color:#4e694f;background:linear-gradient(135deg,#142019,#101712)}
+.rule{padding:30px;border:1px solid #3f5745;background:linear-gradient(135deg,#1a261e,#101712);display:grid;grid-template-columns:1fr auto;align-items:center;gap:20px}.rule strong{font-size:clamp(28px,4vw,48px);letter-spacing:-.05em}.rule span{color:#aebdaf}.footer{padding:36px 0 52px;border-top:1px solid var(--line)}.footerin{display:flex;justify-content:space-between;align-items:center;gap:24px}.amo{display:flex;align-items:center;gap:12px}.amo img{width:220px;filter:brightness(1.25)}.amo small{display:block;color:#899a8c}.fine{max-width:500px;text-align:right;color:#728176;font-size:11px}
+@media(max-width:900px){.navlinks{display:none}.hero,.cases,.rule{grid-template-columns:1fr}.flow{grid-template-columns:1fr 1fr}.compare{grid-template-columns:1fr}.hero{padding-top:68px}.hero-side{max-width:680px}}
+@media(max-width:600px){.flow,.principles{grid-template-columns:1fr}.hero h1{font-size:52px}.footerin{display:block}.fine{text-align:left;margin-top:18px}.amo img{width:190px}}
 </style>
 </head>
 <body>
-<div class="wrap nav"><div class="brand">Complet<span>AMO</span></div></div>
-<main class="wrap">
-<section class="hero">
-<div class="kicker">DesarrollAMO · CompetAMO</div>
-<h1>Mejorar.<br>Comparar.<br>Volver a mejorar.</h1>
-<p class="lead">Casos paralelos donde auditamos una web real, cerramos brechas y probamos diferenciadores sin tocar producción hasta verificar que la propuesta realmente aporta valor.</p>
+<nav class="nav"><div class="wrap navin"><a class="brand" href="/"><span class="mark">C</span>Complet<b>AMO</b></a><div class="navlinks"><a href="#como">Cómo funciona</a><a href="#casos">Casos</a><a href="#criterio">Criterio</a></div><a class="navcta" href="https://desarrollamo.com.ar/" target="_blank" rel="noopener">DesarrollAMO ↗</a></div></nav>
+<main>
+<section class="wrap hero">
+<div><div class="kicker">CompetAMO → CompletAMO</div><h1>El siguiente nivel,<br>antes de tocar producción.</h1><p class="lead">Tomamos una web real, la auditamos, construimos una versión siguiente en paralelo y la comparamos contra el sitio actual. <strong>Sólo migra lo que realmente mejora el producto.</strong></p></div>
+<aside class="hero-side"><div class="kicker">Regla del laboratorio</div><strong>Producción no se toca para experimentar.</strong><p>Cada caso vive separado, con datos reales cuando existen y espacios explícitos cuando requieren validación del cliente.</p><div class="principles"><div class="principle"><b>Sin ficción</b>No inventamos stock, reseñas ni métricas.</div><div class="principle"><b>Sin presión</b>El cliente compara antes de decidir.</div><div class="principle"><b>Sin regresiones</b>Lo bueno del sitio actual se conserva.</div></div></aside>
 </section>
-<section class="grid">
-<a class="card" href="/viverolaquerencia/">
-<span class="tag">Caso 001 · Vivero</span>
-<h2>La Querencia</h2>
-<p>De landing de consulta a experiencia de asesoramiento, disponibilidad, visita y acompañamiento post-compra.</p>
-<div class="open">Abrir propuesta →</div>
-</a>
-<div class="card empty">
-<span class="tag">Próximo caso</span>
-<h2>Disponible</h2>
-<p>La oficina CompetAMO puede sumar nuevos proyectos sin mezclar sus demos ni tocar sus dominios oficiales.</p>
+
+<section id="como"><div class="wrap"><div class="kicker">01 · método</div><h2 class="section-title">Competir contra la versión de ayer.</h2><p class="section-lead">CompetAMO hace la auditoría y detecta brechas. CompletAMO convierte ese diagnóstico en algo navegable que el cliente puede probar, comparar y aprobar.</p>
+<div class="flow">
+<div class="step"><span class="num">01</span><h3>Auditar</h3><p>Datos primero: producto, SEO, conversión, accesibilidad, contenido e infraestructura.</p></div>
+<div class="step"><span class="num">02</span><h3>Construir</h3><p>P0/P1 para cerrar brechas; P2/P3 para encontrar una ventaja propia del proyecto.</p></div>
+<div class="step"><span class="num">03</span><h3>Comparar</h3><p>Sitio actual y propuesta quedan disponibles lado a lado. Nada se da por mejor sólo porque sea nuevo.</p></div>
+<div class="step"><span class="num">04</span><h3>Migrar</h3><p>Cuando una mejora demuestra valor y el cliente la aprueba, recién ahí pasa a producción.</p></div>
+</div></div></section>
+
+<section id="casos"><div class="wrap"><div class="kicker">02 · casos activos</div><h2 class="section-title">La mejora se tiene que poder abrir.</h2><p class="section-lead">No entregamos sólo un PDF diciendo qué haríamos. Cada caso puede tener una versión siguiente funcional y separada.</p>
+<div class="cases">
+<article class="case"><span class="tag">Caso 001 · Vivero · activo</span><h3>La Querencia</h3><p>El sitio actual ya resuelve muy bien identidad y consulta por WhatsApp. La versión siguiente explora qué pasa si esa fortaleza continúa hacia disponibilidad, asesoramiento previo, visita y post-compra.</p><div class="wins"><span class="win">Asesor con resultado</span><span class="win">Disponibilidad contextual</span><span class="win">Temporada</span><span class="win">Planificar visita</span><span class="win">Mi Querencia</span></div><div class="actions"><a class="btn" href="/viverolaquerencia/">Abrir siguiente nivel →</a><a class="btn secondary" href="https://viverolaquerencia.com.ar/" target="_blank" rel="noopener">Abrir sitio actual ↗</a></div></article>
+<article class="case empty"><div><span class="tag">Próximo caso</span><h3>El sistema está listo para repetir.</h3><p>APP, web, portfolio, ecommerce o servicio. Cada proyecto recibe diferenciadores propios, no una checklist pegada.</p></div><div class="wins"><span class="win">P0/P1</span><span class="win">P2/P3</span><span class="win">QA</span><span class="win">Reauditoría</span></div></article>
+</div></div></section>
+
+<section id="criterio"><div class="wrap"><div class="kicker">03 · criterio</div><h2 class="section-title">CompletAMO no significa “más cosas”.</h2>
+<div class="compare">
+<div class="compare-card"><div class="tag">No pasa por acá</div><h3>Agregar por agregar</h3><ul><li>Más secciones sin objetivo.</li><li>Animaciones que no ayudan a decidir.</li><li>Datos ficticios para llenar huecos.</li><li>Copiar a la competencia.</li><li>Reemplazar decisiones deliberadas del cliente.</li></ul></div>
+<div class="compare-card next"><div class="tag">Sí pasa por acá</div><h3>Mejorar una métrica útil</h3><ul><li>Más claridad o conversión.</li><li>Más confianza o accesibilidad.</li><li>Menos trabajo manual.</li><li>Más diferenciación propia.</li><li>Mejor relación antes y después de comprar.</li></ul></div>
 </div>
-</section>
+<div class="rule" style="margin-top:16px"><div><strong>Paridad no es victoria.</strong><br><span>Primero cerramos brechas. Después buscamos algo que tenga sentido sólo para ese proyecto.</span></div><a class="btn" href="/viverolaquerencia/">Verlo aplicado →</a></div>
+</div></section>
 </main>
-<footer class="footer"><div class="wrap">CompletAMO · Laboratorio de propuestas competitivas de DesarrollAMO.</div></footer>
+<footer class="footer"><div class="wrap footerin"><div class="amo"><a href="https://desarrollamo.com.ar/" target="_blank" rel="noopener noreferrer sponsored"><img src="https://cdn.jsdelivr.net/gh/desarrollamo/branding@v1.3.0/assets/logo/horizontal.svg" alt="DesarrollAMO"></a><small>Tecnología con alma.</small></div><div class="fine">CompletAMO es un laboratorio de propuestas de DesarrollAMO. Los casos permanecen en <code>noindex</code> mientras sean versiones paralelas no aprobadas para producción.</div></div></footer>
 </body></html>
