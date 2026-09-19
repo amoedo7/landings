@@ -68,7 +68,7 @@ section{padding:72px 0}.section-title{font-size:clamp(36px,5vw,67px);line-height
 </style>
 </head>
 <body>
-<nav class="nav"><div class="wrap navin"><a class="brand" href="/"><span class="mark">C</span>Complet<b>AMO</b></a><div class="navlinks"><a href="#como">Cómo funciona</a><a href="#casos">Casos</a><a href="#criterio">Criterio</a><a href="#inventario">Inventario</a></div><a class="navcta" href="https://desarrollamo.com.ar/" target="_blank" rel="noopener">DesarrollAMO ↗</a></div></nav>
+<nav class="nav"><div class="wrap navin"><a class="brand" href="/"><span class="mark">C</span>Complet<b>AMO</b></a><div class="navlinks"><a href="#como">Cómo funciona</a><a href="#casos">Casos</a><a href="#criterio">Criterio</a><a href="/casos/">Casos visuales</a><a href="#inventario">Inventario</a><a href="/politica/">Política</a></div><a class="navcta" href="https://desarrollamo.com.ar/" target="_blank" rel="noopener">DesarrollAMO ↗</a></div></nav>
 <main>
 <section class="wrap hero">
 <div><div class="kicker">CompetAMO → CompletAMO</div><h1>El siguiente nivel,<br>antes de tocar producción.</h1><p class="lead">Tomamos una web real, la auditamos, construimos una versión siguiente en paralelo y la comparamos contra el sitio actual. <strong>Sólo migra lo que realmente mejora el producto.</strong></p></div>
@@ -97,6 +97,7 @@ section{padding:72px 0}.section-title{font-size:clamp(36px,5vw,67px);line-height
 <div class="rule" style="margin-top:16px"><div><strong>Paridad no es victoria.</strong><br><span>Primero cerramos brechas. Después buscamos algo que tenga sentido sólo para ese proyecto.</span></div><a class="btn" href="/viverolaquerencia/">Verlo aplicado →</a></div>
 </div></section>
 
+<section><div class="wrap"><div class="rule"><div><strong>53+ casos no deben convertirse en un cementerio de URLs.</strong><br><span>La galería visual muestra el portfolio; el inventario técnico mantiene auditoría, estado y trazabilidad.</span></div><a class="btn" href="/casos/">Abrir galería visual →</a></div></div></section>
 <section id="inventario"><div class="wrap">
 <div class="kicker">04 · inventario DesarrollAMO</div>
 <h2 class="section-title">Todo entra al tablero.<br>No todo está listo todavía.</h2>
@@ -118,11 +119,11 @@ section{padding:72px 0}.section-title{font-size:clamp(36px,5vw,67px);line-height
 (async function(){
   const data=await fetch('/projects.json').then(r=>r.json());
   const projects=data.projects||[];
-  const families=['TODOS','WEB','CV','APP','PLUGGINS','HERRAMIENTA','INTERNO'];
-  const labels={WEB:'WEB',CV:'CV',APP:'APP',PLUGGINS:'PLUGGINS',HERRAMIENTA:'HERRAMIENTAS',INTERNO:'INTERNO'};
+  const families=['TODOS','WEB','CV','APP','PLUGGINS','HERRAMIENTA','INTERNO','LAB'];
+  const labels={WEB:'WEB',CV:'CV',APP:'APP',PLUGGINS:'PLUGGINS',HERRAMIENTA:'HERRAMIENTAS',INTERNO:'INTERNO',LAB:'LAB'};
   const count=f=>projects.filter(p=>p.family===f).length;
   const counts=document.getElementById('counts');
-  counts.innerHTML=['WEB','CV','APP','PLUGGINS','HERRAMIENTA','INTERNO'].map(f=>'<div class="countbox"><strong>'+count(f)+'</strong><span>'+labels[f]+'</span></div>').join('');
+  counts.innerHTML=['WEB','CV','APP','PLUGGINS','HERRAMIENTA','INTERNO','LAB'].map(f=>'<div class="countbox"><strong>'+count(f)+'</strong><span>'+labels[f]+'</span></div>').join('');
   const filters=document.getElementById('filters'), grid=document.getElementById('projectgrid');
   let current='TODOS';
   function render(){
@@ -131,7 +132,7 @@ section{padding:72px 0}.section-title{font-size:clamp(36px,5vw,67px);line-height
     grid.innerHTML=list.map(p=>{
       const statusLabel={complete:'Caso + checklist',audited:'Auditado','verify-url':'Verificar URL',intake:'Relevamiento'}[p.state]||p.state;
       let action='';
-      action='<span style="display:flex;gap:8px;flex-wrap:wrap"><a class="projectlink" href="/'+p.slug+'/">Caso →</a><a class="projectlink" href="/'+p.slug+'/CHECKLIST-CLIENTES.html">Checklist</a></span>';
+      action='<span style="display:flex;gap:8px;flex-wrap:wrap"><a class="projectlink" href="/'+p.slug+'/">Caso →</a><a class="projectlink" href="/'+p.slug+'/checklist-clientes/">Checklist</a></span>';
       return '<article class="projectcard"><span class="tag">'+p.family+'</span><h3>'+p.name+'</h3><p>/'+p.slug+'/</p><div class="meta"><span class="status '+p.state+'">'+statusLabel+'</span>'+action+'</div></article>';
     }).join('');
     filters.querySelectorAll('[data-f]').forEach(b=>b.onclick=()=>{current=b.dataset.f;render()});

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-18",
+  "updated": "2026-09-19",
   "source": "https://desarrollamo.com.ar/galeria",
   "projects": [
     {
@@ -9,7 +9,19 @@
       "slug": "viverolaquerencia",
       "state": "complete",
       "case_url": "/viverolaquerencia/",
-      "checklist_url": "/viverolaquerencia/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/viverolaquerencia/checklist-clientes/",
+      "thumbnail": "https://viverolaquerencia.com.ar/assets/images/og-image.webp",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Recorrido específico",
+        "description": "Detectar una fricción comercial concreta y resolverla dentro del sitio."
+      },
+      "p3": {
+        "title": "Diferenciador nativo",
+        "description": "La idea se define después de entender rubro, operación y objetivo; no se pega una feature genérica."
+      }
     },
     {
       "name": "Reliance Travel",
@@ -18,7 +30,19 @@
       "slug": "reliancetravel",
       "state": "audited",
       "case_url": "/reliancetravel/",
-      "checklist_url": "/reliancetravel/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/reliancetravel/checklist-clientes/",
+      "thumbnail": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Brief de viaje guiado",
+        "description": "Destino, fechas, presupuesto, ritmo y prioridades antes de abrir contacto."
+      },
+      "p3": {
+        "title": "Itinerario compartible",
+        "description": "Convertir la consulta en una propuesta visual con etapas, clima/temporada orientativa y decisiones pendientes."
+      }
     },
     {
       "name": "RemerasCo",
@@ -27,7 +51,19 @@
       "slug": "remerasco",
       "state": "audited",
       "case_url": "/remerasco/",
-      "checklist_url": "/remerasco/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/remerasco/checklist-clientes/",
+      "thumbnail": "https://remeraco.com.ar/assets/pagina_001.png",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Asistente de talle + packs",
+        "description": "Reducir dudas de talle y permitir armar combinaciones antes de WhatsApp/carrito."
+      },
+      "p3": {
+        "title": "Compra minorista/mayorista adaptativa",
+        "description": "La misma tienda cambia cantidades, packs y CTA según el tipo de comprador."
+      }
     },
     {
       "name": "CasaBosco Arquitectura",
@@ -36,7 +72,19 @@
       "slug": "casabosco",
       "state": "audited",
       "case_url": "/casabosco/",
-      "checklist_url": "/casabosco/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/casabosco/checklist-clientes/",
+      "thumbnail": "https://casaboscoarq.com.ar/og-casabosco.jpg",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Brief de proyecto interactivo",
+        "description": "Tipo de espacio, etapa, superficie, ubicación, presupuesto orientativo y modalidad antes de la primera reunión."
+      },
+      "p3": {
+        "title": "Área de proyecto",
+        "description": "Cronología, decisiones, renders y próximos hitos compartidos con el cliente cuando exista backend real."
+      }
     },
     {
       "name": "Krow Rosario",
@@ -45,7 +93,19 @@
       "slug": "krowrosario",
       "state": "audited",
       "case_url": "/krowrosario/",
-      "checklist_url": "/krowrosario/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/krowrosario/checklist-clientes/",
+      "thumbnail": "https://krowrosario.netlify.app/assets/logo-krow.jpg",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Pedido por contexto",
+        "description": "Buscar producto, comparar unidad/caja y guardar carrito para recompra."
+      },
+      "p3": {
+        "title": "Lista oficial viva",
+        "description": "Sincronización de lista, conflictos/duplicados visibles y trazabilidad de qué cambió entre versiones."
+      }
     },
     {
       "name": "Empanadas Caseritas",
@@ -54,7 +114,19 @@
       "slug": "empanadascaseritas",
       "state": "audited",
       "case_url": "/empanadascaseritas/",
-      "checklist_url": "/empanadascaseritas/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/empanadascaseritas/checklist-clientes/",
+      "thumbnail": "https://i.imgur.com/mz70Mke.png",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Armador de pedido",
+        "description": "Sabores, cantidades, cocidas/freezadas y retiro/envío en un único flujo."
+      },
+      "p3": {
+        "title": "Planificador de freezer + recompra",
+        "description": "Packs según personas/semana y repetición del último pedido sin volver a empezar."
+      }
     },
     {
       "name": "Yoga con Jocha",
@@ -63,7 +135,19 @@
       "slug": "yogaconjocha",
       "state": "audited",
       "case_url": "/yogaconjocha/",
-      "checklist_url": "/yogaconjocha/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/yogaconjocha/checklist-clientes/",
+      "thumbnail": "https://i.imgur.com/0tTla11.png",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Encontrá tu clase",
+        "description": "Cruzar experiencia, horario y objetivo para sugerir la clase adecuada antes de reservar."
+      },
+      "p3": {
+        "title": "Continuidad simple",
+        "description": "Pases, recordatorios y seguimiento de asistencia sin convertir el sitio en una app pesada."
+      }
     },
     {
       "name": "Gespasa Argentina",
@@ -72,7 +156,19 @@
       "slug": "gespasargentina",
       "state": "audited",
       "case_url": "/gespasargentina/",
-      "checklist_url": "/gespasargentina/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/gespasargentina/checklist-clientes/",
+      "thumbnail": "https://i.imgur.com/5SGfzyf.png",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Selector por problema",
+        "description": "Elegir fluido, caudal, control/trasvase/filtrado y entorno para llegar al producto correcto."
+      },
+      "p3": {
+        "title": "Calculadora de operación",
+        "description": "Estimar pérdidas, consumo/control y preparar una solicitud técnica de cotización con datos útiles."
+      }
     },
     {
       "name": "Erika Boveri",
@@ -81,7 +177,19 @@
       "slug": "erikaboveri",
       "state": "audited",
       "case_url": "/erikaboveri/",
-      "checklist_url": "/erikaboveri/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/erikaboveri/checklist-clientes/",
+      "thumbnail": "https://i.imgur.com/UuCP4UR.jpg",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Hub de lanzamientos",
+        "description": "Escuchar, ver créditos, videos y enlaces de cada lanzamiento sin salir del sitio."
+      },
+      "p3": {
+        "title": "EPK vivo",
+        "description": "Prensa, booking, fotos, bio y materiales descargables en una URL profesional actualizable."
+      }
     },
     {
       "name": "Tarot con Kima",
@@ -90,7 +198,19 @@
       "slug": "tarotconkima",
       "state": "audited",
       "case_url": "/tarotconkima/",
-      "checklist_url": "/tarotconkima/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/tarotconkima/checklist-clientes/",
+      "thumbnail": "https://i.imgur.com/o5OAW3H.png",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Elegir sesión",
+        "description": "Orientar entre servicios según lo que la persona busca, sin prometer resultados ni hacer afirmaciones de salud."
+      },
+      "p3": {
+        "title": "Reserva + preparación",
+        "description": "Agenda, información previa y recursos de seguimiento opcionales alrededor de la sesión."
+      }
     },
     {
       "name": "Eros DJ",
@@ -99,7 +219,19 @@
       "slug": "erosdj",
       "state": "audited",
       "case_url": "/erosdj/",
-      "checklist_url": "/erosdj/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/erosdj/checklist-clientes/",
+      "thumbnail": "https://i.imgur.com/x1UpgtJ.jpeg",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Brief de evento",
+        "description": "Fecha, ciudad, tipo de evento, duración y estilo antes del WhatsApp."
+      },
+      "p3": {
+        "title": "Set preview + disponibilidad",
+        "description": "Mostrar sets representativos y ventanas de disponibilidad para acelerar contratación."
+      }
     },
     {
       "name": "Logan",
@@ -108,7 +240,19 @@
       "slug": "logan",
       "state": "audited",
       "case_url": "/logan/",
-      "checklist_url": "/logan/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/logan/checklist-clientes/",
+      "thumbnail": "https://i.imgur.com/L1YVVhr.png",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Release hub multilingüe",
+        "description": "Unificar música, videos, biografía y enlaces en ES/EN/DA sin fragmentar la navegación."
+      },
+      "p3": {
+        "title": "Press kit + booking",
+        "description": "Material profesional para medios/eventos y contacto contextual desde cada lanzamiento."
+      }
     },
     {
       "name": "Move DJ",
@@ -117,7 +261,19 @@
       "slug": "movedj",
       "state": "audited",
       "case_url": "/movedj/",
-      "checklist_url": "/movedj/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/movedj/checklist-clientes/",
+      "thumbnail": "https://i.imgur.com/hyVvsPp.png",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Configurador de evento",
+        "description": "Tipo de evento, personas, lugar, sonido/luces y horario para generar un brief técnico."
+      },
+      "p3": {
+        "title": "Rider + presupuesto guiado",
+        "description": "Transformar el pedido en necesidades técnicas y paquete recomendado antes del contacto."
+      }
     },
     {
       "name": "Peluquería Silvina",
@@ -126,7 +282,19 @@
       "slug": "peluqueriasilvina",
       "state": "audited",
       "case_url": "/peluqueriasilvina/",
-      "checklist_url": "/peluqueriasilvina/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/peluqueriasilvina/checklist-clientes/",
+      "thumbnail": "https://i.imgur.com/AUIO3BH.jpeg",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Consulta de servicio a domicilio",
+        "description": "Ciudad/zona, servicio, largo de cabello y referencia visual antes de coordinar."
+      },
+      "p3": {
+        "title": "Reagendado contextual",
+        "description": "Guardar servicio y preferencias del último turno para repetir o ajustar más rápido."
+      }
     },
     {
       "name": "El Máquina Barbershop",
@@ -135,7 +303,19 @@
       "slug": "elmaquinabarbershop",
       "state": "audited",
       "case_url": "/elmaquinabarbershop/",
-      "checklist_url": "/elmaquinabarbershop/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/elmaquinabarbershop/checklist-clientes/",
+      "thumbnail": "https://elmaquinabarbershop.netlify.app/makina1.jpeg",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Reserva por servicio",
+        "description": "Corte, barba o combo + franja horaria antes de WhatsApp."
+      },
+      "p3": {
+        "title": "Rebook + estilo guardado",
+        "description": "Volver a reservar el mismo servicio y conservar referencia del corte con permiso del cliente."
+      }
     },
     {
       "name": "Fierro Argentino",
@@ -144,7 +324,19 @@
       "slug": "fierroargentino",
       "state": "audited",
       "case_url": "/fierroargentino/",
-      "checklist_url": "/fierroargentino/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/fierroargentino/checklist-clientes/",
+      "thumbnail": "https://i.imgur.com/QGtx3o8.jpeg",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Asistente de talle",
+        "description": "Medidas simples + tabla para bajar incertidumbre antes de reservar."
+      },
+      "p3": {
+        "title": "Perfil de fit + packs",
+        "description": "Recordar talle/preferencia y construir packs según uso, color y disponibilidad real."
+      }
     },
     {
       "name": "Martí Bermejo",
@@ -153,7 +345,19 @@
       "slug": "martibermejo",
       "state": "audited",
       "case_url": "/martibermejo/",
-      "checklist_url": "/martibermejo/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/martibermejo/checklist-clientes/",
+      "thumbnail": "https://i.imgur.com/2RfAi0r.png",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Cursos y recursos ordenados",
+        "description": "Calendario, requisitos, inscripción y materiales profesionales en un flujo claro."
+      },
+      "p3": {
+        "title": "Espacio de formación",
+        "description": "Historial de cursos/recursos y próximos contenidos para profesionales, sin mezclarlo con información clínica sensible."
+      }
     },
     {
       "name": "Makana",
@@ -162,7 +366,19 @@
       "slug": "makana",
       "state": "audited",
       "case_url": "/makana/",
-      "checklist_url": "/makana/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/makana/checklist-clientes/",
+      "thumbnail": "https://i.imgur.com/WHkiPZq.png",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Hub de lanzamientos",
+        "description": "Música, video, contexto y redes de cada lanzamiento en un recorrido único."
+      },
+      "p3": {
+        "title": "Comunidad del proyecto",
+        "description": "Suscripción opcional, próximos lanzamientos/eventos y contacto profesional sin depender sólo de redes."
+      }
     },
     {
       "name": "Mercedes Yáñez · Reinvención",
@@ -171,7 +387,19 @@
       "slug": "reinvencionmer",
       "state": "verify-url",
       "case_url": "/reinvencionmer/",
-      "checklist_url": "/reinvencionmer/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/reinvencionmer/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Recorrido específico",
+        "description": "Detectar una fricción comercial concreta y resolverla dentro del sitio."
+      },
+      "p3": {
+        "title": "Diferenciador nativo",
+        "description": "La idea se define después de entender rubro, operación y objetivo; no se pega una feature genérica."
+      }
     },
     {
       "name": "Proyecto Estampa",
@@ -180,7 +408,19 @@
       "slug": "proyectoestampa",
       "state": "verify-url",
       "case_url": "/proyectoestampa/",
-      "checklist_url": "/proyectoestampa/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/proyectoestampa/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Recorrido específico",
+        "description": "Detectar una fricción comercial concreta y resolverla dentro del sitio."
+      },
+      "p3": {
+        "title": "Diferenciador nativo",
+        "description": "La idea se define después de entender rubro, operación y objetivo; no se pega una feature genérica."
+      }
     },
     {
       "name": "Lukas",
@@ -189,7 +429,19 @@
       "slug": "lukas",
       "state": "intake",
       "case_url": "/lukas/",
-      "checklist_url": "/lukas/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/lukas/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Recorrido específico",
+        "description": "Detectar una fricción comercial concreta y resolverla dentro del sitio."
+      },
+      "p3": {
+        "title": "Diferenciador nativo",
+        "description": "La idea se define después de entender rubro, operación y objetivo; no se pega una feature genérica."
+      }
     },
     {
       "name": "Julia Inés Sidor",
@@ -198,7 +450,19 @@
       "slug": "cvjuliasidor",
       "state": "verify-url",
       "case_url": "/cvjuliasidor/",
-      "checklist_url": "/cvjuliasidor/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/cvjuliasidor/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Lectura rápida",
+        "description": "Jerarquía, ATS/PDF y enlaces según objetivo profesional."
+      },
+      "p3": {
+        "title": "Evidencia verificable",
+        "description": "Convertir proyectos/logros confirmados en prueba concreta, no en adjetivos."
+      }
     },
     {
       "name": "Lola Jimeno Fernández",
@@ -207,7 +471,19 @@
       "slug": "cvlolajimenofernandez",
       "state": "audited",
       "case_url": "/cvlolajimenofernandez/",
-      "checklist_url": "/cvlolajimenofernandez/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/cvlolajimenofernandez/checklist-clientes/",
+      "thumbnail": "https://i.imgur.com/F1WrAGF.png",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Modo recruiter",
+        "description": "Resumen breve + experiencia relevante + publicaciones/certificaciones con acceso rápido."
+      },
+      "p3": {
+        "title": "Versiones por oportunidad",
+        "description": "Reordenar el mismo contenido verificado según clínica, investigación u otra vacante sin inventar experiencia."
+      }
     },
     {
       "name": "Marcos Rubial",
@@ -216,7 +492,19 @@
       "slug": "cvmarcosrubial",
       "state": "audited",
       "case_url": "/cvmarcosrubial/",
-      "checklist_url": "/cvmarcosrubial/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/cvmarcosrubial/checklist-clientes/",
+      "thumbnail": "https://i.imgur.com/kkJpn3U.png",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Modo logística/comercio exterior",
+        "description": "Priorizar idiomas, operaciones, procurement y comercio internacional para lectura en 30 segundos."
+      },
+      "p3": {
+        "title": "Evidencia operativa",
+        "description": "Casos o logros verificables con alcance y resultados cuando el candidato los confirme."
+      }
     },
     {
       "name": "Nadia Martín",
@@ -225,7 +513,19 @@
       "slug": "cvnadiamartin",
       "state": "audited",
       "case_url": "/cvnadiamartin/",
-      "checklist_url": "/cvnadiamartin/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/cvnadiamartin/checklist-clientes/",
+      "thumbnail": "https://i.imgur.com/iH1xKrf.png",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "CV ATS + credenciales",
+        "description": "Jerarquizar administración, higiene/seguridad, formación y documentos descargables."
+      },
+      "p3": {
+        "title": "Mapa de experiencia verificable",
+        "description": "Obras/entornos/responsabilidades y certificaciones enlazadas cuando exista evidencia autorizada."
+      }
     },
     {
       "name": "Felipe Ignacio Rubio",
@@ -234,7 +534,19 @@
       "slug": "cvfeliperubio",
       "state": "audited",
       "case_url": "/cvfeliperubio/",
-      "checklist_url": "/cvfeliperubio/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/cvfeliperubio/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Selector de perfil",
+        "description": "Hospitality, bar operations o assistant manager usando el mismo historial verificado."
+      },
+      "p3": {
+        "title": "Portfolio operativo",
+        "description": "Festivales/craft beer/operaciones convertidos en casos breves con responsabilidades confirmadas."
+      }
     },
     {
       "name": "Agustín Vitelli",
@@ -243,7 +555,19 @@
       "slug": "cvagustinvitelli",
       "state": "audited",
       "case_url": "/cvagustinvitelli/",
-      "checklist_url": "/cvagustinvitelli/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/cvagustinvitelli/checklist-clientes/",
+      "thumbnail": "https://i.imgur.com/AzUzVB5.png",
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Portfolio de rendimiento",
+        "description": "Preparación física, coordinación y análisis de video separados por capacidades."
+      },
+      "p3": {
+        "title": "Casos deportivos verificables",
+        "description": "Metodología, rol y evidencia visual sólo cuando haya autorización y datos confirmados."
+      }
     },
     {
       "name": "Archivo de imágenes IA",
@@ -252,7 +576,19 @@
       "slug": "archivo-imagenes-ia",
       "state": "intake",
       "case_url": "/archivo-imagenes-ia/",
-      "checklist_url": "/archivo-imagenes-ia/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/archivo-imagenes-ia/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Relevamiento",
+        "description": "Definir uso real y superficie demostrable."
+      },
+      "p3": {
+        "title": "Ecosistema",
+        "description": "Integrar sólo si aporta valor concreto."
+      }
     },
     {
       "name": "Identidad DesarrollAMO",
@@ -261,7 +597,19 @@
       "slug": "identidad-desarrollamo",
       "state": "intake",
       "case_url": "/identidad-desarrollamo/",
-      "checklist_url": "/identidad-desarrollamo/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/identidad-desarrollamo/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Relevamiento",
+        "description": "Definir uso real y superficie demostrable."
+      },
+      "p3": {
+        "title": "Ecosistema",
+        "description": "Integrar sólo si aporta valor concreto."
+      }
     },
     {
       "name": "StoreAMO",
@@ -270,7 +618,19 @@
       "slug": "storeamo",
       "state": "intake",
       "case_url": "/storeamo/",
-      "checklist_url": "/storeamo/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/storeamo/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Flujo principal",
+        "description": "Probar y simplificar la tarea central cuando exista build/repo demostrable."
+      },
+      "p3": {
+        "title": "Ventaja de producto",
+        "description": "Automatizar o personalizar una tarea real después del relevamiento."
+      }
     },
     {
       "name": "GeneralAMO",
@@ -279,7 +639,19 @@
       "slug": "generalamo",
       "state": "intake",
       "case_url": "/generalamo/",
-      "checklist_url": "/generalamo/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/generalamo/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Flujo principal",
+        "description": "Probar y simplificar la tarea central cuando exista build/repo demostrable."
+      },
+      "p3": {
+        "title": "Ventaja de producto",
+        "description": "Automatizar o personalizar una tarea real después del relevamiento."
+      }
     },
     {
       "name": "MesaAMO",
@@ -288,7 +660,19 @@
       "slug": "mesaamo",
       "state": "intake",
       "case_url": "/mesaamo/",
-      "checklist_url": "/mesaamo/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/mesaamo/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Flujo principal",
+        "description": "Probar y simplificar la tarea central cuando exista build/repo demostrable."
+      },
+      "p3": {
+        "title": "Ventaja de producto",
+        "description": "Automatizar o personalizar una tarea real después del relevamiento."
+      }
     },
     {
       "name": "Chessi",
@@ -297,7 +681,19 @@
       "slug": "chessi",
       "state": "intake",
       "case_url": "/chessi/",
-      "checklist_url": "/chessi/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/chessi/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Flujo principal",
+        "description": "Probar y simplificar la tarea central cuando exista build/repo demostrable."
+      },
+      "p3": {
+        "title": "Ventaja de producto",
+        "description": "Automatizar o personalizar una tarea real después del relevamiento."
+      }
     },
     {
       "name": "WifiAMO",
@@ -306,7 +702,19 @@
       "slug": "wifiamo",
       "state": "intake",
       "case_url": "/wifiamo/",
-      "checklist_url": "/wifiamo/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/wifiamo/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Flujo principal",
+        "description": "Probar y simplificar la tarea central cuando exista build/repo demostrable."
+      },
+      "p3": {
+        "title": "Ventaja de producto",
+        "description": "Automatizar o personalizar una tarea real después del relevamiento."
+      }
     },
     {
       "name": "NfcAMO",
@@ -315,7 +723,19 @@
       "slug": "nfcamo",
       "state": "intake",
       "case_url": "/nfcamo/",
-      "checklist_url": "/nfcamo/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/nfcamo/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Flujo principal",
+        "description": "Probar y simplificar la tarea central cuando exista build/repo demostrable."
+      },
+      "p3": {
+        "title": "Ventaja de producto",
+        "description": "Automatizar o personalizar una tarea real después del relevamiento."
+      }
     },
     {
       "name": "CalculAMO",
@@ -324,7 +744,19 @@
       "slug": "calculamo",
       "state": "intake",
       "case_url": "/calculamo/",
-      "checklist_url": "/calculamo/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/calculamo/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Flujo principal",
+        "description": "Probar y simplificar la tarea central cuando exista build/repo demostrable."
+      },
+      "p3": {
+        "title": "Ventaja de producto",
+        "description": "Automatizar o personalizar una tarea real después del relevamiento."
+      }
     },
     {
       "name": "CronAMO",
@@ -333,7 +765,19 @@
       "slug": "cronamo",
       "state": "intake",
       "case_url": "/cronamo/",
-      "checklist_url": "/cronamo/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/cronamo/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Flujo principal",
+        "description": "Probar y simplificar la tarea central cuando exista build/repo demostrable."
+      },
+      "p3": {
+        "title": "Ventaja de producto",
+        "description": "Automatizar o personalizar una tarea real después del relevamiento."
+      }
     },
     {
       "name": "TemporizAMO",
@@ -342,7 +786,19 @@
       "slug": "temporizamo",
       "state": "intake",
       "case_url": "/temporizamo/",
-      "checklist_url": "/temporizamo/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/temporizamo/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Flujo principal",
+        "description": "Probar y simplificar la tarea central cuando exista build/repo demostrable."
+      },
+      "p3": {
+        "title": "Ventaja de producto",
+        "description": "Automatizar o personalizar una tarea real después del relevamiento."
+      }
     },
     {
       "name": "NotasAMO",
@@ -351,7 +807,19 @@
       "slug": "notasamo",
       "state": "intake",
       "case_url": "/notasamo/",
-      "checklist_url": "/notasamo/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/notasamo/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Flujo principal",
+        "description": "Probar y simplificar la tarea central cuando exista build/repo demostrable."
+      },
+      "p3": {
+        "title": "Ventaja de producto",
+        "description": "Automatizar o personalizar una tarea real después del relevamiento."
+      }
     },
     {
       "name": "TareasAMO",
@@ -360,7 +828,19 @@
       "slug": "tareasamo",
       "state": "intake",
       "case_url": "/tareasamo/",
-      "checklist_url": "/tareasamo/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/tareasamo/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Flujo principal",
+        "description": "Probar y simplificar la tarea central cuando exista build/repo demostrable."
+      },
+      "p3": {
+        "title": "Ventaja de producto",
+        "description": "Automatizar o personalizar una tarea real después del relevamiento."
+      }
     },
     {
       "name": "ConversAMO",
@@ -369,7 +849,19 @@
       "slug": "conversamo",
       "state": "intake",
       "case_url": "/conversamo/",
-      "checklist_url": "/conversamo/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/conversamo/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Flujo principal",
+        "description": "Probar y simplificar la tarea central cuando exista build/repo demostrable."
+      },
+      "p3": {
+        "title": "Ventaja de producto",
+        "description": "Automatizar o personalizar una tarea real después del relevamiento."
+      }
     },
     {
       "name": "QrAMO",
@@ -378,7 +870,19 @@
       "slug": "qramo",
       "state": "intake",
       "case_url": "/qramo/",
-      "checklist_url": "/qramo/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/qramo/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Flujo principal",
+        "description": "Probar y simplificar la tarea central cuando exista build/repo demostrable."
+      },
+      "p3": {
+        "title": "Ventaja de producto",
+        "description": "Automatizar o personalizar una tarea real después del relevamiento."
+      }
     },
     {
       "name": "RedAMO",
@@ -387,7 +891,19 @@
       "slug": "redamo",
       "state": "intake",
       "case_url": "/redamo/",
-      "checklist_url": "/redamo/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/redamo/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Flujo principal",
+        "description": "Probar y simplificar la tarea central cuando exista build/repo demostrable."
+      },
+      "p3": {
+        "title": "Ventaja de producto",
+        "description": "Automatizar o personalizar una tarea real después del relevamiento."
+      }
     },
     {
       "name": "Ordenar Excel a JSON",
@@ -396,7 +912,19 @@
       "slug": "ordenar-excel-json",
       "state": "intake",
       "case_url": "/ordenar-excel-json/",
-      "checklist_url": "/ordenar-excel-json/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/ordenar-excel-json/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Empaquetado reproducible",
+        "description": "Entrada, salida, ejemplo y error handling."
+      },
+      "p3": {
+        "title": "Reutilización",
+        "description": "Decidir si se convierte en APP, PLUGGINS/integración o componente interno."
+      }
     },
     {
       "name": "Renombrador masivo",
@@ -405,7 +933,19 @@
       "slug": "renombrador-masivo",
       "state": "intake",
       "case_url": "/renombrador-masivo/",
-      "checklist_url": "/renombrador-masivo/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/renombrador-masivo/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Empaquetado reproducible",
+        "description": "Entrada, salida, ejemplo y error handling."
+      },
+      "p3": {
+        "title": "Reutilización",
+        "description": "Decidir si se convierte en APP, PLUGGINS/integración o componente interno."
+      }
     },
     {
       "name": "Comparador de imágenes",
@@ -414,7 +954,19 @@
       "slug": "comparador-imagenes",
       "state": "intake",
       "case_url": "/comparador-imagenes/",
-      "checklist_url": "/comparador-imagenes/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/comparador-imagenes/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Empaquetado reproducible",
+        "description": "Entrada, salida, ejemplo y error handling."
+      },
+      "p3": {
+        "title": "Reutilización",
+        "description": "Decidir si se convierte en APP, PLUGGINS/integración o componente interno."
+      }
     },
     {
       "name": "Generador de presupuestos",
@@ -423,7 +975,19 @@
       "slug": "generador-presupuestos",
       "state": "intake",
       "case_url": "/generador-presupuestos/",
-      "checklist_url": "/generador-presupuestos/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/generador-presupuestos/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Empaquetado reproducible",
+        "description": "Entrada, salida, ejemplo y error handling."
+      },
+      "p3": {
+        "title": "Reutilización",
+        "description": "Decidir si se convierte en APP, PLUGGINS/integración o componente interno."
+      }
     },
     {
       "name": "Auditor web básico",
@@ -432,7 +996,19 @@
       "slug": "auditor-web-basico",
       "state": "intake",
       "case_url": "/auditor-web-basico/",
-      "checklist_url": "/auditor-web-basico/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/auditor-web-basico/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Empaquetado reproducible",
+        "description": "Entrada, salida, ejemplo y error handling."
+      },
+      "p3": {
+        "title": "Reutilización",
+        "description": "Decidir si se convierte en APP, PLUGGINS/integración o componente interno."
+      }
     },
     {
       "name": "Certificados a JSON",
@@ -441,7 +1017,19 @@
       "slug": "certificados-json",
       "state": "intake",
       "case_url": "/certificados-json/",
-      "checklist_url": "/certificados-json/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/certificados-json/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Empaquetado reproducible",
+        "description": "Entrada, salida, ejemplo y error handling."
+      },
+      "p3": {
+        "title": "Reutilización",
+        "description": "Decidir si se convierte en APP, PLUGGINS/integración o componente interno."
+      }
     },
     {
       "name": "Limpieza de productos",
@@ -450,7 +1038,19 @@
       "slug": "limpieza-productos",
       "state": "intake",
       "case_url": "/limpieza-productos/",
-      "checklist_url": "/limpieza-productos/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/limpieza-productos/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Empaquetado reproducible",
+        "description": "Entrada, salida, ejemplo y error handling."
+      },
+      "p3": {
+        "title": "Reutilización",
+        "description": "Decidir si se convierte en APP, PLUGGINS/integración o componente interno."
+      }
     },
     {
       "name": "Generador de landings",
@@ -459,7 +1059,19 @@
       "slug": "generador-landings",
       "state": "intake",
       "case_url": "/generador-landings/",
-      "checklist_url": "/generador-landings/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/generador-landings/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Empaquetado reproducible",
+        "description": "Entrada, salida, ejemplo y error handling."
+      },
+      "p3": {
+        "title": "Reutilización",
+        "description": "Decidir si se convierte en APP, PLUGGINS/integración o componente interno."
+      }
     },
     {
       "name": "TermuxNow.sh",
@@ -468,7 +1080,19 @@
       "slug": "termuxnow",
       "state": "intake",
       "case_url": "/termuxnow/",
-      "checklist_url": "/termuxnow/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/termuxnow/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Empaquetado reproducible",
+        "description": "Entrada, salida, ejemplo y error handling."
+      },
+      "p3": {
+        "title": "Reutilización",
+        "description": "Decidir si se convierte en APP, PLUGGINS/integración o componente interno."
+      }
     },
     {
       "name": "Mi PC PowerShell",
@@ -477,7 +1101,42 @@
       "slug": "mi-pc-powershell",
       "state": "intake",
       "case_url": "/mi-pc-powershell/",
-      "checklist_url": "/mi-pc-powershell/CHECKLIST-CLIENTES.html"
+      "checklist_url": "/mi-pc-powershell/checklist-clientes/",
+      "thumbnail": null,
+      "publication": "portfolio-public",
+      "analysis_visibility": "internal-review",
+      "last_snapshot": null,
+      "p2": {
+        "title": "Empaquetado reproducible",
+        "description": "Entrada, salida, ejemplo y error handling."
+      },
+      "p3": {
+        "title": "Reutilización",
+        "description": "Decidir si se convierte en APP, PLUGGINS/integración o componente interno."
+      }
+    },
+    {
+      "name": "Maincash",
+      "family": "LAB",
+      "url": "https://maincash.netlify.app/",
+      "slug": "maincash",
+      "state": "complete",
+      "origin": "CompetAMO lab",
+      "actual_url": "https://maincash.net/",
+      "case_url": "/maincash/",
+      "checklist_url": "/maincash/checklist-clientes/",
+      "thumbnail": "https://maincash.netlify.app/og-maincash.svg",
+      "publication": "lab-public",
+      "analysis_visibility": "public-lab",
+      "last_snapshot": "2026-09-19",
+      "p2": {
+        "title": "Identidad antes de comprar",
+        "description": "Skin 3D, preview por rango, comparación y estado vivo ya implementados en la propuesta."
+      },
+      "p3": {
+        "title": "Cuenta de jugador",
+        "description": "Saldo, rango, historial, referidos y acreditación automática cuando el propietario entregue backend/credenciales."
+      }
     }
   ]
 }

@@ -1,5 +1,9 @@
 [build]
   publish = "."
+  functions = "netlify/functions"
+
+[build.processing.html]
+  pretty_urls = false
 
 [[headers]]
   for = "/*"
